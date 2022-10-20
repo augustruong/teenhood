@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../logo.svg';
+import LessonVisual from './LessonVisual';
+
+import './Header.css'
 
 export default function NavWrapper(props) {
     const [showNav,setShowNav] = useState(false);
@@ -24,7 +27,7 @@ export default function NavWrapper(props) {
                     <li className='nav-list__item'>
                         <NavLink
                             className='nav-item'
-                            to='/lessons'
+                            to='/ehon'
                             style={{'--hover-bg-color': 'var(--pink-color)'}}
                             onClick={() => setShowNav(false)} 
                         >
@@ -35,8 +38,76 @@ export default function NavWrapper(props) {
                             </div>
                         </NavLink>
                     </li>
+                    <li className='nav-list__item'>
+                        <NavLink
+                            className='nav-item'
+                            to='/jisho'
+                            style={{'--hover-bg-color': 'var(--pink-color)'}}
+                            onClick={() => setShowNav(false)} 
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                                <h4 className='nav-item__title lesson-title'>性の辞書</h4>
+                            </div>
+                        </NavLink>
+                    </li>
+                    <li className='nav-list__item'>
+                        <NavLink
+                            className='nav-item'
+                            to='/nayami'
+                            style={{'--hover-bg-color': 'var(--pink-color)'}}
+                            onClick={() => setShowNav(false)} 
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                                <h4 className='nav-item__title lesson-title'>性のよくある悩み</h4>
+                            </div>
+                        </NavLink>
+                    </li>
+                </ul>
+
+                <ul className='nav-list'>
+                    <li className='nav-list__item'>
+                        <NavLink
+                            className='nav-item lesson'
+                            to='/ehon/shishunki'
+                            style={{'--hover-bg-color': '#215371'}}
+                            onClick={() => setShowNav(false)}
+                            onMouseEnter = {() => setLessonName("shishunki")}
+                            onMouseLeave = {() => setLessonName("")}
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                            <div className='nav-item__title'>私のからだがどう変化している？</div>
+                            <div className='nav-item__subtitle body-text'>思春期・大人になるの始まり</div>
+                            </div>
+                        </NavLink>
+                    </li>
+                    <li className='nav-list__item'>
+                        <NavLink
+                            className='nav-item lesson'
+                            to='/ehon/gekkei'
+                            style={{'--hover-bg-color': '#FFDDD9'}}
+                            onClick={() => setShowNav(false)}
+                            onMouseEnter = {() => setLessonName("gekkei")}
+                            onMouseLeave = {() => setLessonName("")}
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                            <div className='nav-item__title'>私のからだがどう変化している？</div>
+                            <div className='nav-item__subtitle body-text'>思春期・大人になるの始まり</div>
+                            </div>
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
+
+            <LessonVisual lessonName={lessonName}/>
+            <div className={showNav ? "nav-backdrop active" : "nav-backdrop"}></div>
         </header>
     )
 }

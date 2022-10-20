@@ -1,0 +1,155 @@
+#header { display: block; position: fixed; width: 100%; top: 0; z-index: 999; }
+#header > a.logo { position: fixed; top: 30px; left: 50px; }
+#header > a.logo .logo-svg { width: 36px; }
+
+#header > #contact-btn { position: fixed; bottom: 30px; right: 30px;}
+#header > #contact-btn img { width: 60px; animation: jitter 800ms infinite;}
+#header > #contact-btn :hover { cursor: var(--cursor-finger); }
+
+#header > #menu-btn { width: 25px; height: 20px; position: absolute; top: 30px; right: 30px; z-index: 100; }
+#header > #menu-btn > .line { position: absolute; left: 0; width: 100%; height: 16%; transform-origin: center; background-color: #725B4C; border-radius: 4px; transition: 0.5s all linear; }
+#header > #menu-btn > .line1 { top: 0; }
+#header > #menu-btn > .line2 { width: 80%; top: 50%; transform: translateY(-50%); }
+#header > #menu-btn > .line3 { top: 100%; transform: translateY(-100%); }
+
+#header > #menu-btn:hover { cursor: var(--cursor-finger); }
+#header > #menu-btn.check .line1 { top: 50%; transform: translate(0, -50%) rotate(45deg); }
+#header > #menu-btn.check .line2 { width: 0; opacity: 0; }
+#header > #menu-btn.check .line3 { top: 50%; transform: translate(0, -50%) rotate(-45deg); }
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    background-color: var(--white-color);
+    clip-path: inset(0 0 0 100%);
+    padding-top: 90px;
+    z-index: 99;
+    overflow-y: scroll;
+}
+.nav::-webkit-scrollbar { display: none;  /* Safari and Chrome */ }
+
+.nav.active { clip-path: unset; pointer-events: auto; }
+
+.nav.hover-within { background-color: transparent; }
+.nav.hover-within .nav-item__title, .nav.hover-within .nav-item__subtitle{ color: var(--white-color); }
+
+ul.nav-list.main {
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 2rem;
+}
+
+.nav-item {
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    color: var(--brown-color);
+    transition: color .25s cubic-bezier(.25,1,.5,1);
+}
+
+.nav-item.lesson {
+    display: block;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 10%;
+    color: var(--brown-color);
+    transition: color .25s cubic-bezier(.25,1,.5,1);
+}
+
+.nav-item:hover {
+    background-color: var(--hover-bg-color);
+    transition: background-color .5s cubic-bezier(.25,1,.5,1);
+}
+
+.nav-backdrop {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,transparent,#000);
+    opacity: 0;
+    cursor: var(--cursor-finger);
+    pointer-events: none;
+    transition: opacity 1s cubic-bezier(.25,1,.5,1);
+}
+
+.nav-backdrop.active {
+    pointer-events: auto;
+    opacity: .5;
+}
+
+.lesson-visual {
+    --transition-duration: 1s;
+    --transition-ease: cubic-bezier(1,0,1,0);
+    position: relative;
+    z-index: 1;
+}
+
+.lesson-visual.active {
+    --transition-duration: 250ms;
+    --transition-ease: cubic-bezier(0.25,1,0.5,1);
+}
+
+.lesson-visual img {
+    display: none;
+}
+
+.lesson-visual.active img {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+@media (min-width: 960px) {
+    .lesson-visual img {
+        display: initial;
+        transform: scale(1.15);
+        opacity: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        pointer-events: none;
+        transition: opacity var(--transition-duration) cubic-bezier(.25,1,.5,1),transform 6s cubic-bezier(0,.99,0,.99);
+    }
+}
+
+@media (min-width: 512px) {
+    .nav {
+        width: min(400px,100%);
+    }
+}
+
+@media (max-width: 960px) {
+    .nav.hover-within {
+        background-color: var(--white-color);
+    }
+    .nav.hover-within .nav-item__title, .nav.hover-within .nav-item__category{
+        color: var(--brown-color);
+    }
+    .nav-item:hover .nav-item__title, .nav-item:hover .nav-item__category {
+        color: var(--white-color);
+    }
+    .nav-list.main .nav-list__item:hover {
+        color: var(--brown-color) !important;
+    }
+}
+
+@media (max-width: 512px) {
+    #header > a.logo { top: 20px; left: 20px; }
+    #header > #menu-btn { top: 25px; right: 25px; }
+} 
