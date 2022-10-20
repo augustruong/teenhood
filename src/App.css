@@ -16,7 +16,9 @@ body *{z-index: 1; }
   --brown-color: #5D504F;
   --white-color: #FFFFF9;
   --grey-color: #d8d8d8;
-  --pink-color: #FFDDD9;
+  --pink-color: #FFECEC;
+  --blue-color: #DEEFFF;
+  --green-color: #E1FCDA;
   --yellow-color: #FEFFBA;
   --neon-color: #FCFF61;
 }
@@ -27,9 +29,10 @@ body *{z-index: 1; }
   src: url("/public/fonts/HGRPP1.TTC");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
-  --font-pop: HGRPP1;
-  --font-inter: 'Inter', sans-serif;
+  --font-title: HGRPP1;
+  --font-body: 'M PLUS 2', sans-serif;
 }
 
 h1 { font-size: 110px; }
@@ -38,8 +41,10 @@ h3 { font-size: 48px; }
 h4 { font-size: 24px; }
 h5 { font-size: 16px; }
 
+div,p {font-family: var(--font-body);}
 a{ text-decoration: none; color: var(--brown-color); transition: all var(--transition-hover); }
 
+div {letter-spacing: 0.05em;}
 
 /*-----------------------------------transition------------------------------------*/
 :root {

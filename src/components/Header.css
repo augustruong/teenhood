@@ -12,7 +12,7 @@
 #header > #menu-btn > .line2 { width: 80%; top: 50%; transform: translateY(-50%); }
 #header > #menu-btn > .line3 { top: 100%; transform: translateY(-100%); }
 
-#header > #menu-btn:hover { cursor: var(--cursor-finger); }
+#header > #menu-btn:hover { cursor: pointer; }
 #header > #menu-btn.check .line1 { top: 50%; transform: translate(0, -50%) rotate(45deg); }
 #header > #menu-btn.check .line2 { width: 0; opacity: 0; }
 #header > #menu-btn.check .line3 { top: 50%; transform: translate(0, -50%) rotate(-45deg); }
@@ -36,6 +36,18 @@
 
 .nav.hover-within { background-color: transparent; }
 .nav.hover-within .nav-item__title, .nav.hover-within .nav-item__subtitle{ color: var(--white-color); }
+
+
+.nav-item__title {
+    font-weight: 800;
+}
+.nav-item__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    margin-top: 5px;
+}
 
 ul.nav-list.main {
     border-bottom: 1px solid var(--grey-color);

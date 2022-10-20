@@ -42,7 +42,7 @@ export default function NavWrapper(props) {
                         <NavLink
                             className='nav-item'
                             to='/jisho'
-                            style={{'--hover-bg-color': 'var(--pink-color)'}}
+                            style={{'--hover-bg-color': 'var(--blue-color)'}}
                             onClick={() => setShowNav(false)} 
                         >
                             <div className='nav-item__transform-wrapper'
@@ -56,7 +56,7 @@ export default function NavWrapper(props) {
                         <NavLink
                             className='nav-item'
                             to='/nayami'
-                            style={{'--hover-bg-color': 'var(--pink-color)'}}
+                            style={{'--hover-bg-color': 'var(--green-color)'}}
                             onClick={() => setShowNav(false)} 
                         >
                             <div className='nav-item__transform-wrapper'
@@ -81,7 +81,7 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                            <div className='nav-item__title'>私のからだがどう変化している？</div>
+                            <h5 className='nav-item__title'>私のからだがどう変化している？</h5>
                             <div className='nav-item__subtitle body-text'>思春期・大人になるの始まり</div>
                             </div>
                         </NavLink>
@@ -90,7 +90,7 @@ export default function NavWrapper(props) {
                         <NavLink
                             className='nav-item lesson'
                             to='/ehon/gekkei'
-                            style={{'--hover-bg-color': '#FFDDD9'}}
+                            style={{'--hover-bg-color': '#C76767'}}
                             onClick={() => setShowNav(false)}
                             onMouseEnter = {() => setLessonName("gekkei")}
                             onMouseLeave = {() => setLessonName("")}
@@ -98,8 +98,8 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                            <div className='nav-item__title'>私のからだがどう変化している？</div>
-                            <div className='nav-item__subtitle body-text'>思春期・大人になるの始まり</div>
+                            <h5 className='nav-item__title'>月経って何がおこるの?</h5>
+                            <div className='nav-item__subtitle'>女性の内性器</div>
                             </div>
                         </NavLink>
                     </li>
