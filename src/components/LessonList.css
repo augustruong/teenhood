@@ -1,0 +1,77 @@
+.lesson-list {
+    position: relative;
+    justify-content: start;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    width: calc(100% - 640px);
+    margin: 0 auto;
+    z-index: 98;
+}
+.lesson-thumb {
+    color: var(--brown-color);
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: calc(50% - 50px);
+    width: -webkit-calc(50% - 50px);
+    margin-bottom: 90px;
+}
+
+.lesson-thumb:nth-child(odd) { transform: translateY(-25%)!important; margin-right: 90px; }
+.lesson-thumb:nth-child(even) { transform: translateY(25%)!important; }
+.lesson-thumb:nth-child(2n) { margin-right: 0; }
+.lesson-thumb:nth-child(3n) { transform: translateY(50%); }
+
+.lesson-thumb > .thumbnail {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.lesson-thumb > .title {
+    font-weight: 800;
+}
+
+.lesson-thumb > .subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+    .lesson-list { width: calc(100% - 180px); }
+    .lesson-list > .lesson-thumb:nth-child(odd) { transform: translateY(-50%); }
+    .lesson-list > .lesson-thumb:nth-child(2n) { margin-right: 0; }
+    .lesson-list > .lesson-thumb:nth-child(3n + 1) { transform: none; }
+}
+@media screen and (max-width: 1000px) {
+    .lesson-list > .lesson-thumb:nth-child(3n + 1) {}
+    .lesson-list > .lesson-thumb:nth-child(3n + 2) {}
+    .lesson-list > .lesson-thumb:nth-child(3n) { margin-right: 60px; }
+    .lesson-list > .lesson-thumb:nth-child(odd) { margin-right: 60px; }
+    .lesson-list > .lesson-thumb:nth-child(2n) { margin-right: 0; }
+    .lesson-list > .lesson-thumb {width: calc(50% - 30px);width: -webkit-calc(50% - 30px);margin-right: 60px;margin-bottom: 60px;}
+}
+
+@media screen and (max-width: 835px) {
+    .lesson-list { padding-top: 10%; width: 60%;}
+    .lesson-list > .lesson-thumb:nth-child(3n + 1) { transform: none; }
+    .lesson-list > .lesson-thumb:nth-child(even) { transform: none !important; }
+    .lesson-list > .lesson-thumb:nth-child(3n) {}
+    .lesson-list > .lesson-thumb:nth-child(odd) { transform: translateY(0)!important; margin-right: 0px; }
+    .lesson-list > .lesson-thumb {width: calc(50% - 2.5%);width: 100%;margin-right: 0;margin-bottom: 5%;}
+}
+
+@media screen and (max-width: 700px) {
+    .lesson-list { width: 60%; }
+}
+@media screen and (max-width: 560px) {
+    .lesson-list { width: 90%; }
+}
+
+@media screen and (max-width: 400px) {
+    .lesson-thumb { padding: 15px 15px; }
+}

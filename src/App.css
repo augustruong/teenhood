@@ -25,26 +25,34 @@ body *{z-index: 1; }
 
 /*-----------------------------------FONTS------------------------------------*/
 @font-face {
-  font-family: HGRPP1;
+  font-family: 'HGRPP1';
   src: url("/public/fonts/HGRPP1.TTC");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
-  --font-title: HGRPP1;
+  --font-title: 'HGRPP1';
   --font-body: 'M PLUS 2', sans-serif;
 }
 
-h1 { font-size: 110px; }
-h2 { font-size: 96px; }
-h3 { font-size: 48px; }
-h4 { font-size: 24px; }
-h5 { font-size: 16px; }
+h1 { font-size: 96px; }
+h2 { font-size: 48px; }
+h3 { font-size: 24px; }
+h4 { font-size: 16px; }
 
-div,p {font-family: var(--font-body);}
+div,p {font-family: var(--font-body); color: var(--brown-color);}
 a{ text-decoration: none; color: var(--brown-color); transition: all var(--transition-hover); }
 
 div {letter-spacing: 0.05em;}
+
+.section-title {
+  font-family: var(--font-title);
+  color: var(--brown-color);
+}
+
+.section-subtitle {
+  font-weight: 600;
+}
 
 /*-----------------------------------transition------------------------------------*/
 :root {
@@ -116,4 +124,14 @@ textarea {
     border: 0;
     outline: none;
     background: transparent;
+}
+
+
+.flex-column{
+  display: -webkit-flex!important; 
+  display: flex!important; 
+  -webkit-flex-wrap: wrap!important; 
+  flex-wrap: wrap!important; 
+  -webkit-box-pack: justify;	
+  justify-content: space-between; 
 }

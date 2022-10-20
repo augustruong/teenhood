@@ -34,7 +34,7 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                                <h4 className='nav-item__title lesson-title'>性の絵本</h4>
+                                <h3 className='nav-item__title lesson-title'>性の絵本</h3>
                             </div>
                         </NavLink>
                     </li>
@@ -48,7 +48,7 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                                <h4 className='nav-item__title lesson-title'>性の辞書</h4>
+                                <h3 className='nav-item__title lesson-title'>性の辞書</h3>
                             </div>
                         </NavLink>
                     </li>
@@ -62,7 +62,7 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                                <h4 className='nav-item__title lesson-title'>性のよくある悩み</h4>
+                                <h3 className='nav-item__title lesson-title'>性のよくある悩み</h3>
                             </div>
                         </NavLink>
                     </li>
@@ -81,8 +81,8 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                            <h5 className='nav-item__title'>私のからだがどう変化している？</h5>
-                            <div className='nav-item__subtitle body-text'>思春期・大人になるの始まり</div>
+                            <h4 className='nav-item__title'>私のからだがどう変化している？</h4>
+                            <div className='nav-item__subtitle body-text'>思春期のしるし、男女のからだのちがい</div>
                             </div>
                         </NavLink>
                     </li>
@@ -98,7 +98,7 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                            <h5 className='nav-item__title'>月経って何がおこるの?</h5>
+                            <h4 className='nav-item__title'>月経って何がおこるの?</h4>
                             <div className='nav-item__subtitle'>女性の内性器</div>
                             </div>
                         </NavLink>

@@ -1,5 +1,21 @@
 #home {
-    height: 100vh;
     overflow: hidden;
     background-color: var(--pink-color);
 }
+
+#home > .hero-section {
+    height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+#home > .hero-section > .altertext {
+    font-weight: 800;
+    color: var(--brown-color);   
+}
+
+#home > .lesson-section {
+    text-align: center;
+}
+
+
