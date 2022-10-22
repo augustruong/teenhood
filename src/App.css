@@ -13,7 +13,7 @@ body *{z-index: 1; }
 
 /*-----------------------------------COLORS------------------------------------*/
 :root {
-  --brown-color: #5D504F;
+  --brown-color: #806E6C;
   --white-color: #FFFFF9;
   --grey-color: #d8d8d8;
   --pink-color: #FFECEC;
@@ -39,6 +39,8 @@ h1 { font-size: 96px; }
 h2 { font-size: 48px; }
 h3 { font-size: 24px; }
 h4 { font-size: 16px; }
+
+.bold {font-weight: 600;}
 
 div,p {font-family: var(--font-body); color: var(--brown-color);}
 a{ text-decoration: none; color: var(--brown-color); transition: all var(--transition-hover); }
@@ -127,6 +129,13 @@ textarea {
 }
 
 
+.mt10 {margin: 10px}
+.mt20 {margin: 20px}
+.mt30 {margin: 30px}
+.mt40 {margin: 40px}
+.mt50 {margin: 50px}
+
+
 .flex-column{
   display: -webkit-flex!important; 
   display: flex!important; 
@@ -134,4 +143,42 @@ textarea {
   flex-wrap: wrap!important; 
   -webkit-box-pack: justify;	
   justify-content: space-between; 
+}
+
+.flex-row{
+  display: -webkit-flex!important; 
+  display: flex!important; 
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+.ct {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.texture {   
+  position: fixed;
+  top: 0; 
+  mix-blend-mode: overlay;
+  opacity: .3;
+  width: 100%;
+  z-index: 99;
+  overflow: visible;
+  pointer-events:none;
+}
+
+@media screen and (max-width: 1200px){
+  html,body{
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+
+  }
+  .texture {   
+    object-fit: cover;
+    height: 100vh;
+    position: fixed;
+  }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import LessonList from '../components/LessonList'
 
 import './HomePage.css'
 
@@ -11,12 +10,37 @@ export default function HomePage() {
           <h2 className='altertext'>KEY VISUAL</h2>
         </section>
 
-        <section className='lesson-section'>
-          <div className='section-header'>
-            <h2 className='section-title'>性を学ぶ</h2>
-            <div className='section-subtitle'>思春期のジャーニーを始めましょう</div>
+        <section className='method-section'>
+          <div className='section-header'>好きな形式をえらびましょう</div>
+          <div className='wrapper flex-row'>
+            <div className='method-card ehon flex-column ct'>
+              <Link to={`/ehon`} className='method-thumb'>
+                <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/ehon-thumb.png`}/>
+                <h4 className='title'>性の絵本</h4>
+                <div className='subtitle'>絵から性を学びましょう</div>
+              </Link>
+              <Link to={`/ehon`} className='method-icon ehon'>絵</Link>
+            </div>
+            
+            <div className='method-card jisho flex-column ct'>
+              <Link to={`/jisho`} className='method-thumb'>
+                <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/jisho-thumb.png`}/>
+                <h4 className='title'>性の辞書</h4>
+                <div className='subtitle'>ことばから性を学びましょう</div>
+              </Link>
+              <Link to={`/jisho`} className='method-icon jisho'>辞</Link>
+            </div>
+
+            <div className='method-card nayami flex-column ct'>
+              <Link to={`/nayami`} className='method-thumb'>
+                <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/nayami-thumb.png`}/>
+                <h4 className='title'>性の悩み</h4>
+                <div className='subtitle'>気になることを解けましょう</div>
+              </Link>
+              <Link to={`/nayami`} className='method-icon nayami'>悩</Link>
+            </div>
+
           </div>
-          <LessonList />
         </section>
     </div>
   )

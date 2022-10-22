@@ -3,6 +3,8 @@ import { HashRouter as Router, Routes, Route, HashRouter } from 'react-router-do
 
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
+import EhonPage from './pages/EhonPage';
+
 
 import './App.css';
 
@@ -11,10 +13,11 @@ function App() {
     <>
       <HashRouter>
         <Header/>
+        <img src={process.env.PUBLIC_URL + '/images/texture.JPG'} className='texture'/>
 
         <Routes>
           <Route path='/' element={<HomePage/>} />
-          {/* <Route path='/about' element={<AboutPage/>} /> */}
+          <Route path='/ehon' element={<EhonPage/>} />
 
         </Routes>
       </HashRouter>
