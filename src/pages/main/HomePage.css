@@ -31,8 +31,11 @@
 
 #home > .method-section > .wrapper {
     width: 64%;
+    max-width: 1120px;
     margin: 0 auto;
 }
+
+.method-card {flex-direction: column;}
 
 .method-thumb {
     color: var(--brown-color);
@@ -107,7 +110,7 @@
 
 @media screen and (max-width: 1050px) {
     #home > .method-section > .wrapper { width: 90%; }
-    .method-card {flex-direction: column;}
+    
     .method-thumb {
         width: 250px;
         border-radius: 12px;

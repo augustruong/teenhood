@@ -4,6 +4,7 @@
     padding-top: 180px;
     padding-bottom: 20%;
     width: calc(100% - 690px);
+    max-width: 800px;
     margin: 0 auto;
     z-index: 98;
 
@@ -18,10 +19,14 @@
     background-color: white;
     border-radius: 20px;
     width: calc(50% - 50px);
-    width: -webkit-calc(50% - 50px);
     margin-bottom: 80px;
-    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.04));
     text-align: center;
+}
+
+.lesson-thumb:hover {
+    filter: drop-shadow(0px 12px 8px rgba(0, 0, 0, 0.06));
+    transition: filter .2s ease-in-out;
 }
 
 .lesson-thumb:nth-child(odd) { transform: translateY(-25%)!important; margin-right: 80px; }
