@@ -8,6 +8,7 @@ import JishoPage from './pages/main/JishoPage';
 import NayamiPage from './pages/main/NayamiPage';
 import CoverPage from './pages/lessons/CoverPage';
 
+import ContentPage from './pages/lessons/ContentPage';
 
 import './App.css';
 
@@ -24,10 +25,10 @@ function App() {
           <Route path='/jisho' element={<JishoPage/>} />
           <Route path='/nayami' element={<NayamiPage/>} />
 
-          <Route path='/ehon/cover/01_shishunki' element={<CoverPage index={0}/>} />
-          <Route path='/ehon/cover/02_gekkei' element={<CoverPage index={1}/>} />
+          <Route path='/ehon/e1_shishunki/cover' element={<CoverPage index={0}/>} />
+          <Route path='/ehon/e2_gekkei/cover' element={<CoverPage index={1}/>} />
 
-
+          <Route path='/ehon/e1_shishunki/content' element={<ContentPage index={0}/>} />
         </Routes>
       </HashRouter>
     </>

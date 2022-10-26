@@ -6,6 +6,7 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 50px;
+    background-color: #fff;
 
 }
 
@@ -18,8 +19,24 @@
     margin: 0 auto;
     align-items: center;
 }
+
+#cover-page > .content-section {
+    width: 50%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+}
+
+.cover-img-wrapper {
+    background-color: #D3F1FF;
+    height: 70vh;
+}
 .cover-img {
-    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 .start-btn {
@@ -28,3 +45,20 @@
     color: #fff;
     margin-right: 35px;
 }
+
+.hashtag-wrapper {
+    justify-content: start !important; 
+    gap: 10px; 
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.hashtag {
+    background-color: #fff;
+    color: var(--red-color);
+    border: 1px dashed var(--red-color);
+    border-radius: 40px;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+

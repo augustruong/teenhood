@@ -19,9 +19,9 @@ export default function HomePage() {
                 <h4 className='title'>性の絵本</h4>
                 <div className='subtitle'>絵から性を学びましょう</div>
               </Link>
-              <button className='method-icon ehon'>
-                <NavLink to={`/ehon`} >絵</NavLink>
-              </button>
+
+              <NavLink to={`/ehon`} ><button className='method-icon ehon'>絵</button></NavLink>
+              
             </div>
             
             <div className='method-card jisho flex-column ct'>
@@ -30,9 +30,9 @@ export default function HomePage() {
                 <h4 className='title'>性の辞書</h4>
                 <div className='subtitle'>ことばから性を学びましょう</div>
               </Link>
-              <button className='method-icon jisho'>
-                <NavLink to={`/jisho`} >辞</NavLink>
-              </button>
+              
+              <NavLink to={`/jisho`} ><button className='method-icon jisho'>辞</button></NavLink>
+
             </div>
 
             <div className='method-card nayami flex-column ct'>
@@ -41,9 +41,9 @@ export default function HomePage() {
                 <h4 className='title'>性の悩み</h4>
                 <div className='subtitle'>気になることを解けましょう</div>
               </Link>
-              <button className='method-icon nayami'>
-                <NavLink to={`/nayami`}>悩</NavLink>
-              </button>
+              
+              <NavLink to={`/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
+
             </div>
 
           </div>

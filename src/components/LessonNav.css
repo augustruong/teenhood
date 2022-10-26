@@ -1,0 +1,44 @@
+.lesson-nav-wrapper {
+    background-color: #FAFAFA;
+    width: 270px;
+    left: 0;
+    padding: 7px 10px 50px 7px;
+    position: sticky;
+    overflow-y: auto;
+}
+
+.lesson-nav-wrapper::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  
+.lesson-nav-wrapper::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+  .lesson-nav-wrapper::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+    border-radius: 100px;
+  }
+
+.lesson-nav-wrapper > .thumbnail {
+    width: 100%;
+}
+
+.lesson-nav-wrapper > .header {
+    background-color: #fff;
+    padding: 15px 15px;
+}
+
+.lesson-nav-wrapper > .header > .method-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.lesson-nav-wrapper > .header > .method-wrapper > .method-icon {
+    font-size: 12px !important;
+}

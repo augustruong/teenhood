@@ -19,7 +19,6 @@
     height: 100vh;
 }
 
-
 #home > .method-section > .section-header {
     font-weight: 600;
     background-color: #FCFF61;
@@ -37,6 +36,33 @@
 
 .method-card {flex-direction: column;}
 
+
+.method-card:hover .method-thumb {
+    transform: scale(1.05);
+    transition: transform .2s ease-in-out;
+}
+.method-card.ehon:hover .method-icon.ehon{
+    background-color: #E06363;
+    transform: scale(1.05);
+    transition: transform .1s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+.method-card.jisho:hover .method-icon.jisho{
+    background-color: #20548A;
+    transform: scale(1.05);
+    transition: transform .1s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+.method-card.nayami:hover .method-icon.nayami {
+    background-color: #75BE5B;
+    transform: scale(1.05);
+    transition: transform .1s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
 .method-thumb {
     color: var(--brown-color);
     padding: 12px 12px;
@@ -50,39 +76,6 @@
 .method-thumb > .thumbnail { width: 100%; }
 .method-thumb > .title { font-size: 20px; line-height: 40px;  }
 .method-thumb > .subtitle { font-size: 14px; letter-spacing: 0.1em;}
-
-
-
-
-.method-card:hover .method-thumb {
-    transform: scale(1.05);
-    transition: transform .2s ease-in-out;
-}
-
-.method-card.ehon:hover .method-icon.ehon{
-    background-color: #E06363;
-    transition: background-color .2s ease-in-out;
-    transition: color .1s ease-in-out;
-}
-.method-card.jisho:hover .method-icon.jisho{
-    background-color: #20548A;
-    transition: background-color .2s ease-in-out;
-    transition: color .1s ease-in-out;
-}
-.method-card.nayami:hover .method-icon.nayami {
-    background-color: #75BE5B;
-    transition: background-color .2s ease-in-out;
-    transition: color .1s ease-in-out;
-}
-.method-card.ehon:hover .method-icon.ehon > a {
-    color: #fff;
-}
-.method-card.jisho:hover .method-icon.jisho > a {
-    color: #fff;
-}
-.method-card.nayami:hover .method-icon.nayami > a {
-    color: #fff;
-}
 
 @media screen and (max-width: 1300px) {
     #home > .method-section > .wrapper { width: 80%; }

@@ -1,28 +1,28 @@
 [
     {
-        "lessonId": "01_shishunki",
+        "lessonId": "e1_shishunki",
         "title": "私のからだが変化している？",
         "description": "思春期の間、私たちの体や心にはさまざまな変化が起こり、それは、脳から指令を受けたホルモンによって引き起こされるのです。ちなみにホルモンとは、体内の内分泌器官や特別な細胞から分泌される情報を伝える特殊な化学物質で、標的となる細胞に特定のことをするよう命令する働きを担います。",
         "hashtag": ["思春期","からだの変化","外性器"],
         "partList": [
             {
-                "partTitle" : "思春期におこること",
-                "subpartTitle" : [
+                "parentTitle" : "思春期におこること",
+                "childTitle" : [
                     "“思春期”とは",
                     "からだの変化のひみつは“ホルモン”",
                     "からだの変化"
                 ]
             },
             {
-                "partTitle" : "みんなの外性器",
-                "subpartTitle" : [
+                "parentTitle" : "みんなの外性器",
+                "childTitle" : [
                     "男と女の外性器",
                     "あなたの性器は、まったく正常といっていい"
                 ]
             },
             {
-                "partTitle" : "性のQUIZ",
-                "subpartTitle" : [
+                "parentTitle" : "性のQUIZ",
+                "childTitle" : [
                     "初級",
                     "中級"
                 ]

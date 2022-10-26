@@ -1,0 +1,31 @@
+.parent-title {
+    font-weight: bold;
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.child-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.child-title {
+    align-content: center;
+    margin-left: 20px;
+}
+
+.check::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50px;
+}
+
