@@ -1,0 +1,30 @@
+#cover-page {
+    background-color: #FAFAFA;
+}
+
+#cover-page > .header-section > .header {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+
+#cover-page > .header-section > .header > .title {
+    margin-bottom: 20px;
+}
+#cover-page > .header-section > .header > .nav-wrapper {
+    width: 50%;
+    max-width: 640px;
+    margin: 0 auto;
+    align-items: center;
+}
+.cover-img {
+    width: 100vw;
+}
+
+.start-btn {
+    background-color: #E06363;
+    border: #E06363 1px solid;
+    color: #fff;
+    margin-right: 35px;
+}

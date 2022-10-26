@@ -8,7 +8,7 @@
     margin: 0 auto;
     z-index: 98;
 
-    background-image: url("/images/path.svg");
+    background-image: url("/public/images/path.svg");
     background-repeat: no-repeat;
     background-size: 58%;
     background-position: 47% 20%;
@@ -68,7 +68,7 @@
     .lesson-list > .lesson-thumb {width: calc(50% - 30px);width: -webkit-calc(50% - 30px);margin-right: 60px;margin-bottom: 60px;}
 
     .lesson-list {
-        background-image: url("/images/path2.svg");
+        background-image: url("/public/images/path2.svg");
         background-position: 55% 25%;
     }
 }

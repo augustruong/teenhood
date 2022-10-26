@@ -56,6 +56,61 @@ div {letter-spacing: 0.05em;}
   font-weight: 600;
 }
 
+/*-----------------------------------BUTTON------------------------------------*/
+button {
+  padding: 12px 34px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  z-index: 1000;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.method-icon {
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 100px;
+  background-color: #fff;
+}
+.method-icon.ehon {
+  color: #E06363;
+  padding: 8px 14px 12px 14px;
+  border: #E06363 2px solid;
+}
+
+.method-icon.jisho {
+  color: #20548A;
+  padding: 8px 14px 12px 14px;
+  border: #20548A 2px solid;
+}
+
+.method-icon.nayami {
+  color: #75BE5B;
+  padding: 8px 14px 12px 14px;
+  border: #75BE5B 2px solid;
+}
+
+.method-icon.jisho:hover {
+  background-color: #20548A;
+  transition: background-color .2s ease-in-out;
+}
+.method-icon.jisho:hover a {
+  color: #fff;
+  transition: color .1s ease-in-out;
+}
+.method-icon.nayami:hover {
+  background-color: #75BE5B;
+  transition: background-color .2s ease-in-out;
+}
+.method-icon.nayami:hover a {
+  color: #fff;
+  transition: color .1s ease-in-out;
+}
 /*-----------------------------------transition------------------------------------*/
 :root {
   --ease-level1: var( --easeOutCubic );
@@ -113,7 +168,6 @@ input,textarea {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    -webkit-appearance: none;
     max-width: 100%;
   }
 
@@ -153,10 +207,13 @@ textarea {
 }
 
 .ct {
-  text-align: center;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
+}
+
+.align-ct {
+  text-align: center;
+  align-items: center;
 }
 
 .texture {   
