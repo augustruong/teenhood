@@ -9,9 +9,9 @@ export default function PartList(props) {
     const partListArray = thisLesson.partList;
     
     return (
-        <div className='partList-wrapper'>
+        <div className='part-list-wrapper'>
             {partListArray.map((item) => (
-                <div key={item}>
+                <div key={item} className='part-list-item'>
                     <div className='parent-title'>{item.parentTitle}</div>
                     {item.childTitle.map((child) => (
                         <div className='child-title-wrapper'>

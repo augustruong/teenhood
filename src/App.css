@@ -37,7 +37,7 @@ body *{z-index: 1; }
 }
 
 div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 16px; letter-spacing: 0.05em;}
-p { line-height: 225%;}
+p { line-height: 225%; font-weight: 500;}
 a{ text-decoration: none; color: var(--brown-color); transition: all var(--transition-hover); }
 
 h1 { font-size: 96px; }
@@ -233,7 +233,7 @@ textarea {
   mix-blend-mode: overlay;
   opacity: .3;
   width: 100%;
-  z-index: 99;
+  z-index: 1000;
   overflow: visible;
   pointer-events:none;
 }

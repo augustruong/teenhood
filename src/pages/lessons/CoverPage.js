@@ -21,11 +21,11 @@ export default function CoverPage(props) {
                     <h2 className='title'>{thisLesson.title}</h2>
                     <div className='nav-wrapper flex-row'>
                         <div className='flex-row align-ct'>
-                            <button className='start-btn'>START</button>
+                            <NavLink to={`/ehon/${thisLesson.lessonId}/content`}><button className='start-btn'>START</button></NavLink>
                             <div className='bold'>概要を見る</div>
                         </div>
                         <div className='flex-row' style={{gap: 10}}>
-                            <NavLink to={`/jisho`} ><button className='method-icon jisho'>辞</button></NavLink>
+                            <NavLink to={`/jisho`}><button className='method-icon jisho'>辞</button></NavLink>
                             <NavLink to={`/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
                         </div>
                     </div>

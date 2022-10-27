@@ -16,7 +16,7 @@ export default function LessonNav(props) {
                 <h4 className='title'>{thisLesson.title}</h4>
                 <div className='progress-wrapper'>
                     <div className='progress-bar'></div>
-                    <div className='progress-status' style={{fontSize: 14}}>% COMPLETE</div>
+                    <div className='progress-status' style={{fontSize: 12}}>% COMPLETE</div>
                 </div>
                 <div className='method-wrapper'>
                     <NavLink to={`/`} ><button className='method-icon ehon small' >絵</button></NavLink>
@@ -25,8 +25,9 @@ export default function LessonNav(props) {
                 </div>
             </div>
 
-            <PartList index={props.index}/>
-            
+            <div className='part-list-scroll'>
+                <PartList index={props.index}/>
+            </div>
         </nav>
     )
 }

@@ -2,25 +2,10 @@
     background-color: #FAFAFA;
     width: 270px;
     left: 0;
-    padding: 7px 10px 50px 7px;
-    position: sticky;
-    overflow-y: auto;
+    padding: 5px 5px 50px 5px;
+    position: fixed;
+    z-index: 999;
 }
-
-.lesson-nav-wrapper::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  
-.lesson-nav-wrapper::-webkit-scrollbar-track {
-    background-color: #e4e4e4;
-    border-radius: 100px;
-  }
-  
-  .lesson-nav-wrapper::-webkit-scrollbar-thumb {
-    background-color: #d4aa70;
-    border-radius: 100px;
-  }
 
 .lesson-nav-wrapper > .thumbnail {
     width: 100%;
@@ -29,6 +14,15 @@
 .lesson-nav-wrapper > .header {
     background-color: #fff;
     padding: 15px 15px;
+}
+.lesson-nav-wrapper > .header > .progress-wrapper {
+  margin-top: 15px;
+}
+.lesson-nav-wrapper > .header > .progress-wrapper > .progress-bar {
+    height: 3px;
+    background-color: #e4e4e4;
+    border-radius: 100px;
+    margin-bottom: 5px;
 }
 
 .lesson-nav-wrapper > .header > .method-wrapper {
@@ -41,4 +35,29 @@
 
 .lesson-nav-wrapper > .header > .method-wrapper > .method-icon {
     font-size: 12px !important;
+}
+
+.lesson-nav-wrapper > .part-list-scroll {
+  overflow-y: scroll;
+  height: 50vh;
+  margin-top: 20px;
+  padding-right: 5px;
+}
+
+.lesson-nav-wrapper > .part-list-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.lesson-nav-wrapper > .part-list-scroll::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.lesson-nav-wrapper > .part-list-scroll::-webkit-scrollbar-thumb {
+  background-color: #B4B4B4;
+  border-radius: 100px;
+}
+
+.lesson-nav-wrapper > .part-list-scroll > .part-list-wrapper > .part-list-item > .parent-title:first-child {
+  margin-top: 20px !important;
 }

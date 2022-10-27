@@ -1,0 +1,57 @@
+.e1-s1, .e1-s2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.e1-s1 {background-color: #99D7F5;}
+.e1-s2 {background-color: #FFFFFF;}
+
+.e1-s1 > .wrapper {
+    position: absolute;
+    bottom: 0;
+}
+.e1-s1 > .wrapper > .img {
+    width: 25vw;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.e1-s1 > .wrapper > .content {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 36vw;
+}
+
+.e1-s2 > .wrapper {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.e1-s2 > .wrapper > .img {
+    width: 40%;
+}
+.e1-s2 > .wrapper > .content {
+    width: 35%;
+}
+
+.e1-s2 > .wrapper > .content > .title {
+    margin-bottom: 70px;
+}
+
+
+/* @media screen and (max-width: 1248px) {
+    .e1-p1 {height: 100%; overflow-y: scroll;}
+    .e1-p1 > .wrapper {
+        flex-direction: column-reverse;
+        left: 50%;
+        transform: translateX(-100%);
+    }
+    .e1-p1 > .wrapper > .i1 {margin: 0 auto; width: 30vw; max-width: 380px;}
+    .e1-p1 > .wrapper > .i2 {margin: 0 auto; width: 40vw; max-width: 380px;}
+
+} */
