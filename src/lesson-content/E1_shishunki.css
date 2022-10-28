@@ -1,25 +1,26 @@
-.e1-s1, .e1-s2 {
+.e1-s1, .e1-s2, .e1-s3 {
     height: 100vh;
-    width: 100%;
+    width: calc(100% - 270px);
     position: relative;
 }
 
 .e1-s1 {background-color: #99D7F5;}
-.e1-s2 {background-color: #FFFFFF;}
+.e1-s2, .e1-s3 {background-color: #FFFFFF;}
 
 .e1-s1 > .wrapper {
     position: absolute;
     bottom: 0;
 }
 .e1-s1 > .wrapper > .img {
-    width: 25vw;
-    margin-left: 10%;
+    /* width: 25vw; */
+    height: 75vh;
+    margin-left: 15%;
     margin-top: 10%;
 }
 .e1-s1 > .wrapper > .content {
     margin-left: 10%;
     margin-bottom: 10%;
-    width: 36vw;
+    height: 70vh;
 }
 
 .e1-s2 > .wrapper {
@@ -27,8 +28,8 @@
     justify-content: space-evenly;
     width: 80%;
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 46%;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
 
@@ -42,7 +43,34 @@
 .e1-s2 > .wrapper > .content > .title {
     margin-bottom: 70px;
 }
+.e1-s3 > .wrapper {
+    padding-top: 6.5%;
+}
+.e1-s3 > .wrapper > img,button {display: block; margin: 0 auto; margin-bottom: 50px;}
+.e1-s3 > .wrapper > .title { width: 20vw; }
 
+.e1-s3 > .wrapper > .karada {
+    height: 60vh;
+    position: relative;
+}
+
+.e1-s3 > .wrapper > .karada > img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.e1-s3 > .wrapper > .karada > .private {
+    z-index: 99;
+    mix-blend-mode: multiply;
+    opacity: 0;
+}
+
+.e1-s3 > .wrapper > .karada > .private.show {
+    opacity: 1;
+}
 
 /* @media screen and (max-width: 1248px) {
     .e1-p1 {height: 100%; overflow-y: scroll;}

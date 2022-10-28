@@ -1,6 +1,7 @@
 .lesson-nav-wrapper {
     background-color: #FAFAFA;
     width: 270px;
+    height: 100%;
     left: 0;
     padding: 5px 5px 50px 5px;
     position: fixed;
@@ -60,4 +61,12 @@
 
 .lesson-nav-wrapper > .part-list-scroll > .part-list-wrapper > .part-list-item > .parent-title:first-child {
   margin-top: 20px !important;
+}
+
+@media screen and (min-height: 1089px) {
+  .lesson-nav-wrapper > .part-list-scroll {
+    overflow-y: scroll;
+    height: 70vh;
+  }
+  
 }

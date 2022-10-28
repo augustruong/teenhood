@@ -71,6 +71,11 @@ button:hover {
   cursor: pointer;
 }
 
+.no-style {
+  padding: 0;
+  border: none;
+}
+
 .method-icon {
   font-size: 20px;
   font-weight: 600;
@@ -250,3 +255,5 @@ textarea {
     position: fixed;
   }
 }
+
+/* https://edit.lottiefiles.com/?src=https%3A%2F%2Fassets10.lottiefiles.com%2Fdotlotties%2Fdlf10_xmTSgX81UE.lottie */

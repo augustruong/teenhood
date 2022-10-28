@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
 import EhonData from '../data/EhonData.json'
 import Image from 'react-image-webp';
@@ -7,6 +7,7 @@ import './E1_shishunki.css'
 
 export default function E1_shishunki(props) {
   const thisLesson = EhonData[props.index];
+  const [privateShow, setPrivateShow] = useState(false)
 
   return (
     <ReactPageScroller>
@@ -40,6 +41,19 @@ export default function E1_shishunki(props) {
                 </div>
             </div>
         </section>  
+        <section className='e1-s3'>
+            <div className='wrapper'>
+                <img className='title' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_title.svg`}/>
+                <button className='no-style private-btn' onClick={() => setPrivateShow(!privateShow)}>
+                    <img src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_private_btn.svg`}/>
+                </button>
+                
+                <div className='karada'>
+                    <img className={privateShow ? 'private show' : 'private'} src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_private.gif`}/>
+                    <img className='futari' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_futari.png`}/>
+                </div>
+            </div>
+        </section >
     </ReactPageScroller>
   )
 }
