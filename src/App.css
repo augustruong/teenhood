@@ -36,16 +36,17 @@ body *{z-index: 1; }
   --font-body: 'M PLUS 2', sans-serif;
 }
 
-div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 16px; letter-spacing: 0.05em;}
-p { line-height: 225%; font-weight: 500;}
+div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 15px; letter-spacing: 0.05em;}
+p { line-height: 225%;}
 a{ text-decoration: none; color: var(--brown-color); transition: all var(--transition-hover); }
 
 h1 { font-size: 96px; }
 h2 { font-size: 48px; }
 h3 { font-size: 24px; }
-h4 { font-size: 16px; }
+h4 { font-size: 15px; }
 
 .bold {font-weight: 600;}
+.keyword {font-weight: 700; color: var(--red-color)}
 
 .section-title {
   font-family: var(--font-title);
@@ -61,7 +62,7 @@ button {
   padding: 12px 34px;
   border-radius: 50px;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.05em;
   z-index: 1000;
@@ -86,7 +87,7 @@ button:hover {
 
 .method-icon.small {
   font-size: 14px;
-  padding: 5px 9.5px 9px 10px;
+  padding: 5px 9px 8.5px 10px;
 }
 .method-icon.ehon {
   color: #E06363;
@@ -209,9 +210,7 @@ textarea {
 .flex-column{
   display: -webkit-flex!important; 
   display: flex!important; 
-  -webkit-flex-wrap: wrap!important; 
   flex-wrap: wrap!important; 
-  -webkit-box-pack: justify;	
   justify-content: space-between; 
 }
 

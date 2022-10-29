@@ -1,6 +1,10 @@
 .lesson-content {
-    width: calc(100% - 270px);
     float: left;
+    /* margin-left: 270px; */
+}
+
+.lesson-content__inner {
+    width: calc(100% - 270px);
     margin-left: 270px;
 }
 

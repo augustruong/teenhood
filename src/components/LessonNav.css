@@ -5,7 +5,7 @@
     left: 0;
     padding: 5px 5px 50px 5px;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
 }
 
 .lesson-nav-wrapper > .thumbnail {
