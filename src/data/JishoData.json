@@ -1,10 +1,20 @@
 [
     {
         "word" : "乳房",
-        "furigana" : "にゅうぼう",
+        "yomi" : "にゅうぼう",
         "eigo" : "Breast",
+        "img": ["乳房","陰毛"],
+        "defi" : "simple definition<br/>",
+        "detail" : "乳房の発達は、一番最初に起こる思春期の変化。女性ホルモンの指令を受けて、乳首の後ろにある小さな隆起が成長して、乳房を発育させていく。<br/>左右差があっても何ら心配はない。できればこの時期は、伸縮性のあるブラジャーを身につけよう。",
+        "hashtag" : ["思春期"],
+        "related" : ["体型（女）","体型（男）"]
+    },
+    {
+        "word" : "体型（女）",
+        "yomi" : "たいけい",
+        "eigo" : "Body shape",
         "img": ["nyuubou"],
-        "defi" : "",
+        "defi" : "simple definition",
         "detail" : "",
         "hashtag" : ["思春期"],
         "related" : ["体型（女）","体型（男）"]

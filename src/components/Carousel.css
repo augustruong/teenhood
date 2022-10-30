@@ -1,0 +1,47 @@
+.rec.rec-pagination {
+    margin-top: 0;
+}
+
+.rec.rec-dot_active {
+    width: 8px;
+    height: 8px;
+}
+.rec.rec-dot{
+    width: 8px;
+    height: 8px;
+}
+
+
+.rec.rec-arrow {
+    background-color: none !important;
+    transition: all 0.3s ease;
+    color: var(--brown-color);
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    min-width: 1.8rem !important;
+    line-height: 0rem !important;
+    box-shadow: none;
+    padding-bottom: 3px;
+}
+
+.rec.rec-arrow.rec.rec-arrow-left {
+    background-color: none !important;
+    padding-right: 3px;
+
+}
+.rec.rec-arrow.rec.rec-arrow-right {
+    background-color: none !important;
+    padding-left: 3px;
+}
+.rec.rec-arrow:hover{
+    color: #fff;
+
+}
+
+.rec.rec-arrow:hover:not(:disabled) {
+    transform: scale(1.2);
+}
+
+.rec.rec-item-wrapper {
+    /* width: 440px; */
+}

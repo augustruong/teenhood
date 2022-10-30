@@ -5,7 +5,6 @@ import './LessonContent.css'
 
 export default function LessonContent(props) {
     const thisLesson = EhonData[props.index];
-    console.log(props.index)
 
   return (
     <div className='lesson-content'>

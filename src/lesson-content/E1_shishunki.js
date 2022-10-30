@@ -59,23 +59,23 @@ export default function E1_shishunki(props) {
                         
                         <div className='features-wrapper'>
                             <div className='boys'>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体型（男）")}}>
                                     <div>からだの成長</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-muscle.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("声枯れ")}}>
                                     <div>声の変化</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-voice.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("射精（精通）")}}>
                                     <div>ペニスと精巣の成長</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-penis.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体毛、陰毛")}}>
                                     <div>体毛の成長</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-hair.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("汗、ニキビ")}}>
                                     <div>汗、にきび</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-pimple.png`}/>
                                 </div>
@@ -85,19 +85,19 @@ export default function E1_shishunki(props) {
                                     <div>乳房の成長</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-breast.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体型（女）")}}>
                                     <div>からだの成長</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-curve.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体毛、陰毛")}}>
                                     <div>体毛の成長</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-hair.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("汗、ニキビ")}}>
                                     <div>汗、にきび</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-pimple.png`}/>
                                 </div>
-                                <div className='feature'>
+                                <div className='feature' onClick={() => {setShowModal(!showModal); setWord("月経")}}>
                                     <div>月経</div>
                                     <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-menstru.png`}/>
                                 </div>

@@ -3,8 +3,10 @@ import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 
-import JishoData from '../data/JishoData.json'
+import Carousel from 'react-elastic-carousel'
+import './Carousel.css'
 
+import JishoData from '../data/JishoData.json'
 
 const Background = styled.div`
   width: 100vw;
@@ -18,7 +20,7 @@ const Background = styled.div`
 `;
 
 const ModalWrapper = styled.div`
-  width: 940px;
+  width: 880px;
   height: 540px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #FFFFFF;
@@ -41,18 +43,19 @@ const ModalInner = styled.div`
 `;
 
 const ModalImage = styled.div`
-img {
+.modal-img {
     width: 440px;
     height: 440px;
     border-radius: 15px;
 }
-.pager {
-    margin-top: 10px;
+.img-detail {
+    text-align: center;
+    margin: 0;
 }
 `;
 
 const ModalContent = styled.div`
-    margin-left: 30px;
+    margin-left: 35px;
     text-align: left;
     width: 100%;
 
@@ -87,10 +90,11 @@ const ModalContent = styled.div`
         background-color: #B4B4B4;
         border-radius: 100px;
       }
-      
-
     .scroll-wrapper > .word-defi {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    .scroll-wrapper > .word-defi,.word-detail {
+      display: inline-block;
     }
     
     
@@ -123,8 +127,16 @@ const CloseModalButton = styled(MdClose)`
 `;
 
 export const WordModal = ({ word, showModal, setShowModal }) => {
+  let resetTimeout;
+  const carouselRef = useRef(null);
   const modalRef = useRef();
-
+  var getWord = JishoData.filter(function (el)
+  {
+    return el.word === word;
+  });
+  var thisWord = getWord[0]
+  if (thisWord) {var thisImgArray = thisWord.img;}
+  
   const animation = useSpring({
     config: {
       duration: 250
@@ -159,30 +171,47 @@ export const WordModal = ({ word, showModal, setShowModal }) => {
       {showModal ? (
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
-            <ModalWrapper showModal={showModal}>
+            <ModalWrapper showModal={showModal}> 
               <ModalInner>
-                <ModalImage>
-                    <img src={process.env.PUBLIC_URL + `/images/jisho/nyuubou.png`}/>
-                    <div className='pager'>1/2</div>
-                    <div className='img-detail bold'>乳房</div>
-                </ModalImage>
+              <Carousel
+                  ref={carouselRef}
+                  enableAutoPlay
+                  autoPlaySpeed={2000} 
+                  onNextEnd={({ index }) => {
+                      clearTimeout(resetTimeout)
+                      if (index + 1 === thisImgArray.length) {
+                          resetTimeout = setTimeout(() => {
+                            carouselRef.current.goTo(0)
+                        }, 2000) 
+                      }
+                  }}
+                  itemsToShow={1}
+              >
+                  {thisImgArray.map((img) => (
+                    <ModalImage>
+                      <img className='modal-img' src={process.env.PUBLIC_URL + `/images/jisho/${img}.png`}/>
+                      <p className='img-detail'>{`[ ${img} ]`}</p>
+                    </ModalImage>
+                  ))}
+                  
+                </Carousel>
                 <ModalContent>
                     <div className='header'>
                         <h2 className='word-title'>{word}</h2>
                         <div>
-                            <div className='word-yomi'>にゅうぼう</div>
-                            <div className='word-eigo'>Breast</div>
+                            <div className='word-yomi'>{thisWord.yomi}</div>
+                            <div className='word-eigo'>{thisWord.eigo}</div>
                         </div>
                     </div>
                     <div className='scroll-wrapper'>
-                        <div className='word-defi'><span className='bold'>定義</span>：（かんたんに説明）</div>
-                        <p className='word-detail'><span className='bold'>詳細</span>：
-                        女性は大人になると、だいたい毎月1回、約3〜7日間、自分の意思とは関係なく、性器から血液等が外に出される月経を迎える。初めて起こる月経のことを「初経（初潮）」といい、50歳くらいまで、この現象と付き合うことになる。はじめの2年間くらいは規則的に来ないことも多く、避妊をしない性行為のあとに月経が来なくてもいつものことと思い込んで妊娠に気づかないことも。月経の周期の変化で、腟分泌物（おりもの）も増えてくる。
-
-ちなみに、思春期の発育の順番は「乳房」→「陰毛」→「初経」。女性は大人になると、だいたい毎月1回、約3〜7日間、自分の意思とは関係なく、性器から血液等が外に出される月経を迎える。初めて起こる月経のことを「初経（初潮）」といい、50歳くらいまで、この現象と付き合うことになる。はじめの2年間くらいは規則的に来ないことも多く、避妊をしない性行為のあとに月経が来なくてもいつものことと思い込んで妊娠に気づかないことも。月経の周期の変化で、腟分泌物（おりもの）も増えてくる。
-
-ちなみに、思春期の発育の順番は「乳房」→「陰毛」→「初経」。
-                        </p>
+                      <div className='word-defi'>
+                        <span className='bold'>定義</span>：
+                        <p style={{display:"inline"}} dangerouslySetInnerHTML={{__html: `${thisWord.defi}`}}></p>
+                      </div>
+                      <div className='word-detail' >
+                        <span className='bold'>詳細</span>：
+                        <p style={{display:"inline"}} dangerouslySetInnerHTML={{__html: `${thisWord.detail}`}}></p>
+                      </div>
                     </div>
                     <div className='word-more flex-row'>
                         <div>もっと知りたい</div>
