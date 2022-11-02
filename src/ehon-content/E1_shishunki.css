@@ -1,24 +1,24 @@
-.e1-s1, .e1-s2, .e1-s3 {
+.e1.s1, .e1.s2, .e1.s3, .e1.s4 {
     height: 100vh;
     width: calc(100% - 270px);
     position: relative;
 }
 
-.e1-s1 {background-color: #99D7F5;}
-.e1-s2, .e1-s3 {background-color: #FFFFFF;}
+.e1.s1 {background-color: #99D7F5;}
+.e1.s2, .e1.s3, .e1.s4 {background-color: #FFFFFF;}
 
 /*-----------------------------------section 1------------------------------------*/
 
-.e1-s1 > .section-wrapper {
+.e1.s1 > .section-wrapper {
     position: absolute;
     bottom: 0;
 }
-.e1-s1 > .section-wrapper > .img {
+.e1.s1 > .section-wrapper > .img {
     height: 75vh;
     margin-left: 15%;
     margin-top: 10%;
 }
-.e1-s1 > .section-wrapper > .content {
+.e1.s1 > .section-wrapper > .content {
     margin-left: 10%;
     margin-bottom: 10%;
     height: 70vh;
@@ -26,7 +26,7 @@
 
 /*-----------------------------------section 2------------------------------------*/
 
-.e1-s2 > .section-wrapper {
+.e1.s2 > .section-wrapper {
     align-items: center;
     justify-content: space-evenly;
     width: 90%;
@@ -36,25 +36,25 @@
     transform: translate(-50%,-50%);
 }
 
-.e1-s2 > .section-wrapper > .img { width: 45%; margin-right: 30px; }
-.e1-s2 > .section-wrapper > .content { width: 40%; }
-.e1-s2 > .section-wrapper > .content > .title { margin-bottom: 70px; }
+.e1.s2 > .section-wrapper > .img { width: 45%; margin-right: 30px; }
+.e1.s2 > .section-wrapper > .content { width: 40%; }
+.e1.s2 > .section-wrapper > .content > .title { margin-bottom: 70px; }
 
 /*-----------------------------------section 3------------------------------------*/
-.e1-s3 > .section-wrapper {padding-top: 6.5%;}
-.e1-s3 > .section-wrapper > img,button {display: block; margin: 0 auto;}
-.e1-s3 > .section-wrapper > .title { height: 42px; margin-bottom: 40px;}
+.e1.s3 > .section-wrapper {padding-top: 6.5%;}
+.e1.s3 > .section-wrapper > img,button {display: block; margin: 0 auto;}
+.e1.s3 > .section-wrapper > .title { height: 42px; margin-bottom: 40px;}
 
-.e1-s3 > .section-wrapper > .private-btn {width: 175px; margin-bottom: 30px;}
-.e1-s3 > .section-wrapper > .private-btn > img {width: 100%;}
+.e1.s3 > .section-wrapper > .private-btn {width: 175px; margin-bottom: 30px;}
+.e1.s3 > .section-wrapper > .private-btn > img {width: 100%;}
 
-.e1-s3 > .section-wrapper > .karada-wrapper {
+.e1.s3 > .section-wrapper > .karada-wrapper {
     height: 64vh;
     max-height: 580px;
     position: relative;
 }
 
-.e1-s3 > .section-wrapper > .karada-wrapper > img {
+.e1.s3 > .section-wrapper > .karada-wrapper > img {
     height: 100%;
     position: absolute;
     top: 50%;
@@ -62,15 +62,15 @@
     transform: translate(-50%,-50%);
 }
 
-.e1-s3 > .section-wrapper > .karada-wrapper > .private {
+.e1.s3 > .section-wrapper > .karada-wrapper > .private {
     z-index: 99;
     mix-blend-mode: multiply;
     opacity: 0;
 }
-.e1-s3 > .section-wrapper > .karada-wrapper > .private.show { opacity: 1; }
+.e1.s3 > .section-wrapper > .karada-wrapper > .private.show { opacity: 1; }
 
 
-.e1-s3 > .section-wrapper > .features-wrapper {
+.e1.s3 > .section-wrapper > .features-wrapper {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -104,14 +104,11 @@
 
 .feature > .icon { width: 54px; }  
 
-/* @media screen and (max-width: 1248px) {
-    .e1-p1 {height: 100%; overflow-y: scroll;}
-    .e1-p1 > .wrapper {
-        flex-direction: column-reverse;
-        left: 50%;
-        transform: translateX(-100%);
-    }
-    .e1-p1 > .wrapper > .i1 {margin: 0 auto; width: 30vw; max-width: 380px;}
-    .e1-p1 > .wrapper > .i2 {margin: 0 auto; width: 40vw; max-width: 380px;}
+/*-----------------------------------section 4------------------------------------*/
+.e1.s4 > .section-wrapper {padding-top: 6.5%;}
+.e1.s4 > .section-wrapper > img {display: block; margin: 0 auto;}
+.e1.s4 > .section-wrapper > .title { height: 42px; margin-bottom: 40px;}
+.e1.s4 > .section-wrapper > .gaiseiki {width: 75%; margin: 0 auto;}
+.e1.s4 > .section-wrapper > .gaiseiki > .girls { justify-content: center; }
+.e1.s4 > .section-wrapper > .gaiseiki > .boys { justify-content: center; }
 
-} */

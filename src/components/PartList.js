@@ -1,4 +1,6 @@
-import React from 'react';
+import React from 'react'
+
+import { MContext } from '../pages/ehon/MyProvider';
 
 import EhonData from '../data/EhonData.json'
 
@@ -12,12 +14,23 @@ export default function PartList(props) {
         <div className='part-list-wrapper'>
             {partListArray.map((item) => (
                 <div key={item} className='part-list-item'>
-                    <div className='parent-title'>{item.parentTitle}</div>
-                    {item.childTitle.map((child) => (
-                        <div className='child-title-wrapper'>
-                            <div className='check'></div>
-                            <div className='child-title' key={child}>{child}</div>
-                        </div>
+                    <div className='parent-title'>{item.parent}</div>
+                    {item.child.map((child) => (
+                        <MContext.Consumer>
+                            {(context) => (
+                                <div className='child-title-wrapper' >
+                                    <div className='check'></div>
+                                    <a
+                                        key={child}  
+                                        href='#/ehon/e1_shishunki/content'
+                                        className={context.state.currentPage === child.index ? 'child-title active' : 'child-title'} 
+                                        onClick={() => {context.setCurrentPage(child.index)}}
+                                    >{child.title}
+                                    </a>
+                                </div>
+                            )}
+                        </MContext.Consumer>
+                        
                     ))}
                 </div>
             ))}

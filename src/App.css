@@ -93,13 +93,25 @@ button:hover {
   color: #E06363;
   border: #E06363 2px solid;
 }
+.method-icon.ehon.active {
+  background-color: #E06363;
+  color: #fff;
+}
 .method-icon.jisho {
   color: #20548A;
   border: #20548A 2px solid;
 }
+.method-icon.jisho.active {
+  background-color: #20548A;
+  color: #fff;
+}
 .method-icon.nayami {
   color: #75BE5B;
   border: #75BE5B 2px solid;
+}
+.method-icon.nayami.active {
+  background-color: #75BE5B;
+  color: #fff;
 }
 
 .method-icon:hover, .method-card:hover .method-icon {

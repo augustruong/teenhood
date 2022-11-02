@@ -6,9 +6,11 @@ import HomePage from './pages/main/HomePage';
 import EhonPage from './pages/main/EhonPage';
 import JishoPage from './pages/main/JishoPage';
 import NayamiPage from './pages/main/NayamiPage';
-import CoverPage from './pages/lessons/CoverPage';
+import CoverPage from './pages/ehon/CoverPage';
 
-import ContentPage from './pages/lessons/ContentPage';
+import EhonContentPage from './pages/ehon/EhonContentPage';
+import EhonJishoPage from './pages/ehon/EhonJishoPage';
+
 
 import './App.css';
 
@@ -28,7 +30,9 @@ function App() {
           <Route path='/ehon/e1_shishunki/cover' element={<CoverPage index={0}/>} />
           <Route path='/ehon/e2_gekkei/cover' element={<CoverPage index={1}/>} />
 
-          <Route path='/ehon/e1_shishunki/content' element={<ContentPage index={0}/>} />
+          <Route path='/ehon/e1_shishunki/content' element={<EhonContentPage index={0}/>} />
+          <Route path='/ehon/e1_shishunki/jisho' element={<EhonJishoPage index={0}/>} />
+
         </Routes>
       </HashRouter>
     </>

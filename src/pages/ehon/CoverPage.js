@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PartList from '../../components/PartList';
+import MyProvider from './MyProvider'
+
 
 import EhonData from '../../data/EhonData.json'
 
@@ -9,9 +11,9 @@ import "./CoverPage.css"
 export default function CoverPage(props) {
     const thisLesson = EhonData[props.index];
     const hashtagArray = thisLesson.hashtag;
-    const partListArray = thisLesson.partList;
 
     return(
+        <MyProvider>
         <div id='cover-page'>
             <section className='header-section'>
                 <div className='cover-img-wrapper'>
@@ -25,8 +27,8 @@ export default function CoverPage(props) {
                             <div className='bold'>概要を見る</div>
                         </div>
                         <div className='flex-row' style={{gap: 10}}>
-                            <NavLink to={`/jisho`}><button className='method-icon jisho'>辞</button></NavLink>
-                            <NavLink to={`/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
+                            <NavLink to={`/ehon/${thisLesson.lessonId}/jisho`}><button className='method-icon jisho'>辞</button></NavLink>
+                            <NavLink to={`/ehon/${thisLesson.lessonId}/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
                         </div>
                     </div>
                 </div>
@@ -44,5 +46,7 @@ export default function CoverPage(props) {
                 <PartList index={props.index}/>
             </section>
         </div>
+        </MyProvider>
+
     )
 }

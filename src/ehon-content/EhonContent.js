@@ -1,9 +1,9 @@
 import React from 'react'
 import EhonData from '../data/EhonData.json'
 import E1_shishunki from './E1_shishunki';
-import './LessonContent.css'
+import './Ehon.css'
 
-export default function LessonContent(props) {
+export default function EhonContent(props) {
     const thisLesson = EhonData[props.index];
 
   return (

@@ -1,0 +1,24 @@
+.lesson-content {
+    float: left;
+    /* margin-left: 270px; */
+}
+
+.lesson-content__inner, .ehon-jisho {
+    width: calc(100% - 270px);
+    float: right;
+    background-color: #e8e8e8;
+}
+
+.lesson-content > img {
+    width: 100%;
+}
+.ehon-jisho {
+    text-align: center;
+}
+
+.wordModal-wrapper {
+    width: calc(100% - 270px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
