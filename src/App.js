@@ -29,10 +29,16 @@ function App() {
 
           <Route path='/ehon/e1_shishunki/cover' element={<CoverPage index={0}/>} />
           <Route path='/ehon/e2_gekkei/cover' element={<CoverPage index={1}/>} />
+          <Route path='/ehon/e7_std/cover' element={<CoverPage index={6}/>}/>
+
 
           <Route path='/ehon/e1_shishunki/content' element={<EhonContentPage index={0}/>} />
           <Route path='/ehon/e1_shishunki/jisho' element={<EhonJishoPage index={0}/>} />
           <Route path='/ehon/e1_shishunki/nayami' element={<EhonNayamiPage index={0}/>} />
+
+          <Route path='/ehon/e7_std/content' element={<EhonContentPage index={6}/>} />
+          <Route path='/ehon/e7_std/jisho' element={<EhonJishoPage index={6}/>} />
+          <Route path='/ehon/e7_std/nayami' element={<EhonNayamiPage index={6}/>} />
 
         </Routes>
       </HashRouter>

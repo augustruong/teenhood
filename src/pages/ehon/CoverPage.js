@@ -11,7 +11,7 @@ import "./CoverPage.css"
 export default function CoverPage(props) {
     const thisLesson = EhonData[props.index];
     const hashtagArray = thisLesson.hashtag;
-
+    console.log(hashtagArray);
     return(
         <MyProvider>
         <div id='cover-page'>

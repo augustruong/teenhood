@@ -8,7 +8,7 @@ export default function JishoPage() {
 
   return (
     <div id='jisho-page'>
-        <PopUpModal word={word} showModal={showModal} setShowModal={setShowModal} />
+        {/* <PopUpModal word={word} showModal={showModal} setShowModal={setShowModal} /> */}
 
         <section className='header-section' style={{backgroundColor:"#DEEFFF"}}>
           <h2 style={{color:"#2B79CA"}}>性の辞書</h2>
