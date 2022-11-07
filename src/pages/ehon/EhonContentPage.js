@@ -4,8 +4,6 @@ import EhonContent from '../../ehon-content/EhonContent'
 import MyProvider from './MyProvider'
 
 export default function EhonContentPage(props) {
-    // const [currentPage, setCurrentPage] = useState(1)
-
     return(
         <MyProvider>
             <div className='content-page'>

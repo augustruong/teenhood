@@ -8,7 +8,7 @@
     padding-left: 15px;
 }
 
-.word-list-item:hover {
+.word-list-item.active, .word-list-item:hover {
     font-weight: 700;
     cursor: pointer;
     background-color: #fff;

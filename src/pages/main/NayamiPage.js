@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import NayamiModal from '../../components/modals/NayamiModal'
 
 
 import './LessonPage.css'
@@ -12,8 +12,16 @@ export default function NayamiPage() {
           <div className='bold mt10'>気になることを解けましょう</div>
         </section>
 
-        <section className='qaList-section'>
-            
+        <section className='nayamiList-section'>
+          <div className='nayami-wrapper'>
+              <NayamiModal index={0}/>
+              {/* <NayamiModal index={1}/>
+              <NayamiModal index={2}/>
+              <NayamiModal index={3}/>
+              <NayamiModal index={4}/>
+              <NayamiModal index={5}/>
+              <NayamiModal index={6}/> */}
+          </div>
         </section>
     </div>
   )

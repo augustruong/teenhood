@@ -4,8 +4,11 @@
 #jisho-page {
     background-color: #F8FCFF;
 }
+#nayami-page {
+    background-color: #F9FEF8;
+}
 
-#ehon-page>.header-section, #jisho-page>.header-section {
+#ehon-page>.header-section, #jisho-page>.header-section, #nayami-page>.header-section {
     text-align: center;
     padding: 100px 0 50px 0;
 }

@@ -16,12 +16,14 @@ export default function EhonJisho(props) {
     <div className='ehon-jisho'>
         <MContext.Consumer>
         {(context) => (
-            <ReactPageScroller>
-            {wordListArray.map((word) => (
-                <div className='wordModal-wrapper'>
-                    <WordModal word={word} className='ehon-jisho-wordmodal'/>
-                </div>
-            ))}
+            <ReactPageScroller
+                customPageNumber={context.state.currentPage}
+                onBeforePageScroll={(number) => {context.setCurrentPage(number); console.log(number)}}>
+                {wordListArray.map((word) => (
+                    <div className='wordModal-wrapper'>
+                        <WordModal word={word} className='ehon-jisho-wordmodal'/>
+                    </div>
+                ))}
             </ReactPageScroller>
         )}
         </MContext.Consumer>

@@ -62,7 +62,7 @@ export default function NavWrapper(props) {
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
-                                <h3 className='nav-item__title lesson-title'>性のよくある悩み</h3>
+                                <h3 className='nav-item__title lesson-title'>性の悩み</h3>
                             </div>
                         </NavLink>
                     </li>
@@ -72,7 +72,7 @@ export default function NavWrapper(props) {
                     <li className='nav-list__item'>
                         <NavLink
                             className='nav-item lesson'
-                            to='/ehon/shishunki'
+                            to='/ehon/e1_shishunki/cover'
                             style={{'--hover-bg-color': '#215371'}}
                             onClick={() => setShowNav(false)}
                             onMouseEnter = {() => setLessonName("shishunki")}
@@ -89,7 +89,7 @@ export default function NavWrapper(props) {
                     <li className='nav-list__item'>
                         <NavLink
                             className='nav-item lesson'
-                            to='/ehon/gekkei'
+                            to='/ehon/e2_gekkei/cover'
                             style={{'--hover-bg-color': '#C76767'}}
                             onClick={() => setShowNav(false)}
                             onMouseEnter = {() => setLessonName("gekkei")}

@@ -10,7 +10,7 @@ import CoverPage from './pages/ehon/CoverPage';
 
 import EhonContentPage from './pages/ehon/EhonContentPage';
 import EhonJishoPage from './pages/ehon/EhonJishoPage';
-
+import EhonNayamiPage from './pages/ehon/EhonNayamiPage';
 
 import './App.css';
 
@@ -32,6 +32,7 @@ function App() {
 
           <Route path='/ehon/e1_shishunki/content' element={<EhonContentPage index={0}/>} />
           <Route path='/ehon/e1_shishunki/jisho' element={<EhonJishoPage index={0}/>} />
+          <Route path='/ehon/e1_shishunki/nayami' element={<EhonNayamiPage index={0}/>} />
 
         </Routes>
       </HashRouter>

@@ -1,12 +1,11 @@
 .lesson-content {
     float: left;
-    /* margin-left: 270px; */
 }
 
-.lesson-content__inner, .ehon-jisho {
+.lesson-content__inner, .ehon-jisho{
     width: calc(100% - 270px);
     float: right;
-    background-color: #e8e8e8;
+    background-color: #ddd;
 }
 
 .lesson-content > img {
@@ -16,9 +15,16 @@
     text-align: center;
 }
 
-.wordModal-wrapper {
+.wordModal-wrapper{
     width: calc(100% - 270px);
     height: 100vh;
     display: flex;
     align-items: center;
 }
+
+.nayami-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+

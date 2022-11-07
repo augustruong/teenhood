@@ -9,13 +9,13 @@ export default function LessonVisual(props) {
         <>
             <picture className={lessonName === "shishunki" ? 'lesson-visual active' : 'lesson-visual'}>
                 <img 
-                    src={process.env.PUBLIC_URL + `/images/lessons/01_shishunki/visual.png`}
+                    src={process.env.PUBLIC_URL + `/images/lessons/E1_shishunki/visual.png`}
                     width="2400" height="1500"
                 />
             </picture>
             <picture className={lessonName === "gekkei" ? 'lesson-visual active' : 'lesson-visual'}>
                 <img 
-                    src={process.env.PUBLIC_URL + `/images/lessons/02_gekkei/visual.png`}
+                    src={process.env.PUBLIC_URL + `/images/lessons/E2_gekkei/visual.png`}
                     width="2400" height="1500"
                 />
             </picture>

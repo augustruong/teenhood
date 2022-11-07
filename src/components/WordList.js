@@ -10,10 +10,16 @@ export default function WordList(props) {
     
     return (
         <div className='word-list-wrapper'>
-            {wordListArray.map((word) => (
-                <div key={word} className='word-list-item'>
-                    <div>{word}</div>
-                </div>
+            {wordListArray.map((word,index) => (
+                <MContext.Consumer>
+                    {(context) => (
+                        <div key={word} 
+                            className={context.state.currentPage === index ? 'word-list-item active' : 'word-list-item'}
+                            onClick={() => {context.setCurrentPage(index)}}>
+                            <div key={word} className='word-title'>{word}</div>
+                        </div>
+                    )}
+                </MContext.Consumer>
             ))}
         </div>
     )
