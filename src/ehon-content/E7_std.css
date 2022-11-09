@@ -8,10 +8,46 @@
 /*-----------------------------------section 1------------------------------------*/
 
 .e7.s1 > .section-wrapper {
-    height:100vh;
-    align-items: center;
+    display:flex;
     justify-content: center;
+    align-items: center;
 }
 
+.e7.s1 > .section-wrapper > .title{
+    margin-top: 5%;
+}
 
+.e7.s1 > .content-text {
+    max-width: 640px;
+    margin:0 auto;
+    margin-top: 10%;
+    position: relative;
+}
 
+.e7.s1 > .content-text > .content-title{
+    padding:20px;
+    width:116px;
+    height:118px;
+    display:inline-block;
+    position:absolute;
+    bottom:90px;
+    left:10px;
+    border-radius: 50%;
+    background-color: #FFB31F;
+    color:#fff;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.e7.s1 > .content-text > .main-content{
+    padding: 25px 40px 25px 50px;
+    margin-left:78px;
+    margin-top:45px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.e7.s1 > .content-text > .main-content > span{
+    color:#FFB31F;
+    font-weight: 700;
+}
