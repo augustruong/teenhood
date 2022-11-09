@@ -13,7 +13,7 @@ export default function LessonNav(props) {
 
     return(
         <nav className='lesson-nav-wrapper'>
-            <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/thumbnail.png`}/>
+            <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/thumbnail.png`}/>
             <div className='header'>
                 <h4 className='title'>{thisLesson.title}</h4>
                 <div className='progress-wrapper'>

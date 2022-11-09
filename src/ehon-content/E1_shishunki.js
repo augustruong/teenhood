@@ -29,23 +29,23 @@ export default function E1_shishunki(props) {
                         <section className='e1 s1'>
                             <div className='section-wrapper flex-row'>
                                 <Image className='img'
-                                    src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s1_img.png`}
-                                    webp={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s1_img.webp`}
+                                    src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_img.png`}
+                                    webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_img.webp`}
                                 />
                                 <Image className='content'
-                                    src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s1_content.png`}
-                                    webp={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s1_content.webp`}
+                                    src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_content.png`}
+                                    webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_content.webp`}
                                 />
                             </div>
                         </section>    
                         <section className='e1 s2'>
                             <div className='section-wrapper flex-row'>
                                 <Image className='img'
-                                    src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s2_img.png`}
-                                    webp={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s2_img.png`}
+                                    src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_hormones.png`}
+                                    webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_hormones.png`}
                                 />
                                 <div className='content'>
-                                    <img className='title' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s2_title.svg`}/>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     <p>思春期になると、脳のうから「ホルモンをだしなさい」<br/>
                                         という命令が出るようになります。<br/>
                                         男の子は精巣から<span className='keyword'>「男性ホルモン」</span>、<br/>
@@ -58,75 +58,75 @@ export default function E1_shishunki(props) {
                         </section>  
                         <section className='e1 s3'>
                             <div className='section-wrapper'>
-                                <img className='title' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_title.svg`}/>
+                                <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
                                 <button className='no-style private-btn' onClick={() => setPrivateShow(!privateShow)}>
-                                    <img src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_private_btn.svg`}/>
+                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_private-btn.svg`}/>
                                 </button>
                                 
                                 <div className='features-wrapper'>
                                     <div className='boys'>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体型（男）")}}>
                                             <div>からだの成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-muscle.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-muscle.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("声枯れ")}}>
                                             <div>声の変化</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-voice.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-voice.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("射精")}}>
                                             <div>ペニスと精巣の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-penis.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-penis.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体毛")}}>
                                             <div>体毛の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-hair.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-hair.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("汗・ニキビ")}}>
                                             <div>汗、にきび</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-pimple.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-pimple.png`}/>
                                         </div>
                                     </div>
                                     <div className='girls'>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("乳房")}}> 
                                             <div>乳房の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-breast.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-breast.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体型（女）")}}>
                                             <div>からだの成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-curve.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-curve.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体毛")}}>
                                             <div>体毛の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-hair.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-hair.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("汗・ニキビ")}}>
                                             <div>汗、にきび</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-pimple.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-pimple.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("月経")}}>
                                             <div>月経</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/icons/i-menstru.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-menstru.png`}/>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='karada-wrapper'>
-                                    <img className={privateShow ? 'private show' : 'private'} src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_private.gif`}/>
-                                    <img className='futari' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s3_futari.png`}/>
+                                    <img className={privateShow ? 'private show' : 'private'} src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_private.gif`}/>
+                                    <img className='body' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_body.png`}/>
                                 </div>
                             </div>
                         </section>
                         <section className='e1 s4'>
                             <div className='section-wrapper'>
-                                <img className='title' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s4_title.svg`}/>
+                                <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
                                 <div className='gaiseiki flex-row'>
                                     <div className='flex-column girls'>
-                                        <img src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s4_onna-seiki.png`}/>
-                                        <img src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s4_onna-seiki-close.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_onna-seiki.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_onna-seiki-close.png`}/>
                                     </div>
                                     <div className='flex-column boys'>
-                                        <img src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s4_otoko-seiki.png`}/>
-                                        <img src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s4_otoko-seiki-close.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_otoko-seiki.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_otoko-seiki-close.png`}/>
                                     </div>
                                 </div>
                             </div>

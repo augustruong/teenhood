@@ -17,7 +17,7 @@ export default function CoverPage(props) {
         <div id='cover-page'>
             <section className='header-section'>
                 <div className='cover-img-wrapper'>
-                    <img className='cover-img' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/cover.png`}/>
+                    <img className='cover-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/cover.png`}/>
                 </div>
                 <div className='header'>
                     <h2 className='title'>{thisLesson.title}</h2>
