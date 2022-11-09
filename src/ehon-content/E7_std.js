@@ -24,14 +24,47 @@ export default function E7_std(props){
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/s1_title.png`}/>
                                     
-
-                                  
                                 </div>
                                 <div className='content-text'>
                                     <p className='content-title'>とは何?</p>
                                     <p className ='main-content'><span>セックスをはじめとする性行為などによって感染する病気
                                     STI</span>ともいう。<span>STI</span>とは、<span>SexuallyTransmitted Infections</span>の略称で、性感染症のことを指す。</p>
                                 </div>
+
+                                <div className='content-image'>
+                                    <img className='content-title' src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/kansenroudou.png`}/>
+                                    <ul className='main-content'>
+                                        <li className='main-wrapper'>
+                                            <img className = "icons" src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/Ellipse 75.png`}/>
+                                            <p>腟性交</p>
+                                        </li>
+                                        <li className='main-wrapper'>
+                                            <img className = "icons" src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/Ellipse 76.png`}/>
+                                            <p>肛門性交</p>
+                                        </li>
+                                        <li className='main-wrapper'>
+                                            <img className = "icons" src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/Ellipse 77.png`}/>
+                                            <p>口腔性交</p>
+                                        </li>
+                                        <li className='main-wrapper'>
+                                            <img className = "icons" src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/Ellipse 78.png`}/>
+                                            <p>下着、タオル便器など</p>
+                                        </li>
+                                        <li className='main-wrapper'>
+                                            <img className = "icons" src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/Ellipse 79.png`}/>
+                                            <p>口の粘膜や皮膚の傷</p>
+                                        </li>
+                                        <li className='main-wrapper'>
+                                            <img className = "icons" src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/Ellipse 80.png`}/>
+                                            <p>母子感染</p>
+                                        </li>
+                                        <li className='main-wrapper'>
+                                            <img className = "icons" src={process.env.PUBLIC_URL + `/images/lessons/${thisLesson.lessonId}/Ellipse 81.png`}/>
+                                            <p>注射針の回し打ち</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
                                
                             </section>   
                             <section className='e7 s2'>

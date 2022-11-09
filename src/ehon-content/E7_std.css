@@ -14,13 +14,13 @@
 }
 
 .e7.s1 > .section-wrapper > .title{
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .e7.s1 > .content-text {
     max-width: 640px;
     margin:0 auto;
-    margin-top: 10%;
+    margin-top: 8%;
     position: relative;
 }
 
@@ -36,6 +36,7 @@
     background-color: #FFB31F;
     color:#fff;
     font-size: 32px;
+    font-weight:700;
     line-height: 1;
 }
 
@@ -50,4 +51,16 @@
 .e7.s1 > .content-text > .main-content > span{
     color:#FFB31F;
     font-weight: 700;
+}
+
+.e7.s1 > .content-image {
+    max-width: 80%;
+    margin: 0 auto;
+    position:relative;
+}
+
+
+.e7.s1 > .content-image > .main-content > .main-wrapper{
+    width:10vh;
+    
 }
