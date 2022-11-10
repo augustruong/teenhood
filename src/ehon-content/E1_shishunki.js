@@ -67,45 +67,45 @@ export default function E1_shishunki(props) {
                                     <div className='boys'>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体型（男）")}}>
                                             <div>からだの成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-muscle.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-muscle.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("声枯れ")}}>
                                             <div>声の変化</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-voice.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icon-stampss/${thisLesson.lessonId}/i-voice.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("射精")}}>
                                             <div>ペニスと精巣の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-penis.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-penis.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体毛")}}>
                                             <div>体毛の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-hair.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-hair.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("汗・ニキビ")}}>
                                             <div>汗、にきび</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-pimple.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-pimple.png`}/>
                                         </div>
                                     </div>
                                     <div className='girls'>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("乳房")}}> 
                                             <div>乳房の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-breast.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-breast.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体型（女）")}}>
                                             <div>からだの成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-curve.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-curve.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("体毛")}}>
                                             <div>体毛の成長</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-hair.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-hair.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("汗・ニキビ")}}>
                                             <div>汗、にきび</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-pimple.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-pimple.png`}/>
                                         </div>
                                         <div className='feature' onClick={() => {setShowModal(!showModal); setWord("月経")}}>
                                             <div>月経</div>
-                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons/${thisLesson.lessonId}/i-menstru.png`}/>
+                                            <img className='icon' src={process.env.PUBLIC_URL + `/images/icons-stamps/${thisLesson.lessonId}/i-menstru.png`}/>
                                         </div>
                                     </div>
                                 </div>

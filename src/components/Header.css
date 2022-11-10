@@ -1,6 +1,6 @@
 #header { display: block; position: fixed; width: 100%; top: 0; z-index: 999; }
 #header > a.logo { position: fixed; top: 30px; left: 50px; }
-#header > a.logo .logo-svg { width: 36px; }
+#header > a.logo .logo-svg { width: 48px; }
 
 #header > #contact-btn { position: fixed; bottom: 30px; right: 30px;}
 #header > #contact-btn img { width: 60px; animation: jitter 800ms infinite;}

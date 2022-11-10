@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import LessonList from '../../components/LessonList'
 
-import './LessonPage.css'
+import './AllPage.css'
 
 export default function EhonPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   return (
     <div id='ehon-page'>
         <section className='header-section' style={{backgroundColor:"#FFECEC"}}>

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll'
 import PartList from '../../components/PartList';
 import MyProvider from './MyProvider'
 
@@ -11,7 +12,9 @@ import "./CoverPage.css"
 export default function CoverPage(props) {
     const thisLesson = EhonData[props.index];
     const hashtagArray = thisLesson.hashtag;
-    console.log(hashtagArray);
+    
+    useEffect(() => { window.scrollTo(0, 0); }, []);
+
     return(
         <MyProvider>
         <div id='cover-page'>
@@ -24,7 +27,7 @@ export default function CoverPage(props) {
                     <div className='nav-wrapper flex-row'>
                         <div className='flex-row align-ct'>
                             <NavLink to={`/ehon/${thisLesson.lessonId}/content`}><button className='start-btn'>START</button></NavLink>
-                            <div className='bold'>概要を見る</div>
+                            <Link className='description-link' to="content-section">概要を見る</Link>
                         </div>
                         <div className='flex-row' style={{gap: 10}}>
                             <NavLink to={`/ehon/${thisLesson.lessonId}/jisho`}><button className='method-icon jisho'>辞</button></NavLink>
@@ -33,7 +36,7 @@ export default function CoverPage(props) {
                     </div>
                 </div>
             </section>
-            <section className='content-section'>
+            <section id='content-section'>
                 <div className='intro-wrapper'>
                     <p>{thisLesson.description}</p>
                     <div className='hashtag-wrapper flex-row'>

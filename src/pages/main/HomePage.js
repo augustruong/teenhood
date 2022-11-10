@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import ReactPageScroller from 'react-page-scroller';
 
 import './HomePage.css'
 
 export default function HomePage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   return (
     <div id='home'>
+      <ReactPageScroller>
         <section className='hero-section'>
           <h2 className='altertext'>KEY VISUAL</h2>
         </section>
@@ -48,6 +52,7 @@ export default function HomePage() {
 
           </div>
         </section>
+      </ReactPageScroller> 
     </div>
   )
 }

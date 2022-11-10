@@ -1,0 +1,49 @@
+#ehon-page { background-color: #FFFBFB; }
+#jisho-page { background-color: #F8FCFF; }
+#nayami-page { background-color: #F9FEF8; }
+
+#ehon-page>.header-section, 
+#jisho-page>.header-section, 
+#nayami-page>.header-section {
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+
+/*------------------------------------EhonPage-----------------------------------*/
+
+
+/*------------------------------------JishoPage-----------------------------------*/
+#jisho-page > .wordList-section {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 5%;
+}
+#jisho-page > .wordList-section > .wordList-wrapper {
+    
+}
+
+#jisho-page > .wordList-section > .wordList-wrapper > .letter {
+    font-size: 64px;
+    font-weight: 800;
+    color: #2B79CA;
+    border-bottom: 2px solid #2B79CA;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+#jisho-page > .wordList-section > .wordList-wrapper > .wordList {
+    margin-bottom: 50px;
+}
+#jisho-page > .wordList-section > .wordList-wrapper > .wordList > div {
+    line-height: 30px;
+}
+#jisho-page > .wordList-section > .wordList-wrapper > .wordList > div:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*------------------------------------NayamiPage-----------------------------------*/

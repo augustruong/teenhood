@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import NayamiModal from '../../components/modals/NayamiModal'
 
 
-import './LessonPage.css'
+import './AllPage.css'
 
 export default function NayamiPage() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   return (
     <div id='nayami-page'>
         <section className='header-section' style={{backgroundColor:"#E1FCDA"}}>

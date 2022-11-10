@@ -1,10 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import LessonNav from '../../components/LessonNav'
 import MyProvider from './MyProvider'
 import EhonJisho from '../../ehon-content/EhonJisho'
 
 
 export default function EhonJishoPage(props) {
+    useEffect(() => { window.scrollTo(0, 0); }, []);
+
     return(
         <MyProvider>
             <div className='ehon-jisho-page'>
