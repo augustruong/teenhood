@@ -3,20 +3,21 @@
 }
 
 #cover-page > .header-section > .header {
-    text-align: center;
+    text-align: left;
     padding-top: 40px;
     padding-bottom: 50px;
     background-color: #fff;
-
 }
 
-#cover-page > .header-section > .header > .title {
+#cover-page > .header-section > .header > .header-inner {
+    margin: 0 auto;
+    width: 45%;
+}
+#cover-page > .header-section > .header > .header-inner > .title {
     margin-bottom: 20px;
 }
-#cover-page > .header-section > .header > .nav-wrapper {
-    width: 50%;
-    max-width: 640px;
-    margin: 0 auto;
+#cover-page > .header-section > .header > .header-inner > .nav-wrapper {
+    min-width: 540px;
     align-items: center;
 }
 

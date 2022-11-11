@@ -23,15 +23,17 @@ export default function CoverPage(props) {
                     <img className='cover-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/cover.png`}/>
                 </div>
                 <div className='header'>
-                    <h2 className='title'>{thisLesson.title}</h2>
-                    <div className='nav-wrapper flex-row'>
-                        <div className='flex-row align-ct'>
-                            <NavLink to={`/ehon/${thisLesson.lessonId}/content`}><button className='start-btn'>START</button></NavLink>
-                            <Link className='description-link' to="content-section">概要を見る</Link>
-                        </div>
-                        <div className='flex-row' style={{gap: 10}}>
-                            <NavLink to={`/ehon/${thisLesson.lessonId}/jisho`}><button className='method-icon jisho'>辞</button></NavLink>
-                            <NavLink to={`/ehon/${thisLesson.lessonId}/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
+                    <div className='header-inner'>
+                        <h2 className='title'>{thisLesson.title}</h2>
+                        <div className='nav-wrapper flex-row'>
+                            <div className='flex-row align-ct'>
+                                <NavLink to={`/ehon/${thisLesson.lessonId}/content`}><button className='start-btn'>START</button></NavLink>
+                                <Link className='description-link' to="content-section">概要を見る</Link>
+                            </div>
+                            <div className='flex-row' style={{gap: 10}}>
+                                <NavLink to={`/ehon/${thisLesson.lessonId}/jisho`}><button className='method-icon jisho'>辞</button></NavLink>
+                                <NavLink to={`/ehon/${thisLesson.lessonId}/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>

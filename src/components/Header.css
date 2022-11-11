@@ -2,9 +2,18 @@
 #header > a.logo { position: fixed; top: 30px; left: 50px; }
 #header > a.logo .logo-svg { width: 48px; }
 
-#header > #contact-btn { position: fixed; bottom: 30px; right: 30px;}
-#header > #contact-btn img { width: 60px; animation: jitter 800ms infinite;}
-#header > #contact-btn :hover { cursor: var(--cursor-finger); }
+#header > #chat-bot-btn { position: fixed; bottom: 50px; right: 50px;}
+#header > #chat-bot-btn img { width: 65px; animation: jitter 800ms infinite;}
+#header > #chat-bot-btn :hover { cursor: pointer; }
+
+#header > .chatBox {
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+#header > .chatBox.active { display: block; }
 
 #header > #menu-btn { width: 25px; height: 20px; position: absolute; top: 30px; right: 30px; z-index: 100; }
 #header > #menu-btn > .line { position: absolute; left: 0; width: 100%; height: 16%; transform-origin: center; background-color: #725B4C; border-radius: 4px; transition: 0.5s all linear; }
