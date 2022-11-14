@@ -1,0 +1,69 @@
+.e2.s1,.e2.s2{
+    height: 100vh;
+    width: calc(100% - 270px);
+    position: relative;
+}
+
+.e2.s1 {background-color: #FFE4E1;}
+.e2.s2 {background-color: #fff;}
+
+
+.note-wrapper > p {
+    background-color: #fff;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px 30px 20px 40px;
+}
+
+/*-----------------------------------section 1------------------------------------*/
+
+.e2.s1 > .section-wrapper > .title {
+    color: var(--e2-key-color);
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    left: 12%;
+}
+.e2.s1 > .section-wrapper > img {
+    position: absolute;
+    width: 45%;
+    top: 3%;
+    right: 5%;
+}
+
+.e2.s1 > .section-wrapper > .note-wrapper.n1 {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+}
+.e2.s1 > .section-wrapper > .note-wrapper.n1 > .stamp {
+    position: absolute;
+    top: -35%;
+    left: -15%;
+    width: 22%;
+}
+
+.e2.s1 > .section-wrapper > .note-wrapper.n2 {
+    position: absolute;
+    top: 64%;
+    right: 24%;
+}
+.e2.s1 > .section-wrapper > .note-wrapper.n2 > .stamp {
+    position: absolute;
+    top: -35%;
+    right: -10%;
+    width: 22%;
+}
+
+/*-----------------------------------section 2------------------------------------*/
+.e2.s2 > .section-wrapper {
+    align-items: center;
+    padding-top: 10%;
+}
+.e2.s2 > .section-wrapper > .title {
+    margin-bottom: 5%;
+}
+.e2.s2 > .section-wrapper > .s2_naiseiki {
+    width: 30%;
+}
+

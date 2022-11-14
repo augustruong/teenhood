@@ -22,17 +22,30 @@ body *{z-index: 1; }
   --yellow-color: #FEFFBA;
   --neon-color: #FCFF61;
   --red-color: #E06363;
+
+  --e2-key-color: #E06363;
+  --e3-key-color: #4E8DDB;
+  --e4-key-color: #FC7B92;
+  --e5-key-color: #44AE7D;
+  --e6-key-color: #765EC5;
+  --e7-key-color: #FFB31F;
 }
 
 /*-----------------------------------FONTS------------------------------------*/
 @font-face {
   font-family: 'HGRPP1';
-  src: url("/public/fonts/HGRPP1.TTC");
+  src: url("/fonts/HGRPP1.TTC");
+}
+
+@font-face {
+  font-family: 'SoupofJustice';
+  src: url("/fonts/iCielSoupofJustice.ttf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
   --font-title: 'HGRPP1';
+  --font-title-en: 'SoupofJustice';
   --font-body: 'M PLUS 2', sans-serif;
 }
 
@@ -220,14 +233,13 @@ textarea {
 
 
 .flex-column{
-  display: -webkit-flex!important; 
   display: flex!important; 
   flex-wrap: wrap!important; 
-  justify-content: space-between; 
+  flex-direction: column;
+  justify-content: space-between;   
 }
 
 .flex-row{
-  display: -webkit-flex!important; 
   display: flex!important; 
   flex-direction: row;
   justify-content: space-between; 

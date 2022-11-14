@@ -11,7 +11,14 @@ export default function HomePage() {
     <div id='home'>
       <ReactPageScroller>
         <section className='hero-section'>
-          <h2 className='altertext'>KEY VISUAL</h2>
+          <img className='title' src={process.env.PUBLIC_URL + `/images/key-visual/TEENHOOD.svg`}/>
+          <h3 className='subtitle'>思春期の性をまなぼう！</h3>
+          <div className='chara-wrapper'>
+            <img className='chinchan' src={process.env.PUBLIC_URL + `/images/key-visual/chinchan.png`}/>
+            <img className='futari' src={process.env.PUBLIC_URL + `/images/key-visual/futari.png`}/>
+            <img className='shirichan' src={process.env.PUBLIC_URL + `/images/key-visual/shirichan.png`}/>
+            <div className='bubble-wrapper'><span className='teenhood'>TeenHood</span><br/>とは何？</div>
+          </div>
         </section>
 
         <section className='method-section'>

@@ -6,12 +6,71 @@
 .hero-section {
     height: 100vh;
     text-align: center;
-    padding-top: 40vh;
+    padding-top: 7%;
+    background-image: url(/images/key-visual/kv_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-section > .title {
+    width: 35vw;
+    max-width: 540px;
+}
+.hero-section > .subtitle {
+    color: #fff;
+    letter-spacing: 0.2em;
+    margin-top: 30px;
 }
 
-.hero-section > .altertext {
+.hero-section > .chara-wrapper > .chinchan {
+    width: 21%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    z-index: 10;
+    animation: kata3 20s infinite ease-in-out;
+}
+.hero-section > .chara-wrapper > .shirichan {
+    width: 19%;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    z-index: 10;
+    animation: kata3 20s 2s infinite ease-in-out;
+}
+.hero-section > .chara-wrapper > .futari {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    z-index: 11;
+    animation: jitter-1 1s infinite ease-out;
+}
+.hero-section > .chara-wrapper > .bubble-wrapper {
+    background-image: url(/images/key-visual/bubble.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 180px;
+    width: 250px;
+    padding-top: 52px;
+    padding-left: 10px;
+    position: absolute;
+    right: 16%;
+    top: 45%;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+.hero-section > .chara-wrapper > .bubble-wrapper > .teenhood {
+    color: #E06363;
+    letter-spacing: 0.05em;
     font-weight: 800;
-    color: var(--brown-color);   
+}
+.hero-section > .chara-wrapper > .bubble-wrapper:hover {
+    cursor: pointer;
+    animation: jitter-2 2s infinite ease-out;
 }
 
 .method-section {

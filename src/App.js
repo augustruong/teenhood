@@ -13,6 +13,7 @@ import EhonJishoPage from './pages/ehon/EhonJishoPage';
 import EhonNayamiPage from './pages/ehon/EhonNayamiPage';
 
 import './App.css';
+import './Keyframes.css'
 
 function App() {
   return (

@@ -143,7 +143,7 @@ export default function WordModal(props) {
             <h2 className='word-title'>{props.word}</h2>
             <div>
               <div className='word-yomi'>{thisWord.yomi}</div>
-              <div className='word-eigo'>{thisWord.eigo}</div>
+              <div className='word-eigo'>英: {thisWord.eigo}</div>
             </div>
           </div>
           <div className='scroll-wrapper'>
