@@ -62,39 +62,63 @@ export default function E2_gekkei(props) {
                                         <div className='slider-content-wrapper'>
                                             <div className='pagination'>
                                                 <div className={s3Page===1 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(1)}>1</div>
-                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>-------</div>
+                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>--------</div>
                                                 <div className={s3Page===2 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(2)}>2</div>
-                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>-------</div>
+                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>--------</div>
                                                 <div className={s3Page===3 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(3)}>3</div>
-                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>-------</div>
+                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>--------</div>
                                                 <div className={s3Page===4 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(4)}>4</div>
                                             </div>
                                             {s3Page === 1 &&
                                             <div className='content'>
                                                 <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>生理後の子宮</h3>
-                                                <div>卵巣で、赤ちゃんのもとになる卵子が成長。</div>
+                                                <p>卵巣で、赤ちゃんのもとになる卵子が成長。</p>
                                             </div>
                                             }
                                             {s3Page === 2 &&
                                             <div className='content'>
                                                 <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>排卵</h3>
-                                                <div>成長した卵子が卵巣からとび出し、卵管にすい上げられて子宮へ。左右どちらの卵巣から排卵するかはきまってない。ふしぎ？</div>
+                                                <p>成長した卵子が卵巣からとび出し、卵管にすい上げられて子宮へ。左右どちらの卵巣から排卵するかはきまってない。ふしぎ？</p>
                                             </div>
                                             }
                                             {s3Page === 3 &&
                                             <div className='content'>
                                                 <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>生理前</h3>
-                                                <div>ベッドになる内膜が1㎝ほどに厚くなり、赤ちゃんがくるのを待つ。卵子は「精子」とであうと、２つは１つとなり、「受精卵」となる。受精卵は赤ちゃんのはじめ。</div>
+                                                <p>ベッドになる内膜が 1cm ほどに厚くなり、赤ちゃんがくるのを待つ。卵子は「精子」とであうと、２つは１つとなり、「受精卵」となる。受精卵は赤ちゃんのはじめ。</p>
                                             </div>
                                             }
                                             {s3Page === 4 &&
                                             <div className='content'>
                                                 <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>生理中</h3>
-                                                <div>いらなくなった内膜がはがれ、たくわえられていた血液といっしょにからだの外へ。</div>
+                                                <p>いらなくなった内膜がはがれ、たくわえられていた血液といっしょにからだの外へ。</p>
                                             </div>
                                             }
                                         </div>
                                     </div>
+                                </div>
+                            </section>
+                            <section className='e2 s4'>
+                                <div className='section-wrapper flex-column'>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
+                                    <div className='content-wrapper'>
+                                        <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_shock.png`}/>
+                                        <p>月経がはじまる前や、月経のとき、<br/>人によっていろいろな<span>からだの変化</span><br/>がおこることがある。</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section className='e2 s5'>
+                                <div className='section-wrapper'>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.png`}/>
+
+                                </div>
+
+                                <div className='tunnel-container'>
+                                    <div className='circles tunnel-anim' style={{'--delay': 5}}></div>
+                                    <div className='circles tunnel-anim' style={{'--delay': 4}}></div>
+                                    <div className='circles tunnel-anim' style={{'--delay': 3}}></div>
+                                    <div className='circles tunnel-anim' style={{'--delay': 2}}></div>
+                                    <div className='circles tunnel-anim' style={{'--delay': 1}}></div>
+                                    <div className='circles tunnel-anim' style={{'--delay': 0}}></div>
                                 </div>
                             </section>
                         </ReactPageScroller>

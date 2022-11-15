@@ -49,7 +49,7 @@ body *{z-index: 1; }
   --font-body: 'M PLUS 2', sans-serif;
 }
 
-div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 15px; letter-spacing: 0.05em;}
+div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 15px; letter-spacing: 0.05em; font-weight: 500;}
 p { line-height: 225%;}
 a{ text-decoration: none; color: var(--brown-color); transition: all var(--transition-hover); }
 
@@ -58,7 +58,7 @@ h2 { font-size: 48px; }
 h3 { font-size: 24px; }
 h4 { font-size: 15px; }
 
-.bold {font-weight: 600;}
+.bold {font-weight: 700;}
 .keyword {font-weight: 700; color: var(--red-color)}
 
 .section-title {
