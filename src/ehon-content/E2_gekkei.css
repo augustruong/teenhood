@@ -1,11 +1,11 @@
-.e2.s1,.e2.s2{
+.e2.s1,.e2.s2,.e2.s3{
     height: 100vh;
     width: calc(100% - 270px);
     position: relative;
 }
 
 .e2.s1 {background-color: #FFE4E1;}
-.e2.s2 {background-color: #fff;}
+.e2.s2, .e2.s3 {background-color: #fff;}
 
 
 .note-wrapper > p {
@@ -67,3 +67,42 @@
     width: 30%;
 }
 
+/*-----------------------------------section 3------------------------------------*/
+.e2.s3 > .section-wrapper {
+    /* align-items: center; */
+    padding-top: 10%;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    gap: 150px;
+    justify-content: center;
+}
+
+.slider-content-wrapper > .pagination {
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.slider-content-wrapper > .pagination > .pagination-item {
+    background-color: #fff;
+    color: var(--e2-key-color);
+    border: 2px solid var(--e2-key-color);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 7px 10px;
+    font-family: var(--font-title);
+}
+.slider-content-wrapper > .pagination > .pagination-item.active,
+.slider-content-wrapper > .pagination > .pagination-item:hover {
+    cursor: pointer;
+    background-color: var(--e2-key-color);
+    color: #fff;
+    transition: background-color .2s ease-in-out;
+}
+
+.slider-content-wrapper > .content {
+    width: 300px;
+}

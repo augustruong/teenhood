@@ -8,11 +8,13 @@ import EhonData from '../data/EhonData.json'
 
 import './Ehon.css'
 import './E2_gekkei.css'
+import { useTheme } from 'styled-components';
 
 export default function E2_gekkei(props) {
     const thisLesson = EhonData[props.index];
     const [showModal, setShowModal] = useState(false);
     const [word, setWord] = useState("");
+    const [s3Page,setS3Page] = useState(1)
 
     return(
         <div>
@@ -48,6 +50,51 @@ export default function E2_gekkei(props) {
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     <img className='s2_naiseiki' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki.png`}/>
+                                </div>
+                            </section>
+                            <section className='e2 s3'>
+                                <div className='section-wrapper flex-column'>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
+                                    <div className='slider-wrapper'>
+                                        <div className='slider-img-wrapper'>
+                                            <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_gekkei-${s3Page}.png`}/>
+                                        </div>
+                                        <div className='slider-content-wrapper'>
+                                            <div className='pagination'>
+                                                <div className={s3Page===1 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(1)}>1</div>
+                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>-------</div>
+                                                <div className={s3Page===2 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(2)}>2</div>
+                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>-------</div>
+                                                <div className={s3Page===3 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(3)}>3</div>
+                                                <div style={{display: "inline-block", color: "var(--red-color)", fontWeight: "800"}}>-------</div>
+                                                <div className={s3Page===4 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(4)}>4</div>
+                                            </div>
+                                            {s3Page === 1 &&
+                                            <div className='content'>
+                                                <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>生理後の子宮</h3>
+                                                <div>卵巣で、赤ちゃんのもとになる卵子が成長。</div>
+                                            </div>
+                                            }
+                                            {s3Page === 2 &&
+                                            <div className='content'>
+                                                <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>排卵</h3>
+                                                <div>成長した卵子が卵巣からとび出し、卵管にすい上げられて子宮へ。左右どちらの卵巣から排卵するかはきまってない。ふしぎ？</div>
+                                            </div>
+                                            }
+                                            {s3Page === 3 &&
+                                            <div className='content'>
+                                                <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>生理前</h3>
+                                                <div>ベッドになる内膜が1㎝ほどに厚くなり、赤ちゃんがくるのを待つ。卵子は「精子」とであうと、２つは１つとなり、「受精卵」となる。受精卵は赤ちゃんのはじめ。</div>
+                                            </div>
+                                            }
+                                            {s3Page === 4 &&
+                                            <div className='content'>
+                                                <h3 className='bold' style={{color: "var(--red-color)", marginBottom: "10px"}}>生理中</h3>
+                                                <div>いらなくなった内膜がはがれ、たくわえられていた血液といっしょにからだの外へ。</div>
+                                            </div>
+                                            }
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                         </ReactPageScroller>

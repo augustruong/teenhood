@@ -5,7 +5,7 @@ import './LessonList.css'
 
 export default function LessonList() {
     return(
-        <div className='lesson-list flex-column'>
+        <div className='lesson-list'>
             <LessonThumb lessonId="e1_shishunki" title="#1: 私のからだが変化している" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
             <LessonThumb lessonId="e2_gekkei" title="#2: 月経って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
             <LessonThumb lessonId="e3_shasei" title="#3: 射精って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>

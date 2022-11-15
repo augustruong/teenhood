@@ -1,6 +1,9 @@
 .lesson-list {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: start;
+
+    position: relative;
     padding-top: 180px;
     padding-bottom: 20%;
     width: calc(100% - 690px);
