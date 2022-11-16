@@ -24,6 +24,7 @@ export default function E1_shishunki(props) {
                 {(context) => (                
                     <ReactPageScroller
                         customPageNumber={context.state.currentPage}
+                        renderAllPagesOnFirstRender={true}
                         onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
                     >
                         <section className='e1 s1'>
