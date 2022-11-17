@@ -22,7 +22,7 @@ export default function PartList(props) {
                                     <div className='check'></div>
                                     <a
                                         key={child}  
-                                        href='#/ehon/e1_shishunki/content'
+                                        // href='#/ehon/e1_shishunki/content'
                                         className={context.state.currentPage === child.index ? 'child-title active' : 'child-title'} 
                                         onClick={() => {context.setCurrentPage(child.index)}}
                                     >{child.title}

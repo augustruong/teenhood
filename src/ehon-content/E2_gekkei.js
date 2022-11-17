@@ -23,7 +23,10 @@ export default function E2_gekkei(props) {
             <div className='lesson-content__inner'>
                 <MContext.Consumer>
                     {(context) => (
-                        <ReactPageScroller>
+                        <ReactPageScroller 
+                            customPageNumber={context.state.currentPage}
+                            renderAllPagesOnFirstRender={true}
+                            onBeforePageScroll={(number) => {context.setCurrentPage(number)}}>
                             <section className='e2 s1'>
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.svg`}/>
@@ -109,16 +112,92 @@ export default function E2_gekkei(props) {
                             <section className='e2 s5'>
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.png`}/>
+                                    
+                                    <div className='spin-wrapper'>
+                                        
+                                        <img className='item' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_angry.png`}/>
+                                        <img className='item' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_pain.png`}/>
+                                        <img className='item' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_stomache.png`}/>
+                                        <img className='item' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_headache.png`}/>
+                                        <img className='item' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_sleepy.png`}/>
+                                        <img className='item' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_nikibi.png`}/>
+                                    </div>
+                                    
+                                    <div className={context.state.currentPage === 4 ? 'tunnel-container':''}>
+                                        <div className='circles tunnel-anim' style={{'--delay': 5}}></div>
+                                        <div className='circles tunnel-anim' style={{'--delay': 4}}></div>
+                                        <div className='circles tunnel-anim' style={{'--delay': 3}}></div>
+                                        <div className='circles tunnel-anim' style={{'--delay': 2}}></div>
+                                        <div className='circles tunnel-anim' style={{'--delay': 1}}></div>
+                                        <div className='circles tunnel-anim' style={{'--delay': 0}}></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section className='e2 s6'>
+                                <div className='section-wrapper'>
+                                    <div className='note-wrapper n1'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-PMS.svg`}/>
+                                        <p>月経の3～7日前に起こる<span style={{color: "var(--red-color)"}}>「月経前症候群（PMS）」</span>は、腹痛や胸の張り、<br/>イライラや気分の落ち込みなどの不快な症状のこと。これは、女性ホルモンのえいきょう。どれも病気ではない。</p>
+                                    </div>
+                                    <div className='note-wrapper n2'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-生理痛.svg`}/>
+                                        <p>子宮の収縮によっておなかがいたくなる。<br/>全然いたくない人もいる。</p>
+                                    </div>
+                                    <div className='note-wrapper n3'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
+                                        <p>このような症状が<br/>
+                                            <span style={{color: "var(--red-color)", fontSize: "25px", fontWeight: "700"}}>３回続けて</span><br/>
+                                            起こっていれば<br/>
+                                            PMSかもしれない
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section className='e2 s7'>
+                                <div className='section-wrapper'>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s7_title.svg`}/>
+                                    <div className='flex-row'>
+                                        <div className='flex-column'>
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s7_meal.png`}/>
+                                            <p>日ごろからバランス<br/>の良い食事をする</p>
+                                        </div>
+                                        <div className='flex-column'>
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s7_keepwarm.png`}/>
+                                            <p>おなかを温める</p>
+                                        </div>
+                                        <div className='flex-column'>
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s7_stretch.png`}/>
+                                            <p>適度な体操をする</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section className='e2 s8'>
+                                <div className='section-wrapper'>
+                                    <img className='s8_konnan' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s8_konnan.png`}/>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s8_title.svg`}/>
+                                    <p>
+                                    休みたくなる、薬を飲まないとしんどいほどの痛みがある場合、<br/><span style={{color: "var(--red-color)"}}>「月経困難症」</span>かもしれない。子宮内膜症や子宮筋腫など病気が隠れていることもあり、その結果、機能性不妊になる可能性も。
+                                    </p>
+                                    <div className='note-wrapper'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
+                                        <p>もし心配なことがあれば、おうちの人や保健室の先生に相談しよう。</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section className='e2 s9'>
+                                <div className='section-wrapper'>
 
                                 </div>
+                            </section>
+                            <section className='e2 s10'>
+                                <div className='section-wrapper'>
 
-                                <div className='tunnel-container'>
-                                    <div className='circles tunnel-anim' style={{'--delay': 5}}></div>
-                                    <div className='circles tunnel-anim' style={{'--delay': 4}}></div>
-                                    <div className='circles tunnel-anim' style={{'--delay': 3}}></div>
-                                    <div className='circles tunnel-anim' style={{'--delay': 2}}></div>
-                                    <div className='circles tunnel-anim' style={{'--delay': 1}}></div>
-                                    <div className='circles tunnel-anim' style={{'--delay': 0}}></div>
+                                </div>
+                            </section>
+                            <section className='e2 s11'>
+                                <div className='section-wrapper'>
+
                                 </div>
                             </section>
                         </ReactPageScroller>

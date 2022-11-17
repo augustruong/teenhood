@@ -1,20 +1,29 @@
-.e2.s1,.e2.s2,.e2.s3,.e2.s4,.e2.s5{
+.e2.s1,.e2.s2,.e2.s3,.e2.s4,.e2.s5,.e2.s6,.e2.s7,.e2.s8,.e2.s9,.e2.s10,.e2.s11{
     height: 100vh;
     width: calc(100% - 270px);
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .e2.s1 {background-color: #FFE4E1;}
-.e2.s2, .e2.s3 {background-color: #FFFFFF;}
+.e2.s2,.e2.s3,.e2.s9,.e2.s10,.e2.s11 {background-color: #FFFFFF;}
 .e2.s4 {background-color: #FFEEEC;}
-.e2.s5 {background-color: #FFEDED;}
+.e2.s5 {background-color: #FFC0C0;}
+.e2.s6 {background-color: #FFC0C0;}
+.e2.s7 {background-image: url(/images/ehon/e2_gekkei/s7_background.png);}
+.e2.s8 {background-image: url(/images/ehon/e2_gekkei/s8_background.png);}
 
 
 .note-wrapper > p {
     background-color: #fff;
     border-radius: 20px;
     display: inline-block;
-    padding: 20px 30px 20px 40px;
+    padding: 20px 30px 20px 60px;
+}
+
+.stamp {
+    position: absolute;
 }
 
 /*-----------------------------------section 1------------------------------------*/
@@ -39,9 +48,8 @@
     left: 15%;
 }
 .e2.s1 > .section-wrapper > .note-wrapper.n1 > .stamp {
-    position: absolute;
     top: -35%;
-    left: -15%;
+    left: -10%;
     width: 22%;
 }
 
@@ -51,7 +59,6 @@
     right: 24%;
 }
 .e2.s1 > .section-wrapper > .note-wrapper.n2 > .stamp {
-    position: absolute;
     top: -35%;
     right: -10%;
     width: 22%;
@@ -78,7 +85,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 7%;
-    gap: 150px;
+    gap: 100px;
     justify-content: center;
 }
 
@@ -110,7 +117,7 @@
 
 /*-----------------------------------section 4------------------------------------*/
 .e2.s4 > .section-wrapper {
-    padding-top: 12%;
+    padding-top: 10%;
 }
 
 .e2.s4 > .section-wrapper > .content-wrapper {
@@ -119,7 +126,7 @@
 }
 .e2.s4 > .section-wrapper > .content-wrapper > p {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 /*-----------------------------------section 5------------------------------------*/
@@ -128,10 +135,48 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 999;
+    z-index: 10; 
+    width: 220px;
+}
+.e2.s5 > .section-wrapper > .spin-wrapper {
+    position: relative;
+    z-index: 10; 
+    height: 100vh;
+    animation: spin 15s linear infinite;
+}
+.e2.s5 > .section-wrapper > .spin-wrapper > .item{
+    position: absolute;
+    animation: spin 15s linear infinite reverse;
+    scale: 0.95;
+}
+.e2.s5 > .section-wrapper > .spin-wrapper > .item:nth-child(1) {
+    left: 40%;
+    top: 5%;
+}
+.e2.s5 > .section-wrapper > .spin-wrapper > .item:nth-child(2) {
+    right: 22%;
+    top: 24%;
 }
 
+.e2.s5 > .section-wrapper > .spin-wrapper > .item:nth-child(3) {
+    right: 22%;
+    bottom: 24%;
+}
+
+.e2.s5 > .section-wrapper > .spin-wrapper > .item:nth-child(4) {
+    left: 40%;
+    bottom: 5%;
+}
+.e2.s5 > .section-wrapper > .spin-wrapper > .item:nth-child(5) {
+    left: 22%;
+    bottom: 24%;
+}
+.e2.s5 > .section-wrapper > .spin-wrapper > .item:nth-child(6) {
+    left: 22%;
+    top: 24%;
+}
 /*///////////////////////////////tunnel animation/////////////////////////////////*/
+.tunnel-container { z-index: 1; }
 .tunnel-container > .circles {
     position: absolute;
     overflow: hidden;
@@ -145,6 +190,7 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-delay: calc(0.3s * var(--delay));
+    z-index: 1; 
 }
 .tunnel-container > .circles:nth-child(even) { border-color: #FFDCDC; }
 .tunnel-container > .circles:nth-child(odd) { border-color: #FFC0C0; }
@@ -173,3 +219,87 @@
     margin: -59px 0 0 -59px;
 }
 .tunnel-anim { animation-name: tunnel; }
+
+/*-----------------------------------section 6------------------------------------*/
+.e2.s6 > .section-wrapper {
+    padding-top: 15%;
+    width: 50%;
+    margin: 0 auto;
+}
+.e2.s6 > .section-wrapper > .note-wrapper {
+    display: inline-block;
+    float: left;
+}
+.e2.s6 > .section-wrapper > .note-wrapper.n1 {
+    margin-bottom: 50px;
+}
+.e2.s6 > .section-wrapper > .note-wrapper.n2 {
+    margin-top: 68px;
+}
+.e2.s6 > .section-wrapper > .note-wrapper.n3 {
+    margin-left: 25px;
+}
+.e2.s6 > .section-wrapper > .note-wrapper.n1 > .stamp {
+    margin-top: -3%;
+    margin-left: -5%;
+}
+
+.e2.s6 > .section-wrapper > .note-wrapper.n2 > .stamp {
+    margin-top: -3%;
+    margin-left: -5%;
+}
+.e2.s6 > .section-wrapper > .note-wrapper.n3 > .stamp {
+    margin-top: -3%;
+    margin-left: -5%;
+}
+
+/*-----------------------------------section 7------------------------------------*/
+.e2.s7 > .section-wrapper {
+    padding-top: 10%;
+}
+.e2.s7 > .section-wrapper > .title {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+.e2.s7 > .section-wrapper > .flex-row {
+    justify-content: space-evenly;
+}
+.e2.s7 > .section-wrapper > .flex-row > .flex-column {
+    justify-content: end;
+}
+.e2.s7 > .section-wrapper > .flex-row > .flex-column  > p {
+    background-color: #FEFFBA;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    line-height: 27px;
+}
+
+/*-----------------------------------section 8------------------------------------*/
+.e2.s8 > .section-wrapper {
+    text-align: center;
+    padding-top: 5%;
+}
+.e2.s8 > .section-wrapper > p {
+    margin: 0 auto;
+    width: 37%;
+    margin-bottom: 40px;
+}
+.e2.s8 > .section-wrapper > .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+}
+.e2.s8 > .section-wrapper > .s8_konnan {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.e2.s8 > .section-wrapper > .note-wrapper > .stamp {
+    margin-top: -3%;
+    margin-left: -5%;
+}
