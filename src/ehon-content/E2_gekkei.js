@@ -187,17 +187,54 @@ export default function E2_gekkei(props) {
                             </section>
                             <section className='e2 s9'>
                                 <div className='section-wrapper'>
-
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s9_title.svg`}/>
+                                    <div className='flex-row'>
+                                        <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s9_napkin.png`}/>
+                                        <div className='content-wrapper'>
+                                            <div className='stamp'>ナプキン</div>
+                                            <p>月経になったら、洋服や下着をよごらないように、生理用ナプキンをちつ口にあてて、生理用のショーツをはく。<br/>ナプキンは、だいたい<span>2〜3時間に1度</span>、<br/>トイレに行くたびにとりかえよう。</p>
+                                        </div>
+                                    </div>
+                                    <div className='flex-row'>
+                                        <div className='note-wrapper'>
+                                            <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
+                                            <p>寝る時以外は、同じナプキンを6時間以上つけないようにしよう。不衛生になるし、かぶれることがある。</p>
+                                        </div>
+                                        <div className='note-wrapper'>
+                                            <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
+                                            <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s9_napkin-howto.png`}/>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e2 s10'>
                                 <div className='section-wrapper'>
-
+                                    <div className='flex-row'>
+                                        <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s10_calendar.png`}/>
+                                        <div className='content-wrapper'>
+                                            <div className='stamp'>カレンダー</div>
+                                            <p>自分のリズムを知るために、月経の日に<br/>しるしをつける習慣をつけよう。</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e2 s11'>
                                 <div className='section-wrapper'>
-
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s11_title.svg`}/>
+                                    <div className='flex-row'>
+                                        <div className='manner'>
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s11_toilet.png`}/>
+                                            <p>ナプキンは、トイレに流さない</p>
+                                        </div>
+                                        <div className='manner'>
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s11_check.png`}/>
+                                            <p>トイレはきれいに</p>
+                                        </div>
+                                        <div className='manner'>
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s11_laundry.png`}/>
+                                            <p>下着のお洗濯は、自分で</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
                         </ReactPageScroller>
