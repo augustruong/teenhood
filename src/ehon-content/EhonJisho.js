@@ -18,7 +18,7 @@ export default function EhonJisho(props) {
         {(context) => (
             <ReactPageScroller
                 customPageNumber={context.state.currentPage}
-                onBeforePageScroll={(number) => {context.setCurrentPage(number); console.log(number)}}>
+                onBeforePageScroll={(number) => {context.setCurrentPage(number)}}>
                 {wordListArray.map((word) => (
                     <div className='wordModal-wrapper'>
                         <WordModal word={word} className='ehon-jisho-wordmodal'/>

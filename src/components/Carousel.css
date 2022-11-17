@@ -1,5 +1,5 @@
 .rec.rec-pagination {
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 .rec.rec-dot_active {
@@ -10,7 +10,6 @@
     width: 8px;
     height: 8px;
 }
-
 
 .rec.rec-arrow {
     background-color: none !important;
@@ -40,8 +39,4 @@
 
 .rec.rec-arrow:hover:not(:disabled) {
     transform: scale(1.2);
-}
-
-.rec.rec-item-wrapper {
-    /* width: 440px; */
 }

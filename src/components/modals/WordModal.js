@@ -38,7 +38,6 @@ const ModalImage = styled.div`
 }
 .img-detail {
     text-align: center;
-    margin: 0;
 }
 `;
 
@@ -56,6 +55,7 @@ const ModalContent = styled.div`
 
     .header > .word-title {
         color: var(--red-color);
+        font-size: 40px;
     }
 
     .scroll-wrapper {
