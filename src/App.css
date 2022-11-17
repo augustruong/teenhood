@@ -49,7 +49,7 @@ body *{z-index: 1; }
   --font-body: 'M PLUS 2', sans-serif;
 }
 
-div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 15px; letter-spacing: 0.05em; font-weight: 500;}
+div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 15px; letter-spacing: 0.05em; font-weight: 400;}
 p { line-height: 225%;}
 a{ text-decoration: none; color: var(--brown-color); transition: all var(--transition-hover); }
 
@@ -187,7 +187,6 @@ button:hover {
 li { list-style-type: none; }
 ol,ul { list-style: none; }
 dl,dt,dd { margin: 0; padding: 0; }
-p { margin: 0 0 10px; padding: 0; text-align:left; }
 img {border: 0; line-height: 0; vertical-align: bottom;}
 hr { display: none; }
 table { margin: 0; padding: 0; }

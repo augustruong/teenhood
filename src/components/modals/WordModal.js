@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 
 import Carousel from 'react-elastic-carousel'
@@ -22,7 +22,6 @@ const ModalWrapper = styled.div`
     width: 90vw;
   }
 `;
-
 
 const ModalInner = styled.div`
   color: var(--brown-color);
@@ -78,7 +77,7 @@ const ModalContent = styled.div`
         background-color: #B4B4B4;
         border-radius: 100px;
       }
-    .scroll-wrapper > .word-defi {
+    .scroll-wrapper > .word-defi,.word-detail {
       margin-bottom: 15px;
     }
     .scroll-wrapper > .word-defi,.word-detail {
@@ -110,8 +109,10 @@ export default function WordModal(props) {
   {
     return el.word === props.word;
   });
-  var thisWord = getWord[0]
-  if (thisWord) {var thisImgArray = thisWord.img;}
+  var [thisWord,setThisWord] = useState(getWord[0]);
+  
+  if (thisWord) {var thisImgArray = thisWord.img}
+
 
   return (
     <>
@@ -155,13 +156,17 @@ export default function WordModal(props) {
               <span className='bold'>詳細</span>：
               <p style={{display:"inline"}} dangerouslySetInnerHTML={{__html: `${thisWord.detail}`}}></p>
             </div>
+            <div className='word-source' >
+              <span className='bold'>参考</span>：<br/>
+              <a href={thisWord.source} target='__blank' style={{display:"inline",textDecoration: "underline"}}>{thisWord.source}</a>
+            </div>
           </div>
           <div className='word-more flex-row'>
             <div>もっと知りたい</div>
             <div className='list flex-row'>
-              <div>性器</div>
-              <div>性器</div>
-              <div>性器</div>
+              <div>ニキビ</div>
+              <div>ニキビ</div>
+              <div>ニキビ</div>
             </div>
           </div>
         </ModalContent>
