@@ -37,6 +37,7 @@ const ModalImage = styled.div`
 }
 .img-detail {
     text-align: center;
+    color: var(--brown-color);
 }
 `;
 

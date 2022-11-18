@@ -40,3 +40,7 @@
 .rec.rec-arrow:hover:not(:disabled) {
     transform: scale(1.2);
 }
+
+.rec.rec-carousel {
+    height: 474px;
+}
