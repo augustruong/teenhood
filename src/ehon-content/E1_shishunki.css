@@ -1,11 +1,11 @@
-.e1.s1, .e1.s2, .e1.s3, .e1.s4 {
+.e1.s1, .e1.s2, .e1.s3, .e1.s4, .e1.s5, .e1.s6 {
     height: 100vh;
     width: calc(100% - 270px);
     position: relative;
 }
 
 .e1.s1 {background-color: #99D7F5;}
-.e1.s2, .e1.s3, .e1.s4 {background-color: #FFFFFF;}
+.e1.s2, .e1.s3, .e1.s4, .e1.s5, .e1.s6 {background-color: #FFFFFF;}
 
 /*-----------------------------------section 1------------------------------------*/
 
@@ -41,9 +41,9 @@
 .e1.s2 > .section-wrapper > .content > .title { margin-bottom: 70px; }
 
 /*-----------------------------------section 3------------------------------------*/
-.e1.s3 > .section-wrapper {padding-top: 6.5%;}
+.e1.s3 > .section-wrapper {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 .e1.s3 > .section-wrapper > img,button {display: block; margin: 0 auto;}
-.e1.s3 > .section-wrapper > .title { height: 42px; margin-bottom: 40px;}
+.e1.s3 > .section-wrapper > .title { margin-bottom: 40px;}
 
 .e1.s3 > .section-wrapper > .private-btn {width: 175px; margin-bottom: 30px;}
 .e1.s3 > .section-wrapper > .private-btn > img {width: 100%;}
@@ -101,14 +101,106 @@
 }
 
 .feature:hover > .icon { transform: scale(1.1); }
-
 .feature > .icon { width: 54px; }  
 
 /*-----------------------------------section 4------------------------------------*/
-.e1.s4 > .section-wrapper {padding-top: 6.5%;}
+.e1.s4 > .section-wrapper {position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%);}
 .e1.s4 > .section-wrapper > img {display: block; margin: 0 auto;}
-.e1.s4 > .section-wrapper > .title { height: 42px; margin-bottom: 40px;}
-.e1.s4 > .section-wrapper > .gaiseiki {width: 75%; margin: 0 auto;}
-.e1.s4 > .section-wrapper > .gaiseiki > .girls { justify-content: center; }
-.e1.s4 > .section-wrapper > .gaiseiki > .boys { justify-content: center; }
+.e1.s4 > .section-wrapper > .title { margin-bottom: 40px;}
+.e1.s4 > .section-wrapper > .gaiseiki {margin: 0 auto; justify-content: space-evenly;}
+.e1.s4 > .section-wrapper > .gaiseiki > .girls { text-align: center; }
+.e1.s4 > .section-wrapper > .gaiseiki > .boys { text-align: center; }
 
+/*-----------------------------------section 5------------------------------------*/
+.e1.s5 > .section-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+.e1.s5 > .section-wrapper > .title {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.e1.s5 > .section-wrapper > .img {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.e1.s5 > .section-wrapper > .infi-slider {
+    width: 100%;
+    display: flex;
+}
+
+.e1.s5 > .section-wrapper > .infi-slider > img {
+    animation: slide 30s linear infinite;
+    animation-delay: -30s;
+}
+
+.e1.s5 > .section-wrapper > .infi-slider > img:nth-child(2) {
+    animation: slide2 30s linear infinite;
+    animation-delay: -15s;
+}
+
+/*-----------------------------------section 6------------------------------------*/
+.e1.s6 > .section-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.e1.s6 > .section-wrapper > .img {
+    width: 90%;
+    margin-top: 5%;
+}
+
+/* leaf animations */
+#leaves {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#leaves i {
+    display: inline-block;
+    background: url("/images/ehon/e1_shishunki/s6_flower.png");
+    transform: skew(20deg);
+    z-index: 1;
+    animation: falling 5s 0s infinite;
+}
+
+#leaves i:nth-of-type(2n) { animation: falling 5s 0s infinite; }
+#leaves i:nth-of-type(3n) { animation: falling 5s 0s infinite; }
+
+#leaves i:nth-of-type(n)    { height:60px; width:60px; }
+#leaves i:nth-of-type(2n+1)    { height:90px; width:90px; }
+#leaves i:nth-of-type(3n+2)  { height:75px; width:75px; }
+
+#leaves i:nth-of-type(n)   { -webkit-animation-delay: 1.9s;}
+#leaves i:nth-of-type(2n)  { -webkit-animation-delay: 3.9s;}
+#leaves i:nth-of-type(3n)  { -webkit-animation-delay: 2.3s;}
+#leaves i:nth-of-type(4n)  { -webkit-animation-delay: 4.4s;}
+#leaves i:nth-of-type(5n)  { -webkit-animation-delay: 5s;  }
+#leaves i:nth-of-type(6n)  { -webkit-animation-delay: 3.5s;}
+#leaves i:nth-of-type(7n)  { -webkit-animation-delay: 2.8s;}
+#leaves i:nth-of-type(8n)  { -webkit-animation-delay: 1.5s;}
+#leaves i:nth-of-type(9n)  { -webkit-animation-delay: 3.3s;}
+#leaves i:nth-of-type(10n) { -webkit-animation-delay: 2.5s;}
+#leaves i:nth-of-type(11n) { -webkit-animation-delay: 1.2s;}
+#leaves i:nth-of-type(12n) { -webkit-animation-delay: 4.1s;}
+#leaves i:nth-of-type(13n) { -webkit-animation-delay: 1s;  }
+#leaves i:nth-of-type(14n) { -webkit-animation-delay: 4.7s;}
+#leaves i:nth-of-type(15n) { -webkit-animation-delay: 3s;  }
+
+#leaves i:nth-of-type(n)     {background: url("/images/ehon/e1_shishunki/s6_flower.png"); background-size: contain; background-repeat: no-repeat;}
+#leaves i:nth-of-type(2n+2)  {background: url("/images/ehon/e1_shishunki/s6_flower.png");background-size: contain; background-repeat: no-repeat;}
+#leaves i:nth-of-type(4n+1)  {background: url("/images/ehon/e1_shishunki/s6_flower.png");background-size: contain; background-repeat: no-repeat;}
+
+#leaves i:nth-of-type(n)    { opacity: 1;}
+#leaves i:nth-of-type(3n+1)  { opacity: .7;}
+#leaves i:nth-of-type(3n+2)  { opacity: .4;}
+
+#leaves i:nth-of-type(n)    {transform: rotate(180deg);}
+
+
+#leaves i:nth-of-type(n) { animation-timing-function:ease-in-out;}

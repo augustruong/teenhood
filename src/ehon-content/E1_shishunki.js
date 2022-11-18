@@ -121,13 +121,52 @@ export default function E1_shishunki(props) {
                             <div className='section-wrapper'>
                                 <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
                                 <div className='gaiseiki flex-row'>
-                                    <div className='flex-column girls'>
+                                    <div className='girls'>
                                         <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_onna-seiki.png`}/>
                                         <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_onna-seiki-close.png`}/>
                                     </div>
-                                    <div className='flex-column boys'>
+                                    <div className='boys'>
                                         <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_otoko-seiki.png`}/>
                                         <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_otoko-seiki-close.png`}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className='e1 s5'>
+                            <div className='section-wrapper'>
+                                <div className='infi-slider'>
+                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_vagina.png`}/>
+                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_vagina.png`}/>
+                                </div>
+                                <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
+                                <img className='img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_img.png`}/>
+
+                                <div className='infi-slider'>
+                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_penis.png`}/>
+                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_penis.png`}/>
+                                </div>
+                            </div>
+                        </section>
+                        <section className='e1 s6'>
+                            <div className='section-wrapper'>
+                                <img className='img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s6_img.png`}/>
+                                <div className='rt-container'>
+                                    <div id="leaves">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                        <i></i> 
                                     </div>
                                 </div>
                             </div>

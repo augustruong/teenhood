@@ -15,6 +15,14 @@
     50% { filter: opacity(100%); }
     100% { transform: perspective(200px) translateZ(200px); }
 }
+@keyframes slide {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+@keyframes slide2 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-200%);}
+}
 
 @keyframes kata0 {
     0%, 10%, 11%, 21%, 30%, 41%, 100% {
@@ -138,5 +146,51 @@
     100% {
         -webkit-transform: translate(0) rotate(6deg);
         transform: translate(0) rotate(6deg);
+    }
+}
+
+@keyframes falling {
+    
+    0% {
+        -webkit-transform:
+            translate3d(300,0,0)
+            rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(0px,700px,0)
+            rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@keyframes falling3 {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0)
+            rotate(-20deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-230px,640px,0)
+            rotate(-70deg);
+        opacity: 0;
+    }
+}
+
+@keyframes falling2 {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0)
+            rotate(90deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-400px,680px,0)
+            rotate(0deg);
+        opacity: 0;
     }
 }
