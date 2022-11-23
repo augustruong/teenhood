@@ -111,9 +111,6 @@ export default function WordModal(props) {
     return el.word === props.word;
   });
   var [thisWord,setThisWord] = useState(getWord[0]);
-  
-  if (thisWord) {var thisImgArray = thisWord.img}
-
 
   return (
     <>
@@ -125,15 +122,13 @@ export default function WordModal(props) {
             autoPlaySpeed={2000} 
             onNextEnd={({ index }) => {
                 clearTimeout(resetTimeout)
-                if (index + 1 === thisImgArray.length) {
-                    resetTimeout = setTimeout(() => {
-                      carouselRef.current.goTo(0)
-                  }, 2000) 
+                if (index + 1 === thisWord.img.length) {
+                  resetTimeout = setTimeout(() => {carouselRef.current.goTo(0)}, 2000) 
                 }
             }}
             itemsToShow={1}
         >
-            {thisImgArray.map((img) => (
+            {thisWord.img.map((img) => (
               <ModalImage>
                 <img className='modal-img' src={process.env.PUBLIC_URL + `/images/jisho/${img}.png`}/>
                 <p className='img-detail'>{`[ ${img} ]`}</p>
@@ -142,7 +137,7 @@ export default function WordModal(props) {
         </Carousel>
         <ModalContent>
           <div className='header'>
-            <h2 className='word-title'>{props.word}</h2>
+            <h2 className='word-title'>{thisWord.word}</h2>
             <div>
               <div className='word-yomi'>{thisWord.yomi}</div>
               <div className='word-eigo'>英: {thisWord.eigo}</div>
@@ -165,9 +160,14 @@ export default function WordModal(props) {
           <div className='word-more flex-row'>
             <div>もっと知りたい</div>
             <div className='list flex-row'>
-              <div>ニキビ</div>
-              <div>ニキビ</div>
-              <div>ニキビ</div>
+              {thisWord.related.map((word) => (
+                <div onClick={() => {
+                  var getWord = JishoData.filter(function (el){return el.word === word;});
+                  setThisWord(getWord[0])
+                }}>
+                  {word}
+                </div>
+              ))}
             </div>
           </div>
         </ModalContent>

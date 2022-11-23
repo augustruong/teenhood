@@ -64,6 +64,7 @@ export default function JishoPage() {
             <div className='letter'>た</div>
             <div className='wordList'>
               <div onClick={() => {setShowModal(!showModal); setWord("膣")}}>膣</div>
+              <div onClick={() => {setShowModal(!showModal); setWord("体毛")}}>体毛</div>
               <div onClick={() => {setShowModal(!showModal); setWord("中絶")}}>中絶</div>
             </div>
           </div>
@@ -75,7 +76,7 @@ export default function JishoPage() {
               <div onClick={() => {setShowModal(!showModal); setWord("ナプキン")}}>ナプキン</div>
               <div onClick={() => {setShowModal(!showModal); setWord("尿道")}}>尿道</div>
               <div onClick={() => {setShowModal(!showModal); setWord("乳房")}}>乳房</div> 
-              <div onClick={() => {setShowModal(!showModal); setWord("乳房")}}>妊娠</div>  
+              <div onClick={() => {setShowModal(!showModal); setWord("妊娠")}}>妊娠</div>  
 
             </div>
           </div>
