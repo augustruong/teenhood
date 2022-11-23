@@ -28,47 +28,72 @@ export default function E3_shasei(props) {
                         >
                             <section className='e3 s1'>
                                 <div className='section-wrapper flex-row'>
-                                    <Image className='img'
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
+                                    <Image className=''
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-1.png`}
                                         webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-1.png`} 
                                     />
-                                    <Image className='content'
+                                    <Image className=''
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-2.png`}
                                         webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-2.png `}
+                                    />
+                                    <Image className=''
+                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage1.png`}
+                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage1.png `}
+                                    />
+                                    <Image className=''
+                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage2.png`}
+                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage2.png`}
                                     />
                                 </div>
                             </section>
                             <section className='e3 s2'>
                                 <div className='section-wrapper flex-row'>
-                                    <Image classname='img'
+                                    {/* Double check title below */}
+                                    {/* <Image className=''
+                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title2.png`}
+                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title2.png `}
+                                    /> */}
+                                    <Image classname=''
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_otoko-naiseiki.png`}
                                         webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_otoko-naiseiki.png`}
                                     />
                                     <div className='content'>
-                                        {/* <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/> */}
                                         <p>テキストの配置 <br/>
-                                            という命令が出るようになります。<br/>
-                                            男の子は精巣から<span className='keyword'>「男性ホルモン」</span>、<br/>
-                                            女の子は卵巣から<span className='keyword'>「女性ホルモン」</span>。<br/>
-                                            ホルモンは、血液と一緒にからだ中にはこばれ、<br/>
-                                            みんなのからだを大人へと成長させます。
                                         </p>
                                     </div>
                                 </div>
                             </section>
                             <section className='e3 s3'>
                                 <div className='section-wrapper'>
-                                    <Image className='img'
+                                    {/* Image size reduced by 50% to display other content */}
+                                    <Image className='' style={{width: '50%'}}
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_musei.png`}
                                         webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_musei.png`} 
+                                    />
+                                    <div className='content'>
+                                        <p>テキストの配置 <br/>
+                                        </p>
+                                    </div>
+                                    <Image classname=''
+                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage3.png`}
+                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage3.png`}
                                     />
                                 </div>
                             </section>
                             <section className='e3 s4'>
                                 <div className='section-wrapper'>
-                                    <Image className='img'
+                                    <Image className='' style={{width: '50%'}}
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_jii.png`}
                                         webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_jii.png`} 
+                                    />
+                                    <div className='content'>
+                                        <p>テキストの配置 <br/>
+                                        </p>
+                                    </div>
+                                    <Image classname=''
+                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage4.png`}
+                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage4.png`}
                                     />
                                 </div>
                             </section>
