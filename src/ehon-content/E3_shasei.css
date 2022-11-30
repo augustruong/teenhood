@@ -2,23 +2,119 @@
     height: 100vh;
     width: calc(100% - 270px);
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.e3.s1 {background-color: #85BCFF;}
+.e3.s1 {background-color: #85BCFF; background-image: url(/images/ehon/e3_shasei/s1_topbg.png); background-position: top center;}
 .e3.s2 {background-color: #FFFFFF;}
+.e3.s3 {background-image: url(/images/ehon/e3_shasei/s3_musei.png);}
+.e3.s4 {background-image: url(/images/ehon/e3_shasei/s4_jii.png);}
+
+
 /*-----------------------------------section 1------------------------------------*/
-.e3.s1 > .section-wrapper {
-    position: absolute;
-    bottom: 0;
+.e3.s1 > .section-wrapper > .title {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 7%;
 }
 
-.e3.s1 > .section-wrapper > .img-content1 {
-} 
+.e3.s1 > .section-wrapper > img {
+    display: block;
+}
+.e3.s1 > .section-wrapper > .s1_shasei1 {
+    position: absolute;
+    bottom: -10px;
+    left: 8%;
+    width: 20%;
 
+}
+.e3.s1 > .section-wrapper > .s1_shasei2 {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 30%;
+    z-index: 11;
+}
+
+.e3.s1 > .section-wrapper > .note-wrapper.n1 {
+    position: absolute;
+    top: 34%;
+    left: 28%;
+}
+.e3.s1 > .section-wrapper > .note-wrapper.n1 > .stamp {
+    top: -35%;
+    left: -10%;
+    width: 20%;
+}
+
+.e3.s1 > .section-wrapper > .note-wrapper.n2 {
+    position: absolute;
+    top: 54%;
+    right: 30%;
+}
+.e3.s1 > .section-wrapper > .note-wrapper.n2 > .stamp {
+    top: -35%;
+    right: -10%;
+    width: 20%;
+}
 
 /*-----------------------------------section 2------------------------------------*/
+.e3.s2 > .section-wrapper {
+    align-items: center;
+    padding-top: 10%;
+}
+.e3.s2 > .section-wrapper > .title {
+    margin-bottom: 5%;
+}
+.e3.s2 > .section-wrapper > .s2_naiseiki {
+    width: 30%;
+}
 
 /*-----------------------------------section 3------------------------------------*/
+.e3.s3 > .section-wrapper > .title {
+    position: absolute;
+    left: 56%;
+    top: 10%;
+}
+.e3.s3 > .section-wrapper > .content {
+    position: absolute;
+    left: 56%;
+    top: 20%;
+}
+.e3.s3 > .section-wrapper > .note-wrapper {
+    position: absolute;
+    bottom: 7%;
+    right: 20%;
+}
+.e3.s3 > .section-wrapper > .note-wrapper > .stamp {
+    top: -35%;
+    left: -20%;
+    /* width: 20%; */
+}
 
 
 /*-----------------------------------section 4------------------------------------*/
+.e3.s4 > .section-wrapper > .title {
+    position: absolute;
+    left: 12%;
+    top: 22%;
+}
+.e3.s4 > .section-wrapper > .content {
+    position: absolute;
+    left: 12%;
+    top: 32%;
+    background-color: #FFFFFF;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+.e3.s4 > .section-wrapper > .note-wrapper {
+    position: absolute;
+    bottom: 18%;
+    left: 16%;
+}
+.e3.s4 > .section-wrapper > .note-wrapper > .stamp {
+    top: -35%;
+    left: -20%;
+    /* width: 20%; */
+}

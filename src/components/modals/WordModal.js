@@ -144,18 +144,24 @@ export default function WordModal(props) {
             </div>
           </div>
           <div className='scroll-wrapper'>
+            { thisWord.defi &&
             <div className='word-defi'>
               <span className='bold'>定義</span>：
               <p style={{display:"inline"}} dangerouslySetInnerHTML={{__html: `${thisWord.defi}`}}></p>
             </div>
+            }
+            { thisWord.detail &&
             <div className='word-detail' >
               <span className='bold'>詳細</span>：
               <p style={{display:"inline"}} dangerouslySetInnerHTML={{__html: `${thisWord.detail}`}}></p>
             </div>
+            }
+            { thisWord.source &&
             <div className='word-source' >
               <span className='bold'>参考</span>：<br/>
               <a href={thisWord.source} target='__blank' style={{display:"inline",textDecoration: "underline"}}>{thisWord.source}</a>
             </div>
+            }
           </div>
           <div className='word-more flex-row'>
             <div>もっと知りたい</div>

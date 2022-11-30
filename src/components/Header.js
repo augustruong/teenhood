@@ -31,7 +31,7 @@ export default function NavWrapper(props) {
 
             <ChatBox />  
 
-            <div id='menu-btn' className={showNav ? 'check' : ''} onClick={() => setShowNav(!showNav)}>
+            <div id='menu-btn' className={showNav ? 'checked' : ''} onClick={() => setShowNav(!showNav)}>
                 <span className='line line1'></span>
                 <span className='line line2'></span>
                 <span className='line line3'></span>

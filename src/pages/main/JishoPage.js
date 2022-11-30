@@ -110,7 +110,6 @@ export default function JishoPage() {
               <div onClick={() => {setShowModal(!showModal); setWord("卵管")}}>卵管</div>
               <div onClick={() => {setShowModal(!showModal); setWord("卵巣")}}>卵巣</div>
               <div onClick={() => {setShowModal(!showModal); setWord("卵子")}}>卵子</div>
-              <div onClick={() => {setShowModal(!showModal); setWord("恋愛")}}>恋愛</div>
             </div>
           </div>
           <div className='wordList-wrapper'>
