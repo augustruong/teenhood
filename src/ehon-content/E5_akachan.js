@@ -41,9 +41,8 @@ export default function E5_akachan(props) {
                                     <div className='groupItem'>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item.svg`}/>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item1.svg`}/>
-                                        <Image className=''
-                                            src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-growing.png`}
-                                            webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-growing.png`} 
+                                        <img className=''
+                                            src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/i-growing.svg`}
 
                                         />
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item1_description.svg`}/>
@@ -51,9 +50,8 @@ export default function E5_akachan(props) {
                                     <div className='groupItem'>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item.svg`}/>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item2.svg`}/>
-                                        <Image className=''
-                                            src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-sex.png`}
-                                            webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-sex.png`} 
+                                        <img className=''
+                                            src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/i-sex.svg`}
 
                                         />
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item2_description.svg`}/>
@@ -61,18 +59,16 @@ export default function E5_akachan(props) {
                                     <div className='groupItem'>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item.svg`}/>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item3.svg`}/>
-                                        <Image className=''
-                                            src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-pregnant.png`}
-                                            webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-pregnant.png`} 
+                                        <img className=''
+                                            src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/i-pregnant.svg`}
                                         />
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item3_description.svg`}/>
                                     </div>
                                     <div className='groupItem'>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item.svg`}/>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item4.svg`}/>
-                                        <Image className=''
-                                            src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-birth.png`}
-                                            webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/i-birth.png`} 
+                                        <img className=''
+                                            src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/i-birth.svg`}
                                         />
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_item4_description.svg`}/>
                                     </div>
@@ -86,14 +82,12 @@ export default function E5_akachan(props) {
                                     <div className='group'>
                                         <Image className=''
                                             src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_gekkei.png`}
-                                            webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_gekkei.png`} 
                                         />
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_content1.svg`}/>
                                     </div>
                                     <div className='group'>
                                         <Image className=''
                                             src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_shasei.png`}
-                                            webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_shasei.png`} 
                                         />
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_content2.svg`}/>
                                     </div>
