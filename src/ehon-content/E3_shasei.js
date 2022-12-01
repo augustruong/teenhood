@@ -27,74 +27,79 @@ export default function E3_shasei(props) {
                             onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
                         >
                             <section className='e3 s1'>
-                                <div className='section-wrapper flex-row'>
-                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
-                                    <Image className=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-1.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-1.png`} 
+                                <div className='section-wrapper'>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.svg`}/>
+                                    <img className='s1_shasei1'
+                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei1.png`}
                                     />
-                                    <Image className=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-2.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei-2.png `}
+                                    <img className='s1_shasei2'
+                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei2.png`}
                                     />
-                                    <Image className=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage1.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage1.png `}
-                                    />
-                                    <Image className=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage2.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage2.png`}
-                                    />
+                                    <div className='note-wrapper n1'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-とは.svg`}/>
+                                        <p className='note'>
+                                        <span className='keyword'>精子がまざった精液が出ること。</span><br/>
+                                        精巣でつくられた精子は、ぼっきしたペニスをとおってから、<br/>からだの外へとびだす。白くて少しねばりけがある。
+                                        </p>
+                                    </div>
+                                    <div className='note-wrapper n2'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-いつ.svg`}/>
+                                        <p className='note'>
+                                        初めての射精は<span className='keyword'>「精通」</span>という。<br/>
+                                        精通は11歳ぐらいからありますが、人によって早いとか遅いとか<br/>心配はいらない。
+                                        </p>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e3 s2'>
-                                <div className='section-wrapper flex-row'>
-                                    {/* Double check title below */}
-                                    {/* <Image className=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title2.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title2.png `}
-                                    /> */}
-                                    <Image classname=''
+                                <div className='section-wrapper flex-column'>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
+                                    <img classname='s2_naiseiki'
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_otoko-naiseiki.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_otoko-naiseiki.png`}
                                     />
-                                    <div className='content'>
-                                        <p>テキストの配置 <br/>
-                                        </p>
-                                    </div>
                                 </div>
                             </section>
                             <section className='e3 s3'>
                                 <div className='section-wrapper'>
-                                    {/* Image size reduced by 50% to display other content */}
-                                    <Image className='' style={{width: '50%'}}
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_musei.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_musei.png`} 
-                                    />
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
+
                                     <div className='content'>
-                                        <p>テキストの配置 <br/>
+                                        <p> <span className='keyword'>ねむっている間に射精をすること。</span><br/>
+                                            たいていは夢を見ているで、<span className='keyword'>「夢精」</span>という。<br/>
+                                            朝おきてパンツがぬるいている。<br/>
+                                            また、朝おきるまえに、ときどき<span className='keyword'>「朝立ち」</span><br/>
+                                            といって、ペニスがぼっきすることがある。<br/>
+                                            これは、元気な男の子ならだれにもあること。<br/>
+                                            おしっこをすれば、ペニスはすぐ小さくなる。
                                         </p>
                                     </div>
-                                    <Image classname=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage3.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage3.png`}
-                                    />
+
+                                    <div className='note-wrapper'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
+                                        <p className='note'>
+                                            すぐ下着をとりかえして、<br/>自分であらいましょう。
+                                        </p>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e3 s4'>
                                 <div className='section-wrapper'>
-                                    <Image className='' style={{width: '50%'}}
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_jii.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_jii.png`} 
-                                    />
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
+
                                     <div className='content'>
-                                        <p>テキストの配置 <br/>
+                                        <p> <span className='keyword'>「自分の性器をさわっているうちに、いいきもちになること」</span><br/>
+                                            マスタベーション、オナニーともいう。<br/>
+                                            自慰は男女ともに、自分のからだを自分で愛し、自然な行為だ。<br/>
+                                            自慰をするかしないかは、自分で決めること。
                                         </p>
                                     </div>
-                                    <Image classname=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage4.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_contentMessage4.png`}
-                                    />
+
+                                    <div className='note-wrapper'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
+                                        <p className='note'>
+                                            自慰をしすぎると頭が悪く<br/>なるなんて、そんなこと<br/>は絶対にありませんよ。
+                                        </p>
+                                    </div>
                                 </div>
                             </section>
                         </ReactPageScroller>

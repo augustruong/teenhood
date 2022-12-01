@@ -22,9 +22,9 @@
 #header > #menu-btn > .line3 { top: 100%; transform: translateY(-100%); }
 
 #header > #menu-btn:hover { cursor: pointer; }
-#header > #menu-btn.check .line1 { top: 50%; transform: translate(0, -50%) rotate(45deg); }
-#header > #menu-btn.check .line2 { width: 0; opacity: 0; }
-#header > #menu-btn.check .line3 { top: 50%; transform: translate(0, -50%) rotate(-45deg); }
+#header > #menu-btn.checked .line1 { top: 50%; transform: translate(0, -50%) rotate(45deg); }
+#header > #menu-btn.checked .line2 { width: 0; opacity: 0; }
+#header > #menu-btn.checked .line3 { top: 50%; transform: translate(0, -50%) rotate(-45deg); }
 
 .nav {
     position: fixed;

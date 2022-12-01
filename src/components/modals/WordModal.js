@@ -111,9 +111,6 @@ export default function WordModal(props) {
     return el.word === props.word;
   });
   var [thisWord,setThisWord] = useState(getWord[0]);
-  
-  if (thisWord) {var thisImgArray = thisWord.img}
-
 
   return (
     <>
@@ -125,15 +122,13 @@ export default function WordModal(props) {
             autoPlaySpeed={2000} 
             onNextEnd={({ index }) => {
                 clearTimeout(resetTimeout)
-                if (index + 1 === thisImgArray.length) {
-                    resetTimeout = setTimeout(() => {
-                      carouselRef.current.goTo(0)
-                  }, 2000) 
+                if (index + 1 === thisWord.img.length) {
+                  resetTimeout = setTimeout(() => {carouselRef.current.goTo(0)}, 2000) 
                 }
             }}
             itemsToShow={1}
         >
-            {thisImgArray.map((img) => (
+            {thisWord.img.map((img) => (
               <ModalImage>
                 <img className='modal-img' src={process.env.PUBLIC_URL + `/images/jisho/${img}.png`}/>
                 <p className='img-detail'>{`[ ${img} ]`}</p>
@@ -142,32 +137,43 @@ export default function WordModal(props) {
         </Carousel>
         <ModalContent>
           <div className='header'>
-            <h2 className='word-title'>{props.word}</h2>
+            <h2 className='word-title'>{thisWord.word}</h2>
             <div>
               <div className='word-yomi'>{thisWord.yomi}</div>
               <div className='word-eigo'>英: {thisWord.eigo}</div>
             </div>
           </div>
           <div className='scroll-wrapper'>
+            { thisWord.defi &&
             <div className='word-defi'>
               <span className='bold'>定義</span>：
               <p style={{display:"inline"}} dangerouslySetInnerHTML={{__html: `${thisWord.defi}`}}></p>
             </div>
+            }
+            { thisWord.detail &&
             <div className='word-detail' >
               <span className='bold'>詳細</span>：
               <p style={{display:"inline"}} dangerouslySetInnerHTML={{__html: `${thisWord.detail}`}}></p>
             </div>
+            }
+            { thisWord.source &&
             <div className='word-source' >
               <span className='bold'>参考</span>：<br/>
               <a href={thisWord.source} target='__blank' style={{display:"inline",textDecoration: "underline"}}>{thisWord.source}</a>
             </div>
+            }
           </div>
           <div className='word-more flex-row'>
             <div>もっと知りたい</div>
             <div className='list flex-row'>
-              <div>ニキビ</div>
-              <div>ニキビ</div>
-              <div>ニキビ</div>
+              {thisWord.related.map((word) => (
+                <div onClick={() => {
+                  var getWord = JishoData.filter(function (el){return el.word === word;});
+                  setThisWord(getWord[0])
+                }}>
+                  {word}
+                </div>
+              ))}
             </div>
           </div>
         </ModalContent>
