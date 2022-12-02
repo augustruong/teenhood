@@ -59,9 +59,8 @@ export default function E2_gekkei(props) {
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
                                     <div className='slider-wrapper'>
-                                        <div className='slider-img-wrapper'>
-                                            <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_gekkei-${s3Page}.png`}/>
-                                        </div>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_gekkei-${s3Page}.png`}/>
+                                        
                                         <div className='slider-content-wrapper'>
                                             <div className='pagination'>
                                                 <div className={s3Page===1 ? 'pagination-item active' : 'pagination-item'} onClick={() => setS3Page(1)}>1</div>

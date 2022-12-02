@@ -258,7 +258,7 @@ textarea {
   position: fixed;
   top: 0; 
   mix-blend-mode: overlay;
-  opacity: .2;
+  opacity: .25;
   width: 100%;
   z-index: 1000;
   overflow: visible;
