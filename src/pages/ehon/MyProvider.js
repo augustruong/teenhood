@@ -4,7 +4,7 @@ import React from 'react'
 export const MContext = React.createContext();
 export default class MyProvider extends React.Component {
     state = {currentPage: 0};
-    visited = {visitedPage: [false, false, false, false, false, false, false, false, false]};
+    visited = {visitedPage: [false, false, false, false, false, false]};
     render() {
         return (
             <MContext.Provider value = {

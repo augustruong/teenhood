@@ -19,7 +19,6 @@ export default function PartList(props) {
                         <MContext.Consumer>
                             {(context) => (
                                 <div className='child-title-wrapper'>
-                                    {console.log(context.visited.visitedPage)}
                                     <div className={context.visited.visitedPage[child.index] === true ? 'check after' : 'check before'}></div>
                                     <a
                                         key={child}  
