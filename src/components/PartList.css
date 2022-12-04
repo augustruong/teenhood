@@ -38,12 +38,22 @@
     transition: background-color 1000ms linear;
 }
 
-.check::before {
+.check.before {
     content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
     border: 2px solid var(--grey-color);
     border-radius: 50px;
+}
+
+.check.after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50px;
+    background-color: red;
 }
 

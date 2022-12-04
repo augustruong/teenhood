@@ -25,6 +25,8 @@ export default function E3_shasei(props) {
                             customPageNumber={context.state.currentPage}
                             renderAllPagesOnFirstRender={true}
                             onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
+                            pageOnChange={(number) => {context.visitedCurrentPage(number)}}
+
                         >
                             <section className='e3 s1'>
                                 <div className='section-wrapper'>

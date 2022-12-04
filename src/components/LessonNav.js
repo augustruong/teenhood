@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PartList from './PartList';
 import WordList from './WordList';
+import { MContext } from '../pages/ehon/MyProvider';
 
 
 import EhonData from '../data/EhonData.json'
@@ -18,7 +19,12 @@ export default function LessonNav(props) {
                 <h4 className='title'>{thisLesson.title}</h4>
                 <div className='progress-wrapper'>
                     <div className='progress-bar'></div>
-                    <div className='progress-status' style={{fontSize: 12}}>% COMPLETE</div>
+                    <MContext.Consumer>
+                        {(context) => (
+                            
+                            <div className='progress-status' style={{fontSize: 12}}>{(context.visited.visitedPage.filter(x => x == true).length / context.visited.visitedPage.length * 100).toFixed(0)}% COMPLETE</div>
+                        )}
+                    </MContext.Consumer>
                 </div>
                 <div className='method-wrapper'>
                     <NavLink to={`/ehon/${thisLesson.lessonId}/content`} ><button className={props.method === 'ehon' ? 'method-icon ehon small active' : 'method-icon ehon small'}>絵</button></NavLink>

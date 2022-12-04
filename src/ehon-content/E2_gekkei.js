@@ -26,7 +26,9 @@ export default function E2_gekkei(props) {
                         <ReactPageScroller 
                             customPageNumber={context.state.currentPage}
                             renderAllPagesOnFirstRender={true}
-                            onBeforePageScroll={(number) => {context.setCurrentPage(number)}}>
+                            onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
+                            pageOnChange={(number) => {context.visitedCurrentPage(number)}}
+                        >
                             <section className='e2 s1'>
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.svg`}/>
