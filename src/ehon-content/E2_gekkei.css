@@ -88,6 +88,9 @@
     gap: 100px;
     justify-content: center;
 }
+.slider-wrapper > img {
+    width: 30%;
+}
 
 .slider-content-wrapper > .pagination {
     margin-top: 30%;

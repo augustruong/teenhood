@@ -7,7 +7,7 @@ import '../Carousel.css'
 import JishoData from '../../data/JishoData.json'
 
 const ModalWrapper = styled.div`
-  width: 880px;
+  width: 980px;
   height: 540px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.07);
   background: #FFFFFF;
@@ -16,7 +16,7 @@ const ModalWrapper = styled.div`
   z-index: 100;
   border-radius: 20px;
   text-align: center;
-  padding: 30px 30px;
+  padding: 30px 25px 20px 25px;
   margin: 0 auto;
   @media screen and (max-width: 824px) {
     width: 90vw;
@@ -31,8 +31,8 @@ const ModalInner = styled.div`
 
 const ModalImage = styled.div`
 .modal-img {
-    width: 440px;
-    height: 440px;
+    width: 430px;
+    height: 430px;
     border-radius: 15px;
 }
 .img-detail {
@@ -45,6 +45,7 @@ const ModalContent = styled.div`
     margin-left: 35px;
     text-align: left;
     width: 100%;
+    flex-basis: 74%;
 
     .header {
         display: flex;

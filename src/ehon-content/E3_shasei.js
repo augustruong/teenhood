@@ -76,6 +76,8 @@ export default function E3_shasei(props) {
                                         </p>
                                     </div>
 
+                                    <img className='s3_kiss' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_kiss.png`}/>
+
                                     <div className='note-wrapper'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
                                         <p className='note'>
@@ -84,9 +86,28 @@ export default function E3_shasei(props) {
                                     </div>
                                 </div>
                             </section>
+
                             <section className='e3 s4'>
+                                <div className='section-wrapper flex-row'>
+                                    <div className='content-wrapper'>
+                                        <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
+                                        <div className='content'>
+                                            <p>
+                                            エッチなものを見たり想像したりすると、<br/>
+                                            <span className='keyword'>★</span>じるしのあっちこっちから命令が出て、<br/>
+                                            <span className='keyword'>ペニスの中に血液がどっと流れ込む。</span><br/>
+                                            それで、かたく大きくなって立つわけだ。<br/>
+                                            これは<span className='keyword'>「ぼっき」</span>というんだ。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <img className='s4_bokki' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_bokki.png`}/>
+                                </div>
+                            </section>
+
+                            <section className='e3 s5'>
                                 <div className='section-wrapper'>
-                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
 
                                     <div className='content'>
                                         <p> <span className='keyword'>「自分の性器をさわっているうちに、いいきもちになること」</span><br/>
@@ -95,6 +116,7 @@ export default function E3_shasei(props) {
                                             自慰をするかしないかは、自分で決めること。
                                         </p>
                                     </div>
+                                    <img className='s5_moon' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_moon.png`}/>
 
                                     <div className='note-wrapper'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
