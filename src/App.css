@@ -70,6 +70,15 @@ h4 { font-size: 15px; }
   font-weight: 600;
 }
 
+.block-msg {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 9;
+  box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
 /*-----------------------------------BUTTON------------------------------------*/
 button {
   padding: 12px 34px;

@@ -1,0 +1,130 @@
+.e6.s1, .e6.s2, .e6.s3, .e6.s4, .e6.s5, .e6.s6 {
+    height: 100vh;
+    width: calc(100% - 270px);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.e6.s1,.e6.s4 {background-color: #DFD6FF;}
+.e6.s2 {background-color: #CBC7F5;}
+.e6.s3 {background-color: #EEE9FF;}
+.e6.s5, .e6.s6 {background-color: #5C5491;}
+
+/*-----------------------------------section 1------------------------------------*/
+
+.e6.s1 > .section-wrapper > .s1_hinin {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+.e6.s1 > .section-wrapper > .block-msg {
+    margin: 0 auto;
+}
+
+/*-----------------------------------section 2------------------------------------*/
+.e6.s2 > .section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-54%);
+}
+.e6.s2 > .section-wrapper > .content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-top: 80px;
+}
+.e6.s2 > .section-wrapper > .content > .alert-wrapper {
+    text-align: center;
+}
+/*-----------------------------------section 3------------------------------------*/
+.e6.s3 > .section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.e6.s3 > .section-wrapper > .content {
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+.e6.s3 > .section-wrapper > .note-wrapper > .stamp {
+    margin-left: -20px;
+
+}
+.e6.s3 > .section-wrapper > .note-wrapper > .note {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+/*-----------------------------------section 4------------------------------------*/
+.e6.s4 > .section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.e6.s4 > .section-wrapper > .title {
+    margin-bottom: 50px;
+}
+/*-----------------------------------section 5------------------------------------*/
+.e6.s5 > .section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    gap: 20px;
+}
+
+.kinkyuu-tag {
+    background: #7AFFE7;
+    border-radius: 50px;
+    padding: 5px 10px 5px 20px;
+    font-weight: 700;
+}
+.e6.s5 > .section-wrapper > .content {
+    gap: 20px;
+}
+.e6.s5 > .section-wrapper > .content > .box {
+    gap: 10px;
+    width: 430px;
+    text-align: center;
+}
+.e6.s5 > .section-wrapper > .content .box > .box-content {
+    background-color: #C4B4DE;
+    border-radius: 30px;
+    padding: 60px 12px 12px 12px;
+    width: 430px;
+    margin-top: -50px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.e6.s5 > .section-wrapper > .content > .box > img {
+    z-index: 100;
+    width: 150px;
+}
+/*-----------------------------------section 6------------------------------------*/
+.e6.s6 > .section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.e6.s6 > .section-wrapper > img {
+    width: 70%;
+}
+.e6.s6 > .section-wrapper > .note-wrapper > .stamp {
+    margin-top: -20px;
+    margin-left: -60px;
+}

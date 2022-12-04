@@ -71,7 +71,7 @@ export default function E5_akachan(props) {
                                                 <div class="shadow"></div>
                                             </div>
                                             <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/i-female.svg`}/>
-                                            <p className='e5_note'>
+                                            <p className='block-msg'>
                                                 8~13歳で女性の<span className='keyword'>月経（生理）</span><br/>がはじまるおよそ月に一度卵巣<br/>から出てきた卵子
                                             </p>
                                         </div>
@@ -81,7 +81,7 @@ export default function E5_akachan(props) {
                                                 <div class="shadow"></div>
                                             </div>
                                             <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/i-male.svg`}/>
-                                            <p className='e5_note'>
+                                            <p className='block-msg'>
                                                 12~16歳で男性は精巣で<br/>精子が作られ始める<span className='keyword'>射精</span><br/>の時精液が外へ出てくる
                                             </p>
                                         </div>
@@ -94,7 +94,7 @@ export default function E5_akachan(props) {
                                     <img className='stage' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
                                     <img className='title' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/sticker-性交.svg`}/>
                                     <div className='box-content flex-row'></div>
-                                    <p className='e5_note'> 
+                                    <p className='block-msg'> 
                                         <span className='keyword'>性交している二人</span><br/>ペニスからちつへ精液を送る、精子はちつを通って<br/>子宮に入る卵子に引き寄せられる
                                     </p>
                                 </div>
@@ -121,7 +121,7 @@ export default function E5_akachan(props) {
                                             <img className='img-desc' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_image2_description.svg`}/>
                                         </div>
                                     </div>
-                                    <p className='e5_note'> 
+                                    <p className='block-msg'> 
                                         <span className='keyword'>精子と卵子が出会う</span>ことでできる<br/>
                                         子宮で必要なえいようをもらってからだ発達していく<br/>
                                         <span className='keyword'>胎児は約９か月</span>かけて生まれる準備する
@@ -134,7 +134,7 @@ export default function E5_akachan(props) {
                                     <img className='stage' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s6_title.svg`}/>
                                     <img className='title' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/sticker-生産.svg`}/>
                                     <div className='box-content flex-row'></div>
-                                    <p className='e5_note'>赤ちゃんが生まれてくる</p>
+                                    <p className='block-msg'>赤ちゃんが生まれてくる</p>
                                 </div>
                             </section>
                         </ReactPageScroller>
