@@ -24,6 +24,7 @@ export default function E6_hinin(props) {
                             customPageNumber={context.state.currentPage}
                             renderAllPagesOnFirstRender={true}
                             onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
+                            pageOnChange={(number) => {context.visitedCurrentPage(number)}}
                         >
                             <section className='e6 s1'>
                                 <div className='section-wrapper'>

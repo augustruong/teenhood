@@ -18,8 +18,9 @@ export default function PartList(props) {
                     {item.child.map((child) => (
                         <MContext.Consumer>
                             {(context) => (
-                                <div className='child-title-wrapper' >
-                                    <div className='check'></div>
+                                <div className='child-title-wrapper'>
+                                    {console.log(context.visited.visitedPage)}
+                                    <div className={context.visited.visitedPage[child.index] === true ? 'check after' : 'check before'}></div>
                                     <a
                                         key={child}  
                                         // href='#/ehon/e1_shishunki/content'

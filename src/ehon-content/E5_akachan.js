@@ -25,6 +25,7 @@ export default function E5_akachan(props) {
                             customPageNumber={context.state.currentPage}
                             renderAllPagesOnFirstRender={true}
                             onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
+                            pageOnChange={(number) => {context.visitedCurrentPage(number)}}
                         >
                             <section className='e5 s1'>
                                 <div className='section-wrapper flex-row'>

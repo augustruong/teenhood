@@ -26,6 +26,7 @@ export default function E1_shishunki(props) {
                         customPageNumber={context.state.currentPage}
                         renderAllPagesOnFirstRender={true}
                         onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
+                        pageOnChange={(number) => {context.visitedCurrentPage(number)}}
                     >
                         <section className='e1 s1'>
                             <div className='section-wrapper flex-row'>
