@@ -6,7 +6,7 @@ export default function QuestionSet(props) {
     return (
     <div className='nayami-set'>
         <div className='nayami-question-wrapper'　onClick={() => setShowAnswer(!showAnswer)}>
-            <div className='nayami-question'>{props.question}</div>
+            <div className={showAnswer ? 'nayami-question active' : 'nayami-question'}>{props.question}</div>
             {!showAnswer && 
                 <div className='toggle-icon' onClick={() => setShowAnswer(!showAnswer)}>✙</div>
             }

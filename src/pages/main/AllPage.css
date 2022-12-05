@@ -1,12 +1,16 @@
 #ehon-page { background-color: #FFFBFB; }
-#jisho-page { background-color: #F8FCFF; }
-#nayami-page { background-color: #F9FEF8; }
+#jisho-page {  background-color: #F8FCFF; }
+#nayami-page { height: 100vh; background-color: #F9FEF8; }
 
 #ehon-page>.header-section, 
 #jisho-page>.header-section, 
 #nayami-page>.header-section {
     text-align: center;
     padding: 100px 0 50px 0;
+    width: 100%;
+}
+#nayami-page>.header-section {
+    position: fixed;
 }
 
 
@@ -45,3 +49,8 @@
 }
 
 /*------------------------------------NayamiPage-----------------------------------*/
+#nayami-page > .nayamiList-section {
+    height: 70vh;
+    bottom: 0;
+    position: absolute;
+}

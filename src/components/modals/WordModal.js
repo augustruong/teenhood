@@ -105,7 +105,7 @@ const ModalContent = styled.div`
 
 export default function WordModal(props) {
   let resetTimeout;
-  const carouselRef = useRef(null);
+  const carouselRef = useRef();
   const modalRef = useRef();
   var getWord = JishoData.filter(function (el)
   {
