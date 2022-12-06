@@ -1,0 +1,58 @@
+[
+    {
+        "name" : "梅毒",
+        "intro" : "世紀をまたいで返り咲いた隠密集団、無限増殖中！",
+        "time" : "約1ヶ月",
+        "via" : ["i-sex","i-butt","i-oral","i-kiss"],
+        "method" : "感染した部分と粘膜や皮膚が直接接触をしないよう、<span className='keyword'>コンドーム</span>を使用することが有効。ただし、コンドームが覆わない部分の皮膚などでも感染がおこる可能性があるため、コンドームを使用しても、100％予防できるとは言えない。",
+        "symptom" : ""
+    },
+    {
+        "name" : "性器クラミジア感染症",
+        "intro" : "国内最多の性感染症。特にティーンに流行中！",
+        "time" : "1〜4週間",
+        "via" : ["i-sex","i-butt","i-oral"],
+        "method" : "<span className='keyword'>コンドーム</span>を使って感染予防をするのが有効。",
+        "symptom" : ""
+    },
+    {
+        "name" : "淋菌感染症",
+        "intro" : "ペニスをいたぶる、トラブルメーカー！",
+        "time" : "2〜7日",
+        "via" : ["i-sex","i-butt","i-oral","i-parent"],
+        "method" : "<span className='keyword'>コンドーム</span>を使って感染予防をするのが有効。",
+        "symptom" : ""
+    },
+    {
+        "name" : "性器ヘルペスウイルス感染症",
+        "intro" : "性病界のコバンザメ",
+        "time" : "3〜7日",
+        "via" : ["i-sex","i-butt","i-oral"],
+        "method" : "<span className='keyword'>コンドーム</span>を使って感染予防をするのが有効。",
+        "symptom" : ""
+    },
+    {
+        "name" : "尖圭コンジローマ",
+        "intro" : "イボにウイルス詰め込みました",
+        "time" : "数週間〜3ヶ月",
+        "via" : ["i-sex","i-butt","i-oral"],
+        "method" : "<span className='keyword'>コンドーム</span>を使って感染予防をするのが有効。",
+        "symptom" : ""
+    },
+    {
+        "name" : "トリコモナス症",
+        "intro" : "異常なおりもの、ゲンチュウ注意！",
+        "time" : "1〜3週間",
+        "via" : ["i-sex","i-butt","i-oral","i-pantsu"],
+        "method" : "<span className='keyword'>コンドーム</span>を使って感染予防をするのが有効。",
+        "symptom" : ""
+    },
+    {
+        "name" : "HIV感染症・エイズ",
+        "intro" : "知らないから怖い？謎多きその正体やいかに！",
+        "time" : "数年〜10数年",
+        "via" : ["i-sex","i-butt","i-oral","i-parent","i-injection"],
+        "method" : "<span className='keyword'>コンドーム</span>を使う。<span className='keyword'>注射器具</span>の使い回しをしない。",
+        "symptom" : ""
+    }
+]

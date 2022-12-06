@@ -114,7 +114,6 @@ export default function WordModal(props) {
   var [thisWord,setThisWord] = useState(getWord[0]);
 
   return (
-    <>
     <ModalWrapper>
       <ModalInner>
         <Carousel
@@ -180,6 +179,5 @@ export default function WordModal(props) {
         </ModalContent>
       </ModalInner>
     </ModalWrapper>
-    </>
   );
 };

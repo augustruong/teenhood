@@ -1,6 +1,8 @@
 import React from 'react'
+import styled from 'styled-components';
 
 import { MContext } from '../module/MyProvider';
+import { BsCheckCircleFill } from 'react-icons/bs';
 
 import EhonData from '../data/EhonData.json'
 
@@ -19,7 +21,7 @@ export default function PartList(props) {
                         <MContext.Consumer>
                             {(context) => (
                                 <div className='child-title-wrapper'>
-                                    <div className={context.visited.visitedPage[child.index] === true ? 'check after' : 'check before'}></div>
+                                    <BsCheckCircleFill className={context.visited.visitedPage[child.index] === true ? 'check after' : 'check before'}/>
                                     <a
                                         key={child}  
                                         // href='#/ehon/e1_shishunki/content'

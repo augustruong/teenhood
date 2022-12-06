@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
 import Image from 'react-image-webp';
+import VirusModal from '../components/modals/VirusModal';
 import { MContext } from '../module/MyProvider';
 
 import EhonData from '../data/EhonData.json'
@@ -20,6 +21,12 @@ export default function E7_std(props){
                         // customPageNumber={context.state.currentPage}
                         // onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
                             >
+                            <section className='e7 s2'>
+                                <div className='section-wrapper'>
+                                    <VirusModal index={0}/>
+
+                                </div>
+                            </section>  
                             <section className='e7 s1'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.png`}/>
@@ -67,11 +74,7 @@ export default function E7_std(props){
                                 
                                
                             </section>   
-                            <section className='e7 s2'>
-                                <div className='section-wrapper flex-column'>
-                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.png`}/>
-                                </div>
-                            </section>   
+                             
               
 
 
