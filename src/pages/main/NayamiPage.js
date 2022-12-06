@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import NayamiModal from '../../components/modals/NayamiModal'
+import ReactPageScroller from 'react-page-scroller';
+import { MContext } from '../ehon/MyProvider';
 
+import NayamiModal from '../../components/modals/NayamiModal'
+import NayamiNav from '../../components/NayamiNav';
 
 import './AllPage.css'
 
@@ -15,16 +18,27 @@ export default function NayamiPage() {
         </section>
 
         <section className='nayamiList-section'>
-          <div className='nayami-wrapper'>
-              <NayamiModal index={0}/>
-              {/* <NayamiModal index={1}/>
-              <NayamiModal index={2}/>
-              <NayamiModal index={3}/>
-              <NayamiModal index={4}/>
-              <NayamiModal index={5}/>
-              <NayamiModal index={6}/> */}
-          </div>
+          <MContext.Consumer>
+            {(context) => (
+              <ReactPageScroller
+              // customPageNumber={context.state.currentPage}
+              renderAllPagesOnFirstRender={true}
+              containerHeight="70vh"
+              // onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
+              >
+                <NayamiModal index={0}/>
+                <NayamiModal index={1}/>
+                <NayamiModal index={2}/>
+                <NayamiModal index={3}/>
+                <NayamiModal index={4}/>
+                <NayamiModal index={5}/>
+                <NayamiModal index={6}/>
+              </ReactPageScroller>
+            )}
+          </MContext.Consumer>
         </section>
+
+        <NayamiNav/>
     </div>
   )
 }

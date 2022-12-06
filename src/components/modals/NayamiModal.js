@@ -70,10 +70,10 @@ const ModalContent = styled.div`
     margin-right: 10px;
   }
   .nayami-question::before {
-    content: url("/icons/q-icon.svg");
+    content: url("/icons/i-question.svg");
   }
   .nayami-answer::before {
-    content: url("/icons/a-icon.svg");
+    content: url("/icons/i-answer.svg");
   }
   .toggle-icon {
     display: inline;
@@ -94,6 +94,10 @@ const ModalContent = styled.div`
     font-weight: 700;
     color:#75BE5B;
   }
+  .nayami-question.active {
+    font-weight: 700;
+    color:#75BE5B;
+  }
   .nayami-answer {
     line-height: 200%;
   }
@@ -111,7 +115,7 @@ export default function NayamiModal(props) {
   return (
     <>
     <ModalWrapper>
-      <div className='nayami-title' style={{backgroundColor: "#D3F1FF"}}>{thisLesson.title}</div>
+      <div className='nayami-title' style={{backgroundColor:`${thisLesson.themeColor}`}}>{thisLesson.title}</div>
       <ModalInner>
         <ModalContent>
           <div className='scroll-wrapper'>
