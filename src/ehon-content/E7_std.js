@@ -21,12 +21,6 @@ export default function E7_std(props){
                         // customPageNumber={context.state.currentPage}
                         // onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
                             >
-                            <section className='e7 s2'>
-                                <div className='section-wrapper'>
-                                    <VirusModal index={0}/>
-
-                                </div>
-                            </section>  
                             <section className='e7 s1'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.png`}/>
@@ -74,7 +68,11 @@ export default function E7_std(props){
                                 
                                
                             </section>   
-                             
+                            <section className='e7 s2'>
+                                <div className='section-wrapper'>
+
+                                </div>
+                            </section>  
               
 
 

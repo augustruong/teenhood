@@ -139,11 +139,14 @@
 
 .e1.s5 > .section-wrapper > .infi-slider > img {
     animation: slide 60s linear infinite;
-    animation-delay: -15s;
+    animation-delay: -30s;
+    width: 200%;
 }
 
 .e1.s5 > .section-wrapper > .infi-slider > img:nth-child(2) {
     animation: slide2 60s linear infinite;
+    animation-delay: -15s;
+
 }
 
 /*-----------------------------------section 6------------------------------------*/
