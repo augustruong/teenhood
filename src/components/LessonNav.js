@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PartList from './PartList';
 import WordList from './WordList';
-import { MContext } from '../pages/ehon/MyProvider';
+import { MContext } from '../module/MyProvider';
 
 
 import EhonData from '../data/EhonData.json'
@@ -21,7 +21,6 @@ export default function LessonNav(props) {
                     <div className='progress-bar'></div>
                     <MContext.Consumer>
                         {(context) => (
-                            
                             <div className='progress-status' style={{fontSize: 12}}>{(context.visited.visitedPage.filter(x => x == true).length / context.visited.visitedPage.length * 100).toFixed(0)}% COMPLETE</div>
                         )}
                     </MContext.Consumer>

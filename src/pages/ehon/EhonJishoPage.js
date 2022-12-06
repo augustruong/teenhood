@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import LessonNav from '../../components/LessonNav'
-import MyProvider from './MyProvider'
+import MyProvider from '../../module/MyProvider'
 import EhonJisho from '../../ehon-content/EhonJisho'
 
 

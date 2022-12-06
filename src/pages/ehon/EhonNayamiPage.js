@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import LessonNav from '../../components/LessonNav'
 import NayamiModal from '../../components/modals/NayamiModal'
-import MyProvider from './MyProvider'
+import MyProvider from '../../module/MyProvider'
 
 export default function EhonNayamiPage(props) {
     useEffect(() => { window.scrollTo(0, 0); }, []);

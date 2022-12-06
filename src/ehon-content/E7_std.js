@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
 import Image from 'react-image-webp';
-import { MContext } from '../pages/ehon/MyProvider';
+import { MContext } from '../module/MyProvider';
 
 import EhonData from '../data/EhonData.json'
 

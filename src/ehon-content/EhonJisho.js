@@ -1,16 +1,14 @@
 import React from 'react'
 import ReactPageScroller from 'react-page-scroller';
-import { MContext } from '../pages/ehon/MyProvider';
+import { MContext } from '../module/MyProvider';
 
 import WordModal from '../components/modals/WordModal';
 import EhonData from '../data/EhonData.json'
-import E1_shishunki from './E1_shishunki';
 import './Ehon.css'
 
 export default function EhonJisho(props) {
     const thisLesson = EhonData[props.index];
     const wordListArray = thisLesson.wordList;
-
 
   return (
     <div className='ehon-jisho'>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { MContext } from '../pages/ehon/MyProvider';
+import { MContext } from '../module/MyProvider';
 
 import EhonData from '../data/EhonData.json'
 

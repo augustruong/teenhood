@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import LessonNav from '../../components/LessonNav'
 import EhonContent from '../../ehon-content/EhonContent'
-import MyProvider from './MyProvider'
+import MyProvider from '../../module/MyProvider'
 
 export default function EhonContentPage(props) {
     useEffect(() => { window.scrollTo(0, 0); }, []);

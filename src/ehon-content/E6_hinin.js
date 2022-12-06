@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
 import Image from 'react-image-webp';
-import { MContext } from '../pages/ehon/MyProvider';
+import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 
 import EhonData from '../data/EhonData.json'
@@ -69,7 +69,7 @@ export default function E6_hinin(props) {
                             <section className='e6 s4'>
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
-                                    <img classname='s4_content' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4-condom.png`}/>
+                                    <img className='condom-gif' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/condom.gif`}/>
                                 </div>
                             </section>
                             <section className='e6 s5'>

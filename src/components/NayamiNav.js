@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { MContext } from '../pages/ehon/MyProvider';
+import { MContext } from '../module/MyProvider';
 import styled from 'styled-components';
 
 import EhonData from '../data/EhonData.json'
@@ -31,14 +31,39 @@ export default function NayamiNav(props) {
     const thisLesson = EhonData[props.index];
 
     return(
-        <NayamiNavWrapper className='flex-row'>
-            <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-curve.png`}/>
-            <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-gekkei.png`}/>
-            <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-penis.png`}/>
-            <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-love.png`}/>
-            <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-baby.png`}/>
-            <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-condom.png`}/>
-            <img className='icon' src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-std.png`}/>
-        </NayamiNavWrapper>
+        <MContext.Consumer>
+            {(context) => (
+                <NayamiNavWrapper className='flex-row'>
+                    <img className='icon' 
+                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-curve.png`}
+                         onClick={() => {context.setCurrentPage(0)}}     
+                    />
+                    <img className='icon' 
+                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-gekkei.png`}
+                         onClick={() => {context.setCurrentPage(1)}}     
+                    />
+                    <img className='icon' 
+                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-penis.png`}
+                         onClick={() => {context.setCurrentPage(2)}}     
+                    />
+                    <img className='icon' 
+                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-love.png`}
+                         onClick={() => {context.setCurrentPage(3)}}     
+                    />
+                    <img className='icon' 
+                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-baby.png`}
+                         onClick={() => {context.setCurrentPage(4)}}     
+                    />
+                    <img className='icon' 
+                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-condom.png`}
+                         onClick={() => {context.setCurrentPage(5)}}     
+                    />
+                    <img className='icon' 
+                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-std.png`}
+                         onClick={() => {context.setCurrentPage(6)}}     
+                    />
+                </NayamiNavWrapper>
+            )}
+        </MContext.Consumer>
     )
 }
