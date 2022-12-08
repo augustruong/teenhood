@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 
 import WordModal from './WordModal';
+import VirusModal from './VirusModal';
 
 const Background = styled.div`
   width: 100vw;
@@ -28,7 +29,7 @@ const CloseModalButton = styled(MdClose)`
   color: #ffffff;
 `;
 
-export const PopUpModal = ({ word, showModal, setShowModal }) => {
+export const PopUpModal = ({ type, word, virusIndex, showModal, setShowModal }) => {
   const modalRef = useRef()
   
   const animation = useSpring({
@@ -65,7 +66,8 @@ export const PopUpModal = ({ word, showModal, setShowModal }) => {
       {showModal ? (
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
-              <WordModal word={word}/>
+              {type === "word" && <WordModal word={word}/>}
+              {type === "virus" && <VirusModal index={virusIndex}/>}
               <CloseModalButton
                 aria-label='Close modal'
                 onClick={() => setShowModal(prev => !prev)}

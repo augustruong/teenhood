@@ -17,7 +17,7 @@ export default function E1_shishunki(props) {
    
   return (
     <div>
-        <PopUpModal word={word} showModal={showModal} setShowModal={setShowModal} />
+        <PopUpModal type={"word"} word={word} showModal={showModal} setShowModal={setShowModal} />
         
         <div className='lesson-content__inner'>
             <MContext.Consumer>

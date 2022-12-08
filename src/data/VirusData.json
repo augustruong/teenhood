@@ -7,7 +7,7 @@
         "method" : "感染した部分と粘膜や皮膚が直接接触をしないよう、<span className='keyword'>コンドーム</span>を使用することが有効。ただし、コンドームが覆わない部分の皮膚などでも感染がおこる可能性があるため、コンドームを使用しても、100％予防できるとは言えない。"
     },
     {
-        "name" : "性器クラミジア感染症",
+        "name" : "性器クラミジア",
         "intro" : "国内最多の性感染症。特にティーンに流行中！",
         "time" : "1〜4週間",
         "via" : ["i-sex","i-butt","i-oral"],
@@ -21,7 +21,7 @@
         "method" : "<span className='keyword'>コンドーム</span>を使って感染予防をするのが有効。"
     },
     {
-        "name" : "性器ヘルペスウイルス感染症",
+        "name" : "性器カンジダ感染症",
         "intro" : "性病界のコバンザメ",
         "time" : "3〜7日",
         "via" : ["i-sex","i-butt","i-oral"],
@@ -42,7 +42,7 @@
         "method" : "<span className='keyword'>コンドーム</span>を使って感染予防をするのが有効。"
     },
     {
-        "name" : "HIV感染症・エイズ",
+        "name" : "HIV・エイズ感染症",
         "intro" : "知らないから怖い？謎多きその正体やいかに！",
         "time" : "数年〜10数年",
         "via" : ["i-sex","i-butt","i-oral","i-parent","i-injection"],

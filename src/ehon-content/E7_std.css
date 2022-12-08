@@ -4,67 +4,122 @@
     position: relative;
 }
 .e7.s1, .e7.s2{background-color: #FFF9D5;}
-
+.e7.s3 {
+    background: linear-gradient(
+        to bottom,
+        #FFF9D5 0%,
+        #FFF9D5 35%,
+        #FFF19A 35%,
+        #FFF19A 100%
+    );
+}
+.stamp {
+    margin-top: -50px;
+    margin-left: -80px;
+}
 /*-----------------------------------section 1------------------------------------*/
 
 .e7.s1 > .section-wrapper {
-    display:flex;
-    justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
 }
 
 .e7.s1 > .section-wrapper > .title{
     margin-top: 7%;
+    margin-bottom: 15%;
+}
+.e7.s1 > .section-wrapper > .note-wrapper.n1 {
+    margin-bottom: 10%;
+}
+.e7.s1 > .section-wrapper > .note-wrapper.n2 > p {
+    display: flex;
+    gap: 20px;
+} 
+.e7.s1 > .section-wrapper > .note-wrapper.n2 > p > li {
+    text-align: center;
+}
+.e7.s1 > .section-wrapper > .note-wrapper.n2 > p > li > p {
+    text-align: center;
+    width: 85px;
+    line-height: 160%;
+    margin-top: 10px;
+    font-size: 13.5px;
+}
+/*-----------------------------------section 2------------------------------------*/
+
+.e7.s2 > .section-wrapper {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    width: 800px;
 }
 
-.e7.s1 > .content-text {
-    max-width: 640px;
-    margin:0 auto;
-    margin-top: 8%;
-    position: relative;
+.e7.s2 > .section-wrapper > .title {
+    line-height: 52px;
+    margin-bottom: 20px;
 }
 
-.e7.s1 > .content-text > .content-title{
-    padding:20px;
-    width:116px;
-    height:118px;
-    display:inline-block;
-    position:absolute;
-    bottom:90px;
-    left:10px;
-    border-radius: 50%;
-    background-color: #FFB31F;
-    color:#fff;
-    font-size: 32px;
-    font-weight:700;
-    line-height: 1;
+.e7.s2 > .section-wrapper > .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.e7.s1 > .content-text > .main-content{
-    padding: 25px 40px 25px 50px;
-    margin-left:78px;
-    margin-top:45px;
-    background-color: #fff;
-    border-radius: 25px;
+.e7.s2 > .section-wrapper > .virus-wrapper {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 10%;
 }
 
-.e7.s1 > .content-text > .main-content > span{
-    color:#FFB31F;
+.e7.s2 > .section-wrapper > .virus-wrapper > .virus > .virus-img {
+    max-width: 150px;
+}
+
+.e7.s2 > .section-wrapper > .virus-wrapper > .virus {
+    text-align: center;
+}
+
+.e7.s2 > .section-wrapper > .virus-wrapper > .virus > .virus-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.e7.s2 > .section-wrapper > .virus-wrapper > .virus:hover {
+    cursor: pointer;
+}
+.e7.s2 > .section-wrapper > .virus-wrapper > .virus:hover > .virus-img {
+    transform: scale(1.1) translateY(-5px); 
+    transition: transform .1s ease-in-out;
+}
+.e7.s2 > .section-wrapper > .virus-wrapper > .virus:hover > .virus-name {
+    color: var(--red-color);
     font-weight: 700;
 }
 
-.e7.s1 > .content-image {
-    max-width: 80%;
-    margin: 0 auto;
-    position:relative;
+/*-----------------------------------section 3------------------------------------*/
+.e7.s3 > .section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    align-items: center;
 }
 
-
-.e7.s1 > .content-image > .main-content > .main-wrapper{
-    width:10vh;
-    
+.e7.s3 > .section-wrapper > img {
+    width: 350px;
 }
 
-.e7.s2 {
-    padding-top: 150px;
+.e7.s3 > .section-wrapper > a > button {
+    margin-top: -150px;
+    background-color: var(--red-color);
+    border: none;
+    color: #fff;
+    font-weight: 500;
 }
