@@ -204,8 +204,8 @@ export default function E2_gekkei(props) {
                                     <div className='flex-row'>
                                         <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s9_napkin.png`}/>
                                         <div className='content-wrapper'>
-                                            <div className='stamp'>ナプキン</div>
-                                            <p>月経になったら、洋服や下着をよごらないように、生理用ナプキンをちつ口にあてて、生理用のショーツをはく。<br/>ナプキンは、だいたい<span>2〜3時間に1度</span>、<br/>トイレに行くたびにとりかえよう。</p>
+                                            <div className='napkin'>ナプキン</div>
+                                            <p>月経になったら、洋服や下着をよごらないように、生理用ナプキンをちつ口にあてて、生理用のショーツをはく。<br/>ナプキンは、だいたい<span className='keyword'>2〜3時間に1度</span>、<br/>トイレに行くたびにとりかえよう。</p>
                                         </div>
                                     </div>
                                     <div className='flex-row'>
@@ -214,7 +214,7 @@ export default function E2_gekkei(props) {
                                             <p>寝る時以外は、同じナプキンを6時間以上つけないようにしよう。不衛生になるし、かぶれることがある。</p>
                                         </div>
                                         <div className='note-wrapper'>
-                                            <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
+                                            <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-貼り方.svg`}/>
                                             <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s9_napkin-howto.png`}/>
                                         </div>
                                     </div>
@@ -225,7 +225,7 @@ export default function E2_gekkei(props) {
                                     <div className='flex-row'>
                                         <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s10_calendar.png`}/>
                                         <div className='content-wrapper'>
-                                            <div className='stamp'>カレンダー</div>
+                                            <div className='calendar'>カレンダー</div>
                                             <p>自分のリズムを知るために、月経の日に<br/>しるしをつける習慣をつけよう。</p>
                                         </div>
                                     </div>

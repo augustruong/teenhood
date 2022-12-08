@@ -73,7 +73,7 @@
     margin-bottom: 8%;
 }
 .e2.s2 > .section-wrapper > .img {
-    width: 480px;
+    width: 450px;
 }
 
 .e2.s2 > .section-wrapper > .moji > div {
@@ -292,7 +292,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%,-65%);    
+    transform: translate(-50%,-52%);    
 }
 .e2.s6 > .section-wrapper > .note-wrapper {
     display: inline-block;
@@ -379,21 +379,24 @@
 
 .e2.s9 > .section-wrapper > .flex-row > .content-wrapper > p {
     width: 52%;
-    margin-left: 80px;
+    margin-left: 100px;
+    text-align: left;
 }
-.e2.s9 > .section-wrapper > .flex-row > .content-wrapper > .stamp {
-    background-color: var(--e2-key-color);
+.e2.s9 > .section-wrapper > .flex-row > .content-wrapper > .napkin {
+    position: absolute;
+    background-color: var(--red-color);
     color: #fff;
     writing-mode: vertical-rl;
     border-radius: 50px;
     letter-spacing: 0.5em;
-    padding: 27px 15px;
-    font-size: 20px;
+    padding: 30px 20px;
+    font-size: 22px;
+    font-family: var(--font-title);
 }
 
 .e2.s9 > .section-wrapper > .flex-row > .note-wrapper > .stamp {
-    margin-top: -3%;
-    margin-left: -5%;
+    margin-top: -20px;
+    margin-left: -60px;
 }
 
 
@@ -412,13 +415,16 @@
     align-items: center;
 }
 
-.e2.s10 > .section-wrapper > .flex-row > .content-wrapper > .stamp {
-    background-color: var(--e2-key-color);
+.e2.s10 > .section-wrapper > .flex-row > .content-wrapper > .calendar {
+    background-color: var(--red-color);
+    font-family: var(--font-title);
     color: #fff;
     border-radius: 50px;
     letter-spacing: 0.5em;
-    padding: 12px 25px;
-    font-size: 20px;
+    padding: 20px 30px;
+    font-size: 22px;
+    text-align: center;
+    display: inline-block;
 }
 
 .e2.s10 > .section-wrapper > .flex-row > .content-wrapper > p {
