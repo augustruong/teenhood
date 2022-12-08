@@ -18,7 +18,7 @@ export default function E2_gekkei(props) {
 
     return(
         <div>
-            <PopUpModal word={word} showModal={showModal} setShowModal={setShowModal} />
+            <PopUpModal type={"word"} word={word} showModal={showModal} setShowModal={setShowModal} />
 
             <div className='lesson-content__inner'>
                 <MContext.Consumer>
@@ -45,7 +45,7 @@ export default function E2_gekkei(props) {
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-いつ.svg`}/>
                                         <p className='note'>
                                         初めて起こる月経のことを「初経（初潮）」という。<br/>
-                                        初潮を10～12歳くらいに迎える人が多い。<br/>
+                                        初潮を10~12歳くらいに迎える人が多い。<br/>
                                         もし、15歳になっても来ない場合は婦人科を受診しよう。
                                         </p>
                                     </div>
@@ -54,7 +54,15 @@ export default function E2_gekkei(props) {
                             <section className='e2 s2'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
-                                    <img className='s2_naiseiki' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki.png`}/>
+                                    <img className='img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki.png`}/>
+                                    
+                                    <div className='moji'>
+                                        <div className='s2_子宮' onClick={() => {setShowModal(!showModal); setWord("子宮")}}></div>
+                                        <div className='s2_卵管' onClick={() => {setShowModal(!showModal); setWord("卵管")}}></div>
+                                        <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
+                                        <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
+                                        <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e2 s3'>
@@ -138,7 +146,11 @@ export default function E2_gekkei(props) {
                                 <div className='section-wrapper'>
                                     <div className='note-wrapper n1'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-PMS.svg`}/>
-                                        <p>月経の3～7日前に起こる<span style={{color: "var(--red-color)"}}>「月経前症候群（PMS）」</span>は、腹痛や胸の張り、<br/>イライラや気分の落ち込みなどの不快な症状のこと。これは、女性ホルモンのえいきょう。どれも病気ではない。</p>
+                                        <p>
+                                            月経の3~7日前に起こる<span style={{color: "var(--red-color)"}}>「月経前症候群（PMS）」</span>は、腹痛や胸の張り、<br/>
+                                            イライラや気分の落ち込みなどの不快な症状のこと。これは、女性ホルモン<br/>
+                                            のえいきょう。どれも病気ではない。
+                                        </p>
                                     </div>
                                     <div className='note-wrapper n2'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-生理痛.svg`}/>

@@ -11,7 +11,15 @@
 .e2.s4 {background-color: #FFEEEC;}
 .e2.s5 {background-color: #FFC0C0;}
 .e2.s6 {background-color: #FFC0C0;}
-.e2.s7 {background-image: url(/images/ehon/e2_gekkei/s7_background.png);}
+.e2.s7 {
+    background: linear-gradient(
+        to bottom,
+        #FFC0C0 0%,
+        #FFC0C0 20%,
+        #FFDDD9 20%,
+        #FFDDD9 100%
+    );
+}
 .e2.s8 {background-image: url(/images/ehon/e2_gekkei/s8_background.png);}
 
 
@@ -22,9 +30,6 @@
     padding: 20px 30px 20px 60px;
 }
 
-.stamp {
-    position: absolute;
-}
 
 /*-----------------------------------section 1------------------------------------*/
 
@@ -47,11 +52,6 @@
     top: 42%;
     left: 15%;
 }
-.e2.s1 > .section-wrapper > .note-wrapper.n1 > .stamp {
-    top: -35%;
-    left: -10%;
-    width: 22%;
-}
 
 .e2.s1 > .section-wrapper > .note-wrapper.n2 {
     position: absolute;
@@ -59,7 +59,6 @@
     right: 24%;
 }
 .e2.s1 > .section-wrapper > .note-wrapper.n2 > .stamp {
-    top: -35%;
     right: -10%;
     width: 22%;
 }
@@ -68,14 +67,77 @@
 .e2.s2 > .section-wrapper {
     align-items: center;
     padding-top: 10%;
+    position: relative;
 }
 .e2.s2 > .section-wrapper > .title {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
-.e2.s2 > .section-wrapper > .s2_naiseiki {
-    width: 30%;
+.e2.s2 > .section-wrapper > .img {
+    width: 480px;
 }
 
+.e2.s2 > .section-wrapper > .moji > div {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.e2.s2 > .section-wrapper > .moji > .s2_子宮 {
+    background-image: url(/images/ehon/e2_gekkei/s2_子宮.svg);
+    height: 242px;
+    width: 50px;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.e2.s2 > .section-wrapper > .moji > .s2_子宮:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_子宮_hover.svg);
+}
+
+.e2.s2 > .section-wrapper > .moji > .s2_卵管 {
+    background-image: url(/images/ehon/e2_gekkei/s2_卵管.svg);
+    height: 60px;
+    width: 242px;
+    top: 57%;
+    left: 29%;
+}
+.e2.s2 > .section-wrapper > .moji > .s2_卵管:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_卵管_hover.svg);
+}
+
+.e2.s2 > .section-wrapper > .moji > .s2_卵子 {
+    background-image: url(/images/ehon/e2_gekkei/s2_卵子.svg);
+    height: 48px;
+    width: 257px;
+    top: 67.5%;
+    left: 28%;
+}
+.e2.s2 > .section-wrapper > .moji > .s2_卵子:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_卵子_hover.svg);
+}
+
+.e2.s2 > .section-wrapper > .moji > .s2_卵巣 {
+    background-image: url(/images/ehon/e2_gekkei/s2_卵巣.svg);
+    height: 62.5px;
+    width: 243.5px;
+    top: 63%;
+    left: 57%;
+}
+.e2.s2 > .section-wrapper > .moji > .s2_卵巣:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_卵巣_hover.svg);
+}
+
+.e2.s2 > .section-wrapper > .moji > .s2_ちつ {
+    background-image: url(/images/ehon/e2_gekkei/s2_ちつ.svg);
+    height: 48px;
+    width: 340px;
+    top: 78%;
+    left: 50%;
+}
+.e2.s2 > .section-wrapper > .moji > .s2_ちつ:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_ちつ_hover.svg);
+}
 /*-----------------------------------section 3------------------------------------*/
 .e2.s3 > .section-wrapper {
     padding-top: 10%;
@@ -225,9 +287,12 @@
 
 /*-----------------------------------section 6------------------------------------*/
 .e2.s6 > .section-wrapper {
-    padding-top: 15%;
     width: 50%;
-    margin: 0 auto;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-65%);    
 }
 .e2.s6 > .section-wrapper > .note-wrapper {
     display: inline-block;
@@ -242,19 +307,10 @@
 .e2.s6 > .section-wrapper > .note-wrapper.n3 {
     margin-left: 25px;
 }
-.e2.s6 > .section-wrapper > .note-wrapper.n1 > .stamp {
-    margin-top: -3%;
-    margin-left: -5%;
-}
-
-.e2.s6 > .section-wrapper > .note-wrapper.n2 > .stamp {
-    margin-top: -3%;
-    margin-left: -5%;
-}
 .e2.s6 > .section-wrapper > .note-wrapper.n3 > .stamp {
-    margin-top: -3%;
-    margin-left: -5%;
-}
+    margin-left: -60px;
+    margin-top: -25px;
+} 
 
 /*-----------------------------------section 7------------------------------------*/
 .e2.s7 > .section-wrapper {
@@ -278,6 +334,7 @@
     padding: 10px 10px;
     margin-top: 20px;
     line-height: 27px;
+    font-weight: 600;
 }
 
 /*-----------------------------------section 8------------------------------------*/

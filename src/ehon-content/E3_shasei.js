@@ -16,7 +16,7 @@ export default function E3_shasei(props) {
 
     return(
         <div>
-            <PopUpModal word={word} showModal={showModal} setShowModal={setShowModal} />
+            <PopUpModal type={"word"} word={word} showModal={showModal} setShowModal={setShowModal} />
             
             <div className='lesson-content__inner'>
                 <MContext.Consumer>
@@ -56,9 +56,15 @@ export default function E3_shasei(props) {
                             <section className='e3 s2'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
-                                    <img classname='s2_naiseiki'
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_otoko-naiseiki.png`}
-                                    />
+                                    <img classname='img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_otoko-naiseiki.png`}/>
+                                    <div className='moji'>
+                                        <div className='s2_ぼうこう' onClick={() => {setShowModal(!showModal); setWord("膀胱")}}></div>
+                                        <div className='s2_尿道' onClick={() => {setShowModal(!showModal); setWord("尿道")}}></div>
+                                        <div className='s2_精巣' onClick={() => {setShowModal(!showModal); setWord("精巣")}}></div>
+                                        <div className='s2_ペニス' onClick={() => {setShowModal(!showModal); setWord("ペニス")}}></div>
+                                        <div className='s2_精管' onClick={() => {setShowModal(!showModal); setWord("精管")}}></div>
+                                        <div className='s2_肛門' onClick={() => {setShowModal(!showModal); setWord("肛門")}}></div>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e3 s3'>

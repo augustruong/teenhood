@@ -43,11 +43,7 @@
     top: 34%;
     left: 28%;
 }
-.e3.s1 > .section-wrapper > .note-wrapper.n1 > .stamp {
-    top: -35%;
-    left: -10%;
-    width: 20%;
-}
+
 
 .e3.s1 > .section-wrapper > .note-wrapper.n2 {
     position: absolute;
@@ -55,23 +51,96 @@
     right: 30%;
 }
 .e3.s1 > .section-wrapper > .note-wrapper.n2 > .stamp {
-    top: -35%;
     right: -10%;
-    width: 20%;
+    margin-top: -70px;
+    width: 22%;
 }
 
 /*-----------------------------------section 2------------------------------------*/
 .e3.s2 > .section-wrapper {
     align-items: center;
     padding-top: 10%;
+    position: relative;
 }
 .e3.s2 > .section-wrapper > .title {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
-.e3.s2 > .section-wrapper > .s2_naiseiki {
-    width: 30%;
+.e3.s2 > .section-wrapper > .img {
+    width: 480px;
+}
+.e3.s2 > .section-wrapper > .moji > div {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
+.e3.s2 > .section-wrapper > .moji > .s2_ぼうこう {
+    background-image: url(/images/ehon/e3_shasei/s2_ぼうこう.svg);
+    height: 231px;
+    width: 90px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.e3.s2 > .section-wrapper > .moji > .s2_ぼうこう:hover {
+    background-image: url(/images/ehon/e3_shasei/s2_ぼうこう_hover.svg);
+}
+
+.e3.s2 > .section-wrapper > .moji > .s2_尿道 {
+    background-image: url(/images/ehon/e3_shasei/s2_尿道.svg);
+    height: 48px;
+    width: 266px;
+    top: 84%;
+    left: 24.7%;
+}
+.e3.s2 > .section-wrapper > .moji > .s2_尿道:hover {
+    background-image: url(/images/ehon/e3_shasei/s2_尿道_hover.svg);
+}
+
+.e3.s2 > .section-wrapper > .moji > .s2_精巣 {
+    background-image: url(/images/ehon/e3_shasei/s2_精巣.svg);
+    height: 48px;
+    width: 417px;
+    top: 80%;
+    left: 46%;
+}
+.e3.s2 > .section-wrapper > .moji > .s2_精巣:hover {
+    background-image: url(/images/ehon/e3_shasei/s2_精巣_hover.svg);
+}
+
+.e3.s2 > .section-wrapper > .moji > .s2_ペニス {
+    background-image: url(/images/ehon/e3_shasei/s2_ペニス.svg);
+    height: 48px;
+    width: 252px;
+    top: 73.5%;
+    left: 24.5%;
+}
+.e3.s2 > .section-wrapper > .moji > .s2_ペニス:hover {
+    background-image: url(/images/ehon/e3_shasei/s2_ペニス_hover.svg);
+}
+
+.e3.s2 > .section-wrapper > .moji > .s2_精管 {
+    background-image: url(/images/ehon/e3_shasei/s2_精管.svg);
+    height: 48px;
+    width: 338px;
+    top: 63%;
+    left: 24.7%;
+}
+.e3.s2 > .section-wrapper > .moji > .s2_精管:hover {
+    background-image: url(/images/ehon/e3_shasei/s2_精管_hover.svg);
+}
+
+.e3.s2 > .section-wrapper > .moji > .s2_肛門 {
+    background-image: url(/images/ehon/e3_shasei/s2_肛門.svg);
+    height: 62.5px;
+    width: 243.5px;
+    top: 60%;
+    left: 57%;
+}
+.e3.s2 > .section-wrapper > .moji > .s2_肛門:hover {
+    background-image: url(/images/ehon/e3_shasei/s2_肛門_hover.svg);
+}
 /*-----------------------------------section 3------------------------------------*/
 .e3.s3 > .section-wrapper > .title {
     position: absolute;
@@ -101,8 +170,8 @@
     right: 20%;
 }
 .e3.s3 > .section-wrapper > .note-wrapper > .stamp {
-    top: -35%;
-    left: -20%;
+    margin-left: -60px;
+    margin-top: -20px;
 }
 /*-----------------------------------section 4------------------------------------*/
 .e3.s4 > .section-wrapper {
@@ -156,7 +225,6 @@
     left: 16%;
 }
 .e3.s5 > .section-wrapper > .note-wrapper > .stamp {
-    top: -35%;
-    left: -20%;
-    /* width: 20%; */
+    margin-left: -60px;
+    margin-top: -25px;
 }

@@ -21,9 +21,9 @@ body *{z-index: 1; }
   --green-color: #E1FCDA;
   --yellow-color: #FEFFBA;
   --neon-color: #FCFF61;
-  --red-color: #E06363;
+  --red-color: #E05353;
 
-  --e2-key-color: #E06363;
+  --e2-key-color: #E05353;
   --e3-key-color: #4E8DDB;
   --e4-key-color: #FC7B92;
   --e5-key-color: #44AE7D;
@@ -112,11 +112,11 @@ button:hover {
   padding: 5px 9px 8.5px 10px;
 }
 .method-icon.ehon {
-  color: #E06363;
-  border: #E06363 2px solid;
+  color: #E05353;
+  border: #E05353 2px solid;
 }
 .method-icon.ehon.active {
-  background-color: #E06363;
+  background-color: #E05353;
   color: #fff;
 }
 .method-icon.jisho {
@@ -142,7 +142,7 @@ button:hover {
 }
 
 .method-icon.ehon:hover {
-  background-color: #E06363;
+  background-color: #E05353;
   transition: background-color .2s ease-in-out;
   transition: color .2s ease-in-out;
 }
@@ -160,6 +160,12 @@ button:hover {
 button:hover {
   transform: scale(1.05);
   transition: transform .1s ease-in-out;
+}
+
+.stamp {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -80px;
 }
 
 /*-----------------------------------transition------------------------------------*/
