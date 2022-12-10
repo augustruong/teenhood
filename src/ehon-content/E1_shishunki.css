@@ -97,7 +97,10 @@
     font-weight: 600;
     cursor: pointer;
     transition: all .2s ease-out;
-    
+}
+.feature:hover > div {
+    font-weight: 700;
+    color: var(--red-color);
 }
 
 .feature:hover > .icon { transform: scale(1.1); transition: transform .1s ease-in-out;}

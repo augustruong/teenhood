@@ -1,6 +1,8 @@
 [
     {
         "name" : "梅毒",
+        "yomi" : "ばいどく",
+        "eigo" : "syphilis",
         "intro" : "世紀をまたいで返り咲いた隠密集団、無限増殖中！",
         "time" : "約1ヶ月",
         "via" : ["i-sex","i-butt","i-oral","i-kiss"],
@@ -8,6 +10,8 @@
     },
     {
         "name" : "性器クラミジア",
+        "yomi" : "",
+        "eigo" : "genital chlamydia",
         "intro" : "国内最多の性感染症。特にティーンに流行中！",
         "time" : "1〜4週間",
         "via" : ["i-sex","i-butt","i-oral"],
@@ -15,6 +19,8 @@
     },
     {
         "name" : "淋菌感染症",
+        "yomi" : "りんきんかんせんしょう",
+        "eigo" : "gonococcal infection",
         "intro" : "ペニスをいたぶる、トラブルメーカー！",
         "time" : "2〜7日",
         "via" : ["i-sex","i-butt","i-oral","i-parent"],
@@ -22,6 +28,8 @@
     },
     {
         "name" : "性器カンジダ感染症",
+        "yomi" : "",
+        "eigo" : "genital candida infection",
         "intro" : "性病界のコバンザメ",
         "time" : "3〜7日",
         "via" : ["i-sex","i-butt","i-oral"],
@@ -29,6 +37,8 @@
     },
     {
         "name" : "尖圭コンジローマ",
+        "yomi" : "せんけい",
+        "eigo" : "genital warts",
         "intro" : "イボにウイルス詰め込みました",
         "time" : "数週間〜3ヶ月",
         "via" : ["i-sex","i-butt","i-oral"],
@@ -36,6 +46,8 @@
     },
     {
         "name" : "トリコモナス症",
+        "yomi" : "",
+        "eigo" : "trichomonas",
         "intro" : "異常なおりもの、ゲンチュウ注意！",
         "time" : "1〜3週間",
         "via" : ["i-sex","i-butt","i-oral","i-pantsu"],
@@ -43,6 +55,8 @@
     },
     {
         "name" : "HIV・エイズ感染症",
+        "yomi" : "",
+        "eigo" : "",
         "intro" : "知らないから怖い？謎多きその正体やいかに！",
         "time" : "数年〜10数年",
         "via" : ["i-sex","i-butt","i-oral","i-parent","i-injection"],

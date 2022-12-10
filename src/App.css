@@ -47,6 +47,9 @@ body *{z-index: 1; }
   --font-title: 'HGRPP1';
   --font-title-en: 'SoupofJustice';
   --font-body: 'M PLUS 2', sans-serif;
+
+  --cursor-search: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>🔍</text></svg>") 16 0,auto;
+
 }
 
 div,p {font-family: var(--font-body); color: var(--brown-color); font-size: 15px; letter-spacing: 0.05em; font-weight: 400;}
@@ -60,6 +63,14 @@ h4 { font-size: 15px; }
 
 .bold {font-weight: 700;}
 .keyword {font-weight: 700; color: var(--red-color)}
+.jishoword { padding-bottom: 1px; border-bottom: 2px dotted #A69B95; display: inline;}
+.jishoword:hover {
+  cursor: var(--cursor-search);
+  color: var(--red-color);
+  border-bottom: 2.5px dotted var(--red-color);
+  font-weight: 700;
+
+}
 
 .section-title {
   font-family: var(--font-title);

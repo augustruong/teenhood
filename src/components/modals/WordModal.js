@@ -97,9 +97,14 @@ const ModalContent = styled.div`
         margin-left: 50px;
     }
 
-    .word-more > .list > div {
+    .word-more > .list > .word {
         color: #6D96FF;
     }
+    .word-more > .list > .word:hover {
+      font-weight: 700;
+      padding-bottom: 1px;
+      cursor: pointer;
+  }
 `;
 
 
@@ -167,7 +172,9 @@ export default function WordModal(props) {
             <div>もっと知りたい</div>
             <div className='list flex-row'>
               {thisWord.related.map((word) => (
-                <div onClick={() => {
+                <div 
+                  className='word'
+                  onClick={() => {
                   var getWord = JishoData.filter(function (el){return el.word === word;});
                   setThisWord(getWord[0])
                 }}>

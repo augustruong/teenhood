@@ -50,8 +50,8 @@ export default function E1_shishunki(props) {
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     <p>思春期になると、脳のうから「ホルモンをだしなさい」<br/>
                                         という命令が出るようになります。<br/>
-                                        男の子は精巣から<span className='keyword'>「男性ホルモン」</span>、<br/>
-                                        女の子は卵巣から<span className='keyword'>「女性ホルモン」</span>。<br/>
+                                        男の子は<span className='jishoword'>精巣</span>から<span className='keyword'>「男性ホルモン」</span>、<br/>
+                                        女の子は<span className='jishoword'>卵巣</span>から<span className='keyword'>「女性ホルモン」</span>。<br/>
                                         ホルモンは、血液と一緒にからだ中にはこばれ、<br/>
                                         みんなのからだを大人へと成長させます。
                                     </p>

@@ -16,7 +16,7 @@ export default function E6_hinin(props) {
 
     return(
         <div>
-            <PopUpModal word={word} showModal={showModal} setShowModal={setShowModal} />
+            <PopUpModal type={"word"} word={word} showModal={showModal} setShowModal={setShowModal} />
             <div className='lesson-content__inner'>
                 <MContext.Consumer>
                     {(context) => (                
@@ -59,7 +59,9 @@ export default function E6_hinin(props) {
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
                                         <p className='note'>
                                             「今は妊娠したくない」「今は子どもを持つことを考えていない」。<br/>
-                                            そう思っている時に異性間でセックスをするなら、避妊が必要。<br/>
+                                            そう思っている時に異性間で
+                                            <span className='jishoword' onClick={() => {setShowModal(!showModal); setWord("性交")}}>セックス</span>
+                                            をするなら、避妊が必要。<br/>
                                             <span className='keyword'>いずれも100％確実ではない。</span>しかし、組み合わせることで、より避妊効果は上がる。<br/>
                                             避妊は相手に任せたら絶対ダメ。二人でちゃんと話し合うために。
                                         </p>

@@ -28,11 +28,14 @@ const ModalHead = styled.div`
     margin-top: -100px;
   }
   .virus-info {text-align: left;}
-  .virus-title {
+  .title {
     color: var(--red-color);
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    line-height: 50px;
   }
-
+  .yomi{
+    font-size: 13px;
+  }
 `;
 
 const ModalContent = styled.div`
@@ -89,8 +92,9 @@ export default function VirusModal(props) {
             <ModalHead>
                 <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/e7_std/virus-${props.index}.png`}/>
                 <div className='virus-info'>
-                    <h2 className='virus-title'>{thisVirus.name}</h2>
-                    <div className='virus-intro bold'>{thisVirus.intro}</div>
+                    <p className='yomi'>{`[${thisVirus.yomi} - ${thisVirus.eigo}]`}</p>
+                    <h2 className='title'>{thisVirus.name}</h2>
+                    <div className='intro bold'>{thisVirus.intro}</div>
                 </div>
             </ModalHead>
             <ModalContent>
