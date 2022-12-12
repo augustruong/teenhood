@@ -14,6 +14,7 @@ export default function E2_gekkei(props) {
     const thisLesson = EhonData[props.index];
     const [showModal, setShowModal] = useState(false);
     const [word, setWord] = useState("");
+    const [s2Page,setS2Page] = useState(1)
     const [s3Page,setS3Page] = useState(1)
 
     return(
@@ -58,14 +59,38 @@ export default function E2_gekkei(props) {
                             <section className='e2 s2'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
-                                    <img className='img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki.png`}/>
                                     
-                                    <div className='moji'>
-                                        <div className='s2_子宮' onClick={() => {setShowModal(!showModal); setWord("子宮")}}></div>
-                                        <div className='s2_卵管' onClick={() => {setShowModal(!showModal); setWord("卵管")}}></div>
-                                        <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
-                                        <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
-                                        <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
+                                    <div className='diagram-wrapper'>
+                                        <nav>
+                                            <ul>
+                                                <li className={s2Page===1 ? 'active' : ''} onClick={() => setS2Page(1)}>正面</li>
+                                                <li className={s2Page===2 ? 'active' : ''} onClick={() => setS2Page(2)}>側面</li>
+                                            </ul>
+                                        </nav>
+                                        {s2Page === 1 && 
+                                            <div className='front'>
+                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-front.png`}/>
+                                                <div className='diagram-moji'>
+                                                    <div className='s2_子宮' onClick={() => {setShowModal(!showModal); setWord("子宮")}}></div>
+                                                    <div className='s2_卵管' onClick={() => {setShowModal(!showModal); setWord("卵管")}}></div>
+                                                    <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
+                                                    <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
+                                                    <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
+                                                </div>
+                                            </div>
+                                        }
+                                        {s2Page === 2 && 
+                                            <div className='side'>
+                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-side.png`}/>
+                                                <div className='diagram-moji'>
+                                                    <div className='s2_子宮' onClick={() => {setShowModal(!showModal); setWord("子宮")}}></div>
+                                                    <div className='s2_卵管' onClick={() => {setShowModal(!showModal); setWord("卵管")}}></div>
+                                                    <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
+                                                    <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
+                                                    <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
+                                                </div>
+                                            </div>
+                                        }
                                     </div>
                                 </div>
                             </section>

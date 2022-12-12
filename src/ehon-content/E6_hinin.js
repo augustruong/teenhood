@@ -40,10 +40,10 @@ export default function E6_hinin(props) {
                                             src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_wrong-methods.png`}
                                         />
                                         <div className='alert-wrapper'>
-                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content1.png`} />
-                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content2.png`} />
-                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content3.png`} />
-                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content4.png`} />
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content1.svg`} />
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content2.svg`} />
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content3.svg`} />
+                                            <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content4.svg`} />
                                         </div>
                                     </div>
                                 </div>
@@ -51,10 +51,6 @@ export default function E6_hinin(props) {
                             <section className='e6 s3'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
-                                    <div className='content flex-row'>
-                                        <img classname='s3_content' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_content1.png`} />
-                                        <img classname='s3_content' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_content2.png`} />
-                                    </div>
                                     <div className='note-wrapper'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
                                         <p className='note'>
@@ -70,19 +66,25 @@ export default function E6_hinin(props) {
                             </section>
                             <section className='e6 s4'>
                                 <div className='section-wrapper'>
-                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
-                                    <img className='condom-gif' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/condom.gif`}/>
+                                    <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_content.png`}/>
+                                    
                                 </div>
                             </section>
                             <section className='e6 s5'>
-                                <div className='section-wrapper flex-column'>
+                                <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
+                                    <img className='condom-gif' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/condom.gif`}/>
+                                </div>
+                            </section>
+                            <section className='e6 s6'>
+                                <div className='section-wrapper flex-column'>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s6_title.svg`}/>
                                     <p className='block-msg'>
                                         「避妊をしなかった」「コンドームが破れた」「コンドームが外れてしまった」「ピル<br/>（経口避妊薬）を飲み忘れた」、そしてあってはいけないことだけれど、合意のない性交<br/>があったとき、<span className='keyword'>望まない妊娠を防止するために行う緊急避妊という方法があります。</span>
                                         </p>
                                     <div className='content flex-row'>
                                             <div className='box'>
-                                                <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_image1.png`}/>
+                                                <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s6_image1.png`}/>
                                                 <div className='box-content'>
                                                     <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/kinkyuu-tag1.svg`}/>
                                                     <p className='block-msg'>
@@ -91,7 +93,7 @@ export default function E6_hinin(props) {
                                                 </div>
                                             </div>
                                             <div className='box'>
-                                                <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_image2.png`}/>
+                                                <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s6_image2.png`}/>
                                                 <div className='box-content'>
                                                     <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/kinkyuu-tag2.svg`}/>
                                                     <p className='block-msg'>
@@ -102,9 +104,9 @@ export default function E6_hinin(props) {
                                     </div>
                                 </div>
                             </section>
-                            <section className='e6 s6'>
+                            <section className='e6 s7'>
                                 <div className='section-wrapper'>
-                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5-pregnant.png`}/>
+                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s7-pregnant.png`}/>
                                     <div className='note-wrapper'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
                                         <p className='note'>

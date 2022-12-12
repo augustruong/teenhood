@@ -72,71 +72,68 @@
 .e2.s2 > .section-wrapper > .title {
     margin-bottom: 8%;
 }
-.e2.s2 > .section-wrapper > .img {
+.diagram-img {
     width: 450px;
 }
 
-.e2.s2 > .section-wrapper > .moji > div {
+.diagram-moji > div {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
-.e2.s2 > .section-wrapper > .moji > .s2_子宮 {
-    background-image: url(/images/ehon/e2_gekkei/s2_子宮.svg);
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_子宮 {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-子宮.svg);
     height: 242px;
     width: 50px;
     top: 32%;
     left: 50%;
     transform: translateX(-50%);
 }
-.e2.s2 > .section-wrapper > .moji > .s2_子宮:hover {
-    background-image: url(/images/ehon/e2_gekkei/s2_子宮_hover.svg);
-}
-
-.e2.s2 > .section-wrapper > .moji > .s2_卵管 {
-    background-image: url(/images/ehon/e2_gekkei/s2_卵管.svg);
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_卵管 {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-卵管.svg);
     height: 60px;
     width: 242px;
     top: 57%;
     left: 29%;
 }
-.e2.s2 > .section-wrapper > .moji > .s2_卵管:hover {
-    background-image: url(/images/ehon/e2_gekkei/s2_卵管_hover.svg);
-}
-
-.e2.s2 > .section-wrapper > .moji > .s2_卵子 {
-    background-image: url(/images/ehon/e2_gekkei/s2_卵子.svg);
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_卵子 {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-卵子.svg);
     height: 48px;
     width: 257px;
     top: 67.5%;
     left: 28%;
 }
-.e2.s2 > .section-wrapper > .moji > .s2_卵子:hover {
-    background-image: url(/images/ehon/e2_gekkei/s2_卵子_hover.svg);
-}
-
-.e2.s2 > .section-wrapper > .moji > .s2_卵巣 {
-    background-image: url(/images/ehon/e2_gekkei/s2_卵巣.svg);
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_卵巣 {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-卵巣.svg);
     height: 62.5px;
     width: 243.5px;
     top: 63%;
     left: 57%;
 }
-.e2.s2 > .section-wrapper > .moji > .s2_卵巣:hover {
-    background-image: url(/images/ehon/e2_gekkei/s2_卵巣_hover.svg);
-}
-
-.e2.s2 > .section-wrapper > .moji > .s2_ちつ {
-    background-image: url(/images/ehon/e2_gekkei/s2_ちつ.svg);
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_ちつ {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-ちつ.svg);
     height: 48px;
     width: 340px;
     top: 78%;
     left: 50%;
 }
-.e2.s2 > .section-wrapper > .moji > .s2_ちつ:hover {
-    background-image: url(/images/ehon/e2_gekkei/s2_ちつ_hover.svg);
+
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_子宮:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-hv-子宮.svg);
+}
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_卵管:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-hv-卵管.svg);
+}
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_卵子:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-hv-卵子.svg);
+}
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_卵巣:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-hv-卵巣.svg);
+}
+.e2.s2 > .section-wrapper > .diagram-wrapper > .front > .diagram-moji > .s2_ちつ:hover {
+    background-image: url(/images/ehon/e2_gekkei/s2_front-hv-ちつ.svg);
 }
 /*-----------------------------------section 3------------------------------------*/
 .e2.s3 > .section-wrapper {
