@@ -61,12 +61,6 @@ export default function E2_gekkei(props) {
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     
                                     <div className='diagram-wrapper'>
-                                        <nav>
-                                            <ul>
-                                                <li className={s2Page===1 ? 'active' : ''} onClick={() => setS2Page(1)}>正面</li>
-                                                <li className={s2Page===2 ? 'active' : ''} onClick={() => setS2Page(2)}>側面</li>
-                                            </ul>
-                                        </nav>
                                         {s2Page === 1 && 
                                             <div className='front'>
                                                 <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-front.png`}/>
@@ -88,9 +82,16 @@ export default function E2_gekkei(props) {
                                                     <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
                                                     <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
                                                     <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
+                                                    <div className='s2_肛門' onClick={() => {setShowModal(!showModal); setWord("肛門")}}></div>
                                                 </div>
                                             </div>
                                         }
+                                        <nav>
+                                            <ul>
+                                                <li className={s2Page===1 ? 'active' : ''} onClick={() => setS2Page(1)}>正面</li>
+                                                <li className={s2Page===2 ? 'active' : ''} onClick={() => setS2Page(2)}>側面</li>
+                                            </ul>
+                                        </nav>
                                     </div>
                                 </div>
                             </section>

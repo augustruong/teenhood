@@ -13,6 +13,8 @@ export default function E3_shasei(props) {
     const thisLesson = EhonData[props.index];
     const [showModal, setShowModal] = useState(false);
     const [word, setWord] = useState("");
+    const [s2Page,setS2Page] = useState(1)
+
 
     return(
         <div>
@@ -56,14 +58,41 @@ export default function E3_shasei(props) {
                             <section className='e3 s2'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
-                                    <img classname='img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_otoko-naiseiki.png`}/>
-                                    <div className='moji'>
-                                        <div className='s2_ぼうこう' onClick={() => {setShowModal(!showModal); setWord("膀胱")}}></div>
-                                        <div className='s2_尿道' onClick={() => {setShowModal(!showModal); setWord("尿道")}}></div>
-                                        <div className='s2_精巣' onClick={() => {setShowModal(!showModal); setWord("精巣")}}></div>
-                                        <div className='s2_ペニス' onClick={() => {setShowModal(!showModal); setWord("ペニス")}}></div>
-                                        <div className='s2_精管' onClick={() => {setShowModal(!showModal); setWord("精管")}}></div>
-                                        <div className='s2_肛門' onClick={() => {setShowModal(!showModal); setWord("肛門")}}></div>
+
+                                    <div className='diagram-wrapper'>
+                                        {s2Page === 1 && 
+                                            <div className='front'>
+                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-front.png`}/>
+                                                <div className='diagram-moji'>
+                                                    <div className='s2_ぼうこう' onClick={() => {setShowModal(!showModal); setWord("膀胱")}}></div>
+                                                    <div className='s2_尿道' onClick={() => {setShowModal(!showModal); setWord("尿道")}}></div>
+                                                    <div className='s2_精巣' onClick={() => {setShowModal(!showModal); setWord("精巣")}}></div>
+                                                    <div className='s2_ペニス' onClick={() => {setShowModal(!showModal); setWord("ペニス")}}></div>
+                                                    <div className='s2_精管' onClick={() => {setShowModal(!showModal); setWord("精管")}}></div>
+                                                    <div className='s2_精子' onClick={() => {setShowModal(!showModal); setWord("精子")}}></div>
+                                                </div>
+                                            </div>
+                                        }
+                                        {s2Page === 2 && 
+                                            <div className='side'>
+                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-side.png`}/>
+                                                <div className='diagram-moji'>
+                                                    <div className='s2_ぼうこう' onClick={() => {setShowModal(!showModal); setWord("膀胱")}}></div>
+                                                    <div className='s2_尿道' onClick={() => {setShowModal(!showModal); setWord("尿道")}}></div>
+                                                    <div className='s2_精巣' onClick={() => {setShowModal(!showModal); setWord("精巣")}}></div>
+                                                    <div className='s2_ペニス' onClick={() => {setShowModal(!showModal); setWord("ペニス")}}></div>
+                                                    <div className='s2_精管' onClick={() => {setShowModal(!showModal); setWord("精管")}}></div>
+                                                    <div className='s2_精子' onClick={() => {setShowModal(!showModal); setWord("精子")}}></div>
+                                                    <div className='s2_肛門' onClick={() => {setShowModal(!showModal); setWord("肛門")}}></div>
+                                                </div>
+                                            </div>
+                                        }
+                                        <nav>
+                                            <ul>
+                                                <li className={s2Page===1 ? 'active' : ''} onClick={() => setS2Page(1)}>正面</li>
+                                                <li className={s2Page===2 ? 'active' : ''} onClick={() => setS2Page(2)}>側面</li>
+                                            </ul>
+                                        </nav>
                                     </div>
                                 </div>
                             </section>
