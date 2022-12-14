@@ -29,31 +29,59 @@ export default function E4_suki(props) {
                         >
                             <section className='e4 s1'>
                                 <div className='section-wrapper'>
-                                    <img className='content' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_content.svg`}/>
-                                    <img className='s1_suki' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_suki.png`}/>
+                                    <div className='note-wrapper'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-好き.svg`}/>
+                                        <p className='note'>
+                                            <span className='keyword'>すきっていう気持ちには、さまざまの形がある。</span><br/>
+                                            相手のいいところや、自分とちがうところに気づいたり、<br/>だれかにあこがれたりすること。<br/>
+                                            自分と違う性別の人を好きになることもあれば、<br/>自分と同じ性別の人を好きになることもある。
+                                        </p>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e4 s2'>
                                 <div className='section-wrapper'>
-                                    <img className='content' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_content.svg`}/>
                                     <img className='s2_omoiyari' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_omoiyari.png`}/>
+                                    <div className='note-wrapper'>
+                                        <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-思いやり.svg`}/>
+                                        <p className='note'>
+                                            <span className='keyword'>人の気持ちをかんがえること</span><br/>
+                                            相手が「いやだ」と思うことを、言ったり、やったりすることは「いじめ」っていうんだ。<br/>
+                                            君は、ただふざけているつもりでも、相手はすごくきずついているかもしれないよ。<br/>
+                                            → 自分のいいたこと、したことで、相手はどんな気持ちになるか、大切にしよう！
+                                        </p>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e4 s3'>
-                                <div className='section-wrapper'>
-                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
-                                    <img className='content' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_content.svg`}/>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='s3_hands' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_hands.png`}/>
+                                    <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
+                                    <div className='p-content'>
+                                        <p>
+                                        もし、その人の前にでると、どきどきしてうまくしゃべれない。<br/>
+                                        目が合うと赤くなったり… いつも、そのひとと一緒にいたい、話したい、合いたい…<br/>
+                                        それは<span className='keyword'>「大好き」「愛している」「愛されたい」</span>という気持ちになる。
+                                        </p>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e4 s4'>
-                                <div className='section-wrapper'>
-                                    <img className='content' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_content.svg`}/>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='s4_cupcake' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_cupcake.png`}/>
+                                    <div className='p-content'>
+                                        <p>
+                                        <span className='keyword'>私たちの基本はカップルではなく、個人です。</span> <br/>
+                                        恋愛に興味があってもいいし、なくてもいい。<br/>
+                                        好きな人がいてもいいし、いなくてもいい。<br/>
+                                        片思いでも両想いでもいい。<br/>
+                                        恋をしていなければおかしい年齢などもありません。
+                                        </p>
+                                    </div>
                                 </div>
                             </section>
                             <section className='e4 s5'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
                                     <img className='s5_loveyourself' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_loveyourself.png`}/>
                                 </div>

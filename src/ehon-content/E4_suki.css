@@ -1,0 +1,56 @@
+.e4.s1, .e4.s2, .e4.s3, .e4.s4, .e4.s5 {
+    height: 100vh;
+    width: calc(100% - 270px);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.e4.s1 { background-image: url(/images/ehon/e4_suki/s1_bg.png); }
+.e4.s2,.e4.s3,.e4.s4 {background-color: #FFE1E8;}
+.e4.s5 {background-color: #FFF;}
+
+
+/*-----------------------------------section 1------------------------------------*/
+
+.e4.s1 > .section-wrapper > .note-wrapper {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.e4.s1 > .section-wrapper > .note-wrapper .stamp {
+    width: 25%;
+}
+
+/*-----------------------------------section 2------------------------------------*/
+.e4.s2 > .section-wrapper > img {
+    position: absolute;
+    top: 7%;
+    right: 10%;
+}
+.e4.s2 > .section-wrapper > .note-wrapper {
+    position: absolute;
+    bottom: 24%;
+    left: 14%;
+}
+/*-----------------------------------section 3------------------------------------*/
+.e4.s3 > .section-wrapper {
+    align-items: center;
+    gap: 25px;
+
+    transform: translate(-50%,-55%);
+}
+/*-----------------------------------section 4------------------------------------*/
+.e4.s4 > .section-wrapper {
+    align-items: center;
+    gap: 50px;
+
+    transform: translate(-50%,-55%);
+}
+
+/*-----------------------------------section 5------------------------------------*/
+.e4.s5 > .section-wrapper {
+    align-items: center;
+    gap:120px;
+}

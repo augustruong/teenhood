@@ -37,7 +37,7 @@ export default function E5_akachan(props) {
                             </section>
 
                             <section className='e5 s2'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     <div className='content'>
                                         <div className='groupItem flex-row'>
@@ -61,7 +61,7 @@ export default function E5_akachan(props) {
                             </section>
 
                             <section className='e5 s3'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img className='stage' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
                                     <img className='title' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/sticker-思春期.svg`}/>
                                     <div className='box-content flex-row'>
@@ -90,7 +90,7 @@ export default function E5_akachan(props) {
                             </section>
 
                             <section className='e5 s4'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img className='stage' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
                                     <img className='title' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/sticker-性交.svg`}/>
                                     <div className='box-content flex-row'></div>
@@ -101,7 +101,7 @@ export default function E5_akachan(props) {
                             </section>
 
                             <section className='e5 s5'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img className='stage' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
                                     <img className='title' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/sticker-妊娠.svg`}/>
 
@@ -130,7 +130,7 @@ export default function E5_akachan(props) {
                             </section>
 
                             <section className='e5 s6'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img className='stage' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s6_title.svg`}/>
                                     <img className='title' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/sticker-生産.svg`}/>
                                     <div className='box-content flex-row'></div>

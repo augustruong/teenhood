@@ -41,7 +41,7 @@ export default function E1_shishunki(props) {
                             </div>
                         </section>    
                         <section className='e1 s2'>
-                            <div className='section-wrapper flex-row'>
+                            <div className='section-wrapper flex-row scr-center'>
                                 <Image className='img'
                                     src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_hormones.png`}
                                     webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_hormones.png`}
@@ -59,7 +59,7 @@ export default function E1_shishunki(props) {
                             </div>
                         </section>  
                         <section className='e1 s3'>
-                            <div className='section-wrapper'>
+                            <div className='section-wrapper scr-center'>
                                 <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
                                 <button className='no-style private-btn' onClick={() => setPrivateShow(!privateShow)}>
                                     <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_private-btn.svg`}/>
@@ -119,7 +119,7 @@ export default function E1_shishunki(props) {
                             </div>
                         </section>
                         <section className='e1 s4'>
-                            <div className='section-wrapper'>
+                            <div className='section-wrapper scr-center'>
                                 <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
                                 <div className='gaiseiki flex-row'>
                                     <div className='girls'>
@@ -134,7 +134,7 @@ export default function E1_shishunki(props) {
                             </div>
                         </section>
                         <section className='e1 s5'>
-                            <div className='section-wrapper'>
+                            <div className='section-wrapper '>
                                 <div className='infi-slider'>
                                     <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_vagina.png`}/>
                                     <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_vagina.png`}/>

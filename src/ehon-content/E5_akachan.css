@@ -40,9 +40,6 @@
 
 /*-----------------------------------section 2------------------------------------*/
 .e5.s2 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%,-52%);
 }
 
@@ -72,12 +69,6 @@
 }
 
 /*-----------------------------------section 3------------------------------------*/
-.e5.s3 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 
 .e5.s3 > .section-wrapper > .title {
     display: block;
@@ -110,12 +101,6 @@
 }
 
 /*-----------------------------------section 4------------------------------------*/
-.e5.s4 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 
 .e5.s4 > .section-wrapper > .title {
     display: block;
@@ -145,12 +130,6 @@
 }
 
 /*-----------------------------------section 5------------------------------------*/
-.e5.s5 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 
 .e5.s5 > .section-wrapper > .title {
     display: block;
@@ -177,12 +156,6 @@
 }
 
 /*-----------------------------------section 6------------------------------------*/
-.e5.s6 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 
 .e5.s6 > .section-wrapper > .title {
     display: block;

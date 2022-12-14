@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 
-.e3.s1 {background-color: #85BCFF; background-image: url(/images/ehon/e3_shasei/s1_topbg.png); background-size: contain; background-position: top center;}
+.e3.s1 {background-color: #85BCFF; background-image: url(/images/ehon/e3_shasei/s1_bg.png); }
 .e3.s2 {background-color: #FFFFFF;}
 .e3.s3 {background-image: url(/images/ehon/e3_shasei/s3_musei.png); background-position: bottom;}
 .e3.s4 {background-color: #375A95;}
@@ -23,31 +23,25 @@
 .e3.s1 > .section-wrapper > img {
     display: block;
 }
-.e3.s1 > .section-wrapper > .s1_shasei1 {
-    position: absolute;
-    bottom: -10px;
-    left: 8%;
-    width: 20%;
 
-}
-.e3.s1 > .section-wrapper > .s1_shasei2 {
+.e3.s1 > .section-wrapper > .s1_shasei {
     position: absolute;
-    bottom: 20px;
-    right: 0;
+    bottom: 30px;
+    right: 20px;
     width: 30%;
     z-index: 11;
 }
 
 .e3.s1 > .section-wrapper > .note-wrapper.n1 {
     position: absolute;
-    top: 34%;
-    left: 28%;
+    top: 30%;
+    left: 30%;
 }
 
 
 .e3.s1 > .section-wrapper > .note-wrapper.n2 {
     position: absolute;
-    top: 54%;
+    top: 45%;
     right: 30%;
 }
 .e3.s1 > .section-wrapper > .note-wrapper.n2 > .stamp {
@@ -263,7 +257,6 @@
     left: 60%;
     top: 20%;
     z-index: 11;
-
 }
 
 .e3.s3 > .section-wrapper > .s3_kiss {
@@ -292,12 +285,7 @@
     height: 52px;
     margin-bottom: 30px;
     margin-left: 30px;
-}
-
-.e3.s4 > .section-wrapper > .content-wrapper > .content {
-    background-color: #FFFFFF;
-    padding: 20px 30px;
-    border-radius: 20px;
+    display: block;
 }
 
 .e3.s4 > .section-wrapper > .s4_bokki {
@@ -311,13 +299,10 @@
     top: 24%;
     height: 52px;
 }
-.e3.s5 > .section-wrapper > .content {
+.e3.s5 > .section-wrapper > .p-content {
     position: absolute;
     left: 12%;
     top: 32%;
-    background-color: #FFFFFF;
-    padding: 20px 30px;
-    border-radius: 20px;
 }
 
 .e3.s5 > .section-wrapper > .s5_moon {

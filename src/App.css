@@ -11,6 +11,14 @@ html {
 body {overflow-x: hidden;}
 body *{z-index: 1; }
 
+/*-----------------------------------POSITION------------------------------------*/
+.scr-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 /*-----------------------------------COLORS------------------------------------*/
 :root {
   --brown-color: #806E6C;
@@ -177,6 +185,14 @@ button:hover {
   position: absolute;
   margin-top: -50px;
   margin-left: -80px;
+}
+
+/*-----------------------------------BOX------------------------------------*/
+.p-content {
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 /*-----------------------------------transition------------------------------------*/

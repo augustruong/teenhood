@@ -33,12 +33,10 @@ export default function E3_shasei(props) {
                             <section className='e3 s1'>
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.svg`}/>
-                                    <img className='s1_shasei1'
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei1.png`}
-                                    />
-                                    <img className='s1_shasei2'
+                                    
+                                    <img className='s1_shasei'
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei2.png`}
-                                    />
+                                    /> 
                                     <div className='note-wrapper n1'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-とは.svg`}/>
                                         <p className='note'>
@@ -126,13 +124,13 @@ export default function E3_shasei(props) {
                                 <div className='section-wrapper flex-row'>
                                     <div className='content-wrapper'>
                                         <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
-                                        <div className='content'>
+                                        <div className='p-content'>
                                             <p>
-                                            エッチなものを見たり想像したりすると、<br/>
-                                            <span className='keyword'>★</span>じるしのあっちこっちから命令が出て、<br/>
-                                            <span className='keyword'>ペニスの中に血液がどっと流れ込む。</span><br/>
-                                            それで、かたく大きくなって立つわけだ。<br/>
-                                            これは<span className='keyword'>「ぼっき」</span>というんだ。
+                                                エッチなものを見たり想像したりすると、<br/>
+                                                <span className='keyword'>★</span>じるしのあっちこっちから命令が出て、<br/>
+                                                <span className='keyword'>ペニスの中に血液がどっと流れ込む。</span><br/>
+                                                それで、かたく大きくなって立つわけだ。<br/>
+                                                これは<span className='keyword'>「ぼっき」</span>というんだ。
                                             </p>
                                         </div>
                                     </div>
@@ -144,7 +142,7 @@ export default function E3_shasei(props) {
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
 
-                                    <div className='content'>
+                                    <div className='p-content'>
                                         <p> <span className='keyword'>「自分の性器をさわっているうちに、いいきもちになること」</span><br/>
                                             マスタベーション、オナニーともいう。<br/>
                                             自慰は男女ともに、自分のからだを自分で愛し、自然な行為だ。<br/>

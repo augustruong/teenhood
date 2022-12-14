@@ -29,7 +29,7 @@ export default function E7_std(props){
                             pageOnChange={(number) => {context.visitedCurrentPage(number)}}
                             >
                             <section className='e7 s1'>
-                                <div className='section-wrapper flex-column'>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.png`}/>
                                     
                                     <div className='note-wrapper n1'>
@@ -77,7 +77,7 @@ export default function E7_std(props){
                                
                             </section>   
                             <section className='e7 s2'>
-                                <div className='section-wrapper flex-column'>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     <div className='subtitle' >気になる性感染症を選んでね！</div>
                                 
@@ -114,7 +114,7 @@ export default function E7_std(props){
                                 </div>
                             </section>  
                             <section className='e7 s3'>
-                                <div className='section-wrapper flex-column'>
+                                <div className='section-wrapper flex-column scr-center'>
                                         <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_condom.png`}/>
                                         <Link to={`/ehon/e6_hinin/content`}>
                                             <button>コンドームの使い方</button>

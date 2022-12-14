@@ -33,7 +33,7 @@ export default function E6_hinin(props) {
                                 </div>
                             </section>
                             <section className='e6 s2'>
-                                <div className='section-wrapper flex-column'>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     <div className='content'>
                                         <img className='s2_wrong-methods'
@@ -49,7 +49,7 @@ export default function E6_hinin(props) {
                                 </div>
                             </section>
                             <section className='e6 s3'>
-                                <div className='section-wrapper flex-column'>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_title.svg`}/>
                                     <div className='note-wrapper'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>
@@ -71,13 +71,13 @@ export default function E6_hinin(props) {
                                 </div>
                             </section>
                             <section className='e6 s5'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
                                     <img className='condom-gif' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/condom.gif`}/>
                                 </div>
                             </section>
                             <section className='e6 s6'>
-                                <div className='section-wrapper flex-column'>
+                                <div className='section-wrapper flex-column scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s6_title.svg`}/>
                                     <p className='block-msg'>
                                         「避妊をしなかった」「コンドームが破れた」「コンドームが外れてしまった」「ピル<br/>（経口避妊薬）を飲み忘れた」、そしてあってはいけないことだけれど、合意のない性交<br/>があったとき、<span className='keyword'>望まない妊娠を防止するために行う緊急避妊という方法があります。</span>
@@ -105,7 +105,7 @@ export default function E6_hinin(props) {
                                 </div>
                             </section>
                             <section className='e6 s7'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s7-pregnant.png`}/>
                                     <div className='note-wrapper'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-!.svg`}/>

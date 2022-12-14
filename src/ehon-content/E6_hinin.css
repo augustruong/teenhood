@@ -25,9 +25,6 @@
 
 /*-----------------------------------section 2------------------------------------*/
 .e6.s2 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%,-54%);
 }
 
@@ -41,12 +38,6 @@
     text-align: center;
 }
 /*-----------------------------------section 3------------------------------------*/
-.e6.s3 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 .e6.s3 > .section-wrapper > .title {
     margin-bottom: 10%;
 }
@@ -71,9 +62,6 @@
 /*-----------------------------------section 5------------------------------------*/
 
 .e6.s5 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%,-55%);
     display: flex;
     flex-direction: column;
@@ -88,10 +76,6 @@
 }
 /*-----------------------------------section 6------------------------------------*/
 .e6.s6 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     align-items: center;
     gap: 5vh;
 }
@@ -128,10 +112,6 @@
 }
 /*-----------------------------------section 7------------------------------------*/
 .e6.s7 > .section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
