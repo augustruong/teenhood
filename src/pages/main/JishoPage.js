@@ -28,9 +28,9 @@ export default function JishoPage() {
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("陰核")}}>陰核</div>
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("陰茎")}}>陰茎</div>
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("陰のう")}}>陰のう</div>
-              <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("体毛")}}>陰毛</div>
+              <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("陰毛")}}>陰毛</div>
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("受精卵")}}>受精卵</div>
-              <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("思いやり")}}>思いやり</div>
+              <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("陰唇")}}>陰唇</div>
             </div>
           </div>
           <div className='wordList-wrapper'>
@@ -84,7 +84,6 @@ export default function JishoPage() {
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("尿道")}}>尿道</div>
               <div onClick={() => {setShowModal(!showModal); setType("word");setWord("乳房")}}>乳房</div> 
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("妊娠")}}>妊娠</div>  
-              <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("人間関係")}}>人間関係</div>
             </div>
           </div>
           <div className='wordList-wrapper'>
@@ -105,18 +104,17 @@ export default function JishoPage() {
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("夢精")}}>夢精</div>
             </div>
           </div>
-          <div className='wordList-wrapper'>
+          {/* <div className='wordList-wrapper'>
             <div className='letter'>や</div>
             <div className='wordList'>
             </div>
-          </div>
+          </div> */}
           <div className='wordList-wrapper'>
             <div className='letter'>ら</div>
             <div className='wordList'>
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("卵管")}}>卵管</div>
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("卵巣")}}>卵巣</div>
               <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("卵子")}}>卵子</div>
-              <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("恋愛")}}>恋愛</div>
               <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirusIndex(2)}}>淋菌感染症</div>
             </div>
           </div>

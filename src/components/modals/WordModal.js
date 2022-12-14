@@ -125,12 +125,12 @@ export default function WordModal(props) {
             ref={carouselRef}
             enableAutoPlay
             autoPlaySpeed={2000} 
-            onNextEnd={({ index }) => {
-                clearTimeout(resetTimeout)
-                if (index + 1 === thisWord.img.length) {
-                  resetTimeout = setTimeout(() => {carouselRef.current.goTo(0)}, 2000) 
-                }
-            }}
+            // onNextEnd={({ index }) => {
+            //     clearTimeout(resetTimeout)
+            //     if (index + 1 === thisWord.img.length) {
+            //       resetTimeout = setTimeout(() => {carouselRef.current.goTo(0)}, 2000) 
+            //     }
+            // }}
             itemsToShow={1}
         >
             {thisWord.img.map((img) => (

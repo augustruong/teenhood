@@ -34,9 +34,9 @@ export default function E3_shasei(props) {
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.svg`}/>
                                     
-                                    <img className='s1_shasei'
+                                    {/* <img className='s1_shasei'
                                         src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei2.png`}
-                                    /> 
+                                    />  */}
                                     <div className='note-wrapper n1'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-とは.svg`}/>
                                         <p className='note'>
@@ -48,7 +48,7 @@ export default function E3_shasei(props) {
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-いつ.svg`}/>
                                         <p className='note'>
                                         初めての射精は<span className='keyword'>「精通」</span>という。<br/>
-                                        精通は11歳ぐらいからありますが、人によって早いとか遅いとか<br/>心配はいらない。
+                                        精通は11歳ぐらいからありますが、<br/>人によって早いとか遅いとか<br/>心配はいらない。
                                         </p>
                                     </div>
                                 </div>

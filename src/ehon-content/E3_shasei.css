@@ -41,13 +41,13 @@
 
 .e3.s1 > .section-wrapper > .note-wrapper.n2 {
     position: absolute;
-    top: 45%;
-    right: 30%;
+    top: 50%;
+    right: 15%;
 }
 .e3.s1 > .section-wrapper > .note-wrapper.n2 > .stamp {
-    right: -10%;
+    right: -15%;
     margin-top: -70px;
-    width: 22%;
+    width: 34%;
 }
 
 /*-----------------------------------section 2------------------------------------*/
