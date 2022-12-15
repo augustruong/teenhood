@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import ReactPageScroller from 'react-page-scroller';
+import { PopUpModal } from '../../components/modals/PopUpModal'
 
 import './HomePage.css'
 
 export default function HomePage() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
+  const [showModal, setShowModal] = useState(true);
 
   return (
     <div id='home'>
+      <PopUpModal type={"welcome"} showModal={showModal} setShowModal={setShowModal} />
+
       <ReactPageScroller>
         <section className='hero-section'>
           <img className='title' src={process.env.PUBLIC_URL + `/images/key-visual/TEENHOOD.svg`}/>

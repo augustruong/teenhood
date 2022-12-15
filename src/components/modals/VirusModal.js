@@ -86,11 +86,16 @@ const ModalContent = styled.div`
   }
 `;
 export default function VirusModal(props) {
-    var thisVirus = VirusData[props.index]
+    var getWord = VirusData.filter(function (el)
+    {
+        return el.name === props.word;
+    });
+    var thisVirus = getWord[0];
+
     return(
         <ModalWrapper>
             <ModalHead>
-                <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/e7_std/virus-${props.index}.png`}/>
+                <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/e7_std/${thisVirus.name}.png`}/>
                 <div className='virus-info'>
                     <p className='yomi'>{`[${thisVirus.yomi} - ${thisVirus.eigo}]`}</p>
                     <h2 className='title'>{thisVirus.name}</h2>
@@ -120,7 +125,7 @@ export default function VirusModal(props) {
                     <div>
                         <div className='title'>症状</div>
                         
-                        {props.index === 0 &&
+                        {thisVirus.name === "梅毒" &&
                             <div style={{marginTop: "10px"}}> 
                                 <p className='symptom-paragraph'>
                                     <span className='keyword'>第1期（感染後1ヶ月）</span><br/>
@@ -140,7 +145,7 @@ export default function VirusModal(props) {
                                 </p>
                             </div>
                         }
-                        {props.index === 1 &&
+                        {thisVirus.name === "性器クラミジア" &&
                             <div style={{marginTop: "10px"}}> 
                                 <p className='symptom-paragraph'>
                                     <span className='keyword'>＜女の体を持つ人＞</span><br/>
@@ -152,7 +157,7 @@ export default function VirusModal(props) {
                                 </p>
                             </div>
                         }
-                        {props.index === 2 &&
+                        {thisVirus.name === "淋菌感染症" &&
                             <div style={{marginTop: "10px"}}> 
                                 <p className='symptom-paragraph'>
                                     <span className='keyword'>＜女の体を持つ人＞</span><br/>
@@ -164,14 +169,14 @@ export default function VirusModal(props) {
                                 </p>
                             </div>
                         }
-                        {props.index === 3 &&
+                        {thisVirus.name === "性器カンジダ感染症" &&
                             <div style={{marginTop: "10px"}}> 
                                 <p className='symptom-paragraph'>
                                     男女ともに無症状のことが多い。性器に小さい水ぶくれやただれができる。激しい痛みで、おしっこや歩行に困難が出る場合もある。
                                 </p>
                             </div>
                         }
-                        {props.index === 4 &&
+                        {thisVirus.name === "尖圭コンジローマ" &&
                             <div style={{marginTop: "10px"}}> 
                                 <p className='symptom-paragraph'>
                                     小さな尖ったイボが、性器のあらゆる箇所にできる。イボが集まり小さなカリフラワー状になることも。<br/>
@@ -179,7 +184,7 @@ export default function VirusModal(props) {
                                 </p>
                             </div>
                         }
-                        {props.index === 5 &&
+                        {thisVirus.name === "トリコモナス症" &&
                             <div style={{marginTop: "10px"}}> 
                                 <p className='symptom-paragraph'>
                                     <span className='keyword'>＜女の体を持つ人＞</span><br/>
@@ -196,7 +201,7 @@ export default function VirusModal(props) {
                                 </p>
                             </div>
                         }
-                        {props.index === 6 &&
+                        {thisVirus.name === "HIV・エイズ感染症" &&
                             <div style={{marginTop: "10px"}}> 
                                 <p className='symptom-paragraph'>
                                     <span className='keyword'>急性期</span><br/>

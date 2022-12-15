@@ -14,21 +14,65 @@
 }
 
 
-/*------------------------------------EhonPage-----------------------------------*/
+/*------------------------------------EhonPage--------------------------------------------*/
 
 
-/*------------------------------------JishoPage-----------------------------------*/
-#jisho-page > .wordList-section {
+/*------------------------------------JishoPage-------------------------------------------*/
+
+/*---------------------------JishoPage Nav----------------------------*/
+#jisho-page {
+    text-align: center;
+}
+#jisho-page > nav {
+    display: inline-block;
+    margin-top: 60px;
+}
+#jisho-page > nav > ul > li {
+    color: var(--e3-key-color);
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid var(--e3-key-color);
+}
+#jisho-page > nav > ul > li:first-child {
+    padding-left: 35px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#jisho-page > nav > ul > li:last-child {
+    padding-right: 35px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#jisho-page > nav > ul > li:hover {
+    color: #fff;
+    background-color: var(--e3-key-color);
+    cursor: pointer;
+    transition: background-color 0.15s ease-out;
+}
+#jisho-page > nav > ul > li.active {
+    color: #fff;
+    background-color: var(--e3-key-color);
+    cursor: pointer;
+}
+
+
+#jisho-page > .az-section {
     width: 60%;
+    max-width: 890px;
+
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap:65px;
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 10%;    
 }
-
-#jisho-page > .wordList-section > .wordList-wrapper > .letter {
+#jisho-page > .az-section > .wordList-wrapper {
+    width: 126px;
+    text-align: left;
+}
+#jisho-page > .az-section > .wordList-wrapper > .letter {
     font-size: 64px;
     font-weight: 800;
     color: #2B79CA;
@@ -37,17 +81,90 @@
     margin-bottom: 15px;
     padding-right: 20px;
 }
-#jisho-page > .wordList-section > .wordList-wrapper > .wordList {
+#jisho-page > .az-section > .wordList-wrapper > .wordList {
     margin-bottom: 50px;
 }
-#jisho-page > .wordList-section > .wordList-wrapper > .wordList > div {
+#jisho-page > .az-section > .wordList-wrapper > .wordList > div {
     line-height: 30px;
 }
-#jisho-page > .wordList-section > .wordList-wrapper > .wordList > div:hover {
+#jisho-page > .az-section > .wordList-wrapper > .wordList > div:hover {
     font-weight: 700;
     cursor: pointer;
 }
 
+
+#jisho-page > .tema-section {
+    width: 70%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 5%;
+    padding-bottom: 10%;    
+}
+#jisho-page > .tema-section > .wordList-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#jisho-page > .tema-section > .wordList-wrapper > .thumb-wrapper {
+    width: 310px;
+    text-align: left;
+    background-color: #fff;
+    padding: 0 16px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 7px 0px rgba(0, 0, 0, 0.04));
+    z-index: 10;
+}
+
+#jisho-page > .tema-section > .wordList-wrapper > .thumb-wrapper:hover {
+    filter: drop-shadow(0px 12px 8px rgba(0, 0, 0, 0.06));
+    transition: filter .2s ease-in-out;
+}
+#jisho-page > .tema-section > .wordList-wrapper > .thumb-wrapper > .lesson-thumb {
+    padding: 0px;
+}
+#jisho-page > .tema-section > .wordList-wrapper > .wordList {
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.04));
+    width: 70%;
+    padding: 20px 5px;
+}
+#jisho-page > .tema-section > .wordList-wrapper > .wordList > div {
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 15px;
+} 
+#jisho-page > .tema-section > .wordList-wrapper > .wordList > div:hover {
+    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.04));
+    cursor: pointer;
+    font-weight: 600;
+}
+#jisho-page > .tema-section > .wordList-wrapper:nth-child(1) > .wordList > div:hover {
+    background-color: var(--e1-light-color);
+}
+#jisho-page > .tema-section > .wordList-wrapper:nth-child(2) > .wordList > div:hover {
+    background-color: var(--e2-light-color);
+}
+#jisho-page > .tema-section > .wordList-wrapper:nth-child(3) > .wordList > div:hover {
+    background-color: var(--e3-light-color);
+}
+#jisho-page > .tema-section > .wordList-wrapper:nth-child(4) > .wordList > div:hover {
+    background-color: var(--e4-light-color);
+}
+#jisho-page > .tema-section > .wordList-wrapper:nth-child(5) > .wordList > div:hover {
+    background-color: var(--e5-light-color);
+}
+#jisho-page > .tema-section > .wordList-wrapper:nth-child(6) > .wordList > div:hover {
+    background-color: var(--e6-light-color);
+}
+#jisho-page > .tema-section > .wordList-wrapper:nth-child(7) > .wordList > div:hover {
+    background-color: var(--e7-light-color);
+}
 /*------------------------------------NayamiPage-----------------------------------*/
 #nayami-page > .nayamiList-section {
     height: 70vh;

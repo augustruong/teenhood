@@ -29,6 +29,7 @@ export default function E4_suki(props) {
                         >
                             <section className='e4 s1'>
                                 <div className='section-wrapper'>
+                                    <img className='s1_bg' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_bg.png`}/>
                                     <div className='note-wrapper'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-好き.svg`}/>
                                         <p className='note'>

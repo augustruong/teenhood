@@ -6,21 +6,29 @@
     background-repeat: no-repeat;
 }
 
-.e4.s1 { background-image: url(/images/ehon/e4_suki/s1_bg.png); }
+.e4.s1 {background-color: #FFB7B7;}
 .e4.s2,.e4.s3,.e4.s4 {background-color: #FFE1E8;}
 .e4.s5 {background-color: #FFF;}
 
 
 /*-----------------------------------section 1------------------------------------*/
-
+.e4.s1 > .section-wrapper {
+    text-align: center;
+}
+.e4.s1 > .section-wrapper > img {
+    width: 85%;
+    min-width: 765px;
+}
 .e4.s1 > .section-wrapper > .note-wrapper {
     position: absolute;
     bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
+    text-align: left;
+    min-width: 437.5px;
 }
 .e4.s1 > .section-wrapper > .note-wrapper .stamp {
-    width: 25%;
+    width: 24%;
 }
 
 /*-----------------------------------section 2------------------------------------*/

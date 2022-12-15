@@ -37,6 +37,14 @@ body *{z-index: 1; }
   --e5-key-color: #44AE7D;
   --e6-key-color: #765EC5;
   --e7-key-color: #FFB31F;
+
+  --e1-light-color: #DDFAFF;
+  --e2-light-color: #FFDDDD;
+  --e3-light-color: #DDE9FF;
+  --e4-light-color: #FFDDED;
+  --e5-light-color: #DDFFDE;
+  --e6-light-color: #E6DDFF;
+  --e7-light-color: #FFFCDD;
 }
 
 /*-----------------------------------FONTS------------------------------------*/

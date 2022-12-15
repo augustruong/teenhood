@@ -5,6 +5,7 @@ import { MdClose } from 'react-icons/md';
 
 import WordModal from './WordModal';
 import VirusModal from './VirusModal';
+import { WelcomeForm } from './WelcomeForm';
 
 const Background = styled.div`
   width: 100vw;
@@ -67,7 +68,8 @@ export const PopUpModal = ({ type, word, virusIndex, showModal, setShowModal }) 
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
               {type === "word" && <WordModal word={word}/>}
-              {type === "virus" && <VirusModal index={virusIndex}/>}
+              {type === "virus" && <VirusModal word={word}/>}
+              {type === "welcome" && <WelcomeForm />}
               <CloseModalButton
                 aria-label='Close modal'
                 onClick={() => setShowModal(prev => !prev)}
