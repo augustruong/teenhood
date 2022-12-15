@@ -17,6 +17,9 @@ const ModalWrapper = styled.div`
   @media screen and (max-width: 824px) {
     width: 90vw;
   }
+  @media screen and (max-width: 1600px) {
+    height: 450px;
+  }
   .nayami-title {
     font-weight: 700;
     padding-top: 15px;
@@ -39,6 +42,12 @@ const ModalContent = styled.div`
       overflow-y: scroll;
       height: 430px;
       padding-right: 20px;
+    }
+
+    @media screen and (max-width: 1600px) {
+      .scroll-wrapper {
+        height: 350px;
+      }
     }
     
     .scroll-wrapper::-webkit-scrollbar {

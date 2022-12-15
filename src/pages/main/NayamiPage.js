@@ -25,7 +25,7 @@ export default function NayamiPage() {
                 <ReactPageScroller
                 customPageNumber={context.state.currentPage}
                 renderAllPagesOnFirstRender={true}
-                containerHeight="70vh"
+                containerHeight="72vh"
                 onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
                 >
                   <NayamiModal index={0}/>

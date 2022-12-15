@@ -13,6 +13,13 @@
     position: fixed;
 }
 
+@media screen and (max-width: 1600px) {
+    #ehon-page>.header-section, 
+    #jisho-page>.header-section, 
+    #nayami-page>.header-section {
+        padding: 40px 0;
+}
+}
 
 /*------------------------------------EhonPage--------------------------------------------*/
 
@@ -167,7 +174,8 @@
 }
 /*------------------------------------NayamiPage-----------------------------------*/
 #nayami-page > .nayamiList-section {
-    height: 70vh;
+    height: 72vh;
     bottom: 0;
     position: absolute;
 }
+
