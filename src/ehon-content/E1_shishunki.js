@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
 import Image from 'react-image-webp';
 import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
+import {GlassMagnifier,MOUSE_ACTIVATION,TOUCH_ACTIVATION} from "react-image-magnifiers";
 
 import EhonData from '../data/EhonData.json'
 
@@ -42,10 +43,11 @@ export default function E1_shishunki(props) {
                         </section>    
                         <section className='e1 s2'>
                             <div className='section-wrapper flex-row scr-center'>
-                                <Image className='img'
+                                <Image className='img' 
                                     src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_hormones.png`}
                                     webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_hormones.png`}
                                 />
+                                
                                 <div className='content'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_title.svg`}/>
                                     <p>思春期になると、脳のうから「ホルモンをだしなさい」<br/>
@@ -121,16 +123,12 @@ export default function E1_shishunki(props) {
                         <section className='e1 s4'>
                             <div className='section-wrapper scr-center'>
                                 <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_title.svg`}/>
-                                <div className='gaiseiki flex-row'>
-                                    <div className='girls'>
-                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_onna-seiki.png`}/>
-                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_onna-seiki-close.png`}/>
-                                    </div>
-                                    <div className='boys'>
-                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_otoko-seiki.png`}/>
-                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_otoko-seiki-close.png`}/>
-                                    </div>
-                                </div>
+                                    <GlassMagnifier className='s4_gaiseiki' magnifierSize="10%"
+                                        imageSrc={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_gaiseiki.png`}
+                                        largeImageSrc={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s4_gaiseiki_zoom.png`}
+                                    />
+                                    {/* <img className='sticker' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/sticker-qt.svg`}/> */}
+
                             </div>
                         </section>
                         <section className='e1 s5'>

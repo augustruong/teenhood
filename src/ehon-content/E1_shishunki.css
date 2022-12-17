@@ -103,11 +103,16 @@
 .feature > .icon { width: 54px; }  
 
 /*-----------------------------------section 4------------------------------------*/
+.e1.s4 > .section-wrapper {
+    position: relative;
+    padding-top: 10%;
+}
 .e1.s4 > .section-wrapper > img {display: block; margin: 0 auto;}
 .e1.s4 > .section-wrapper > .title { margin-bottom: 40px;}
-.e1.s4 > .section-wrapper > .gaiseiki {margin: 0 auto; justify-content: space-evenly;}
-.e1.s4 > .section-wrapper > .gaiseiki > .girls { text-align: center; }
-.e1.s4 > .section-wrapper > .gaiseiki > .boys { text-align: center; }
+.s4_gaiseiki {
+    width: 92%; margin: 0 auto;
+    margin-top: -5%;
+}
 
 /*-----------------------------------section 5------------------------------------*/
 .e1.s5 > .section-wrapper {
