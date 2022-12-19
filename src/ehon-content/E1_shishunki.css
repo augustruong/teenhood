@@ -45,25 +45,26 @@
 .e1.s3 > .section-wrapper > .private-btn > img {width: 100%;}
 
 .e1.s3 > .section-wrapper > .karada-wrapper {
-    height: 64vh;
+    height: 55vh;
     max-height: 580px;
     position: relative;
+    z-index: 100;
 }
 
-.e1.s3 > .section-wrapper > .karada-wrapper > img {
+.s3_body, .s3_private {
     height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+}
+.s3_body {
+    z-index: 100;
 }
 
-.e1.s3 > .section-wrapper > .karada-wrapper > .private {
+.s3_private {
     z-index: 99;
     mix-blend-mode: multiply;
     opacity: 0;
 }
-.e1.s3 > .section-wrapper > .karada-wrapper > .private.show { opacity: 1; }
+.s3_private.show { opacity: 1; z-index: 101;}
 
 
 .e1.s3 > .section-wrapper > .features-wrapper {
@@ -73,9 +74,9 @@
     justify-content: space-between;
     width: 54vw;
     min-width: 780px;
-    height: 64vh;
+    height: 55vh;
     margin: 0 auto;
-    z-index: 999;
+    z-index: 99;
     left: 50%;
     transform: translateX(-54%);
 }
@@ -84,7 +85,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .boys > .feature {flex-direction: row; justify-content: right;}
 .girls > .feature {flex-direction: row-reverse; justify-content: left;}

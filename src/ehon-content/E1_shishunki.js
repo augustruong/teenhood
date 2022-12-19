@@ -113,11 +113,12 @@ export default function E1_shishunki(props) {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className='karada-wrapper'>
-                                    <img className={privateShow ? 'private show' : 'private'} src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_private.gif`}/>
-                                    <img className='body' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_body.png`}/>
+                                    {/* <img className='s3_body' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_body_teens.png`}/> */}
+                                    {/* <img className={privateShow ? 's3_private show' : 's3_private'} src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_private.gif`}/> */}
+                                    <iframe className='s3_body' frameborder="0" class="juxtapose" width="100%" height="711" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=0fcf2c2e-7f49-11ed-b5bd-6595d9b17862"></iframe>
                                 </div>
+                                
                             </div>
                         </section>
                         <section className='e1 s4'>
