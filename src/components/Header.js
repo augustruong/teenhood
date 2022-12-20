@@ -81,6 +81,61 @@ export default function NavWrapper(props) {
                             </div>
                         </NavLink>
                     </li>
+                    <li className='nav-list__item'>
+                        <NavLink
+                            className='nav-item'
+                            to='/quiz'
+                            style={{'--hover-bg-color': 'var(--pink-color)'}}
+                            onClick={() => setShowNav(false)} 
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                                <h3 className='nav-item__title lesson-title'>性のQUIZ</h3>
+                            </div>
+                        </NavLink>
+                    </li>
+                    
+                    
+                    <li className='nav-list__item flex-row'>
+                        <NavLink
+                            className='nav-item'
+                            to='/about'
+                            style={{'--hover-bg-color': 'var(--green-color)'}}
+                            onClick={() => setShowNav(false)} 
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                                <h4 className='nav-item__title lesson-title'>TeenHoodについて</h4>
+                            </div>
+                        </NavLink>
+                        <NavLink
+                            className='nav-item'
+                            to='/contact'
+                            style={{'--hover-bg-color': 'var(--green-color)'}}
+                            onClick={() => setShowNav(false)} 
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                                <h4 className='nav-item__title lesson-title'>問い合わせ</h4>
+                            </div>
+                        </NavLink>
+                    </li>
+                    <button className='sos-btn'>
+                        <NavLink
+                            className='nav-item'
+                            to='/trouble'
+                            onClick={() => setShowNav(false)} 
+                        >
+                            <div className='nav-item__transform-wrapper'
+                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                            >
+                                <h3 className='nav-item__title lesson-title'>性のSOS</h3>
+                            </div>
+                        </NavLink>
+                    </button>
                 </ul>
 
                 <ul className='nav-list'>
