@@ -34,6 +34,10 @@ export default function E2_gekkei(props) {
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.png`}/>
                                     <img className='s1_gekkei' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_gekkei.png`}/>
+                                    <div className='infi-slider'>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_infislide.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_infislide.png`}/>
+                                    </div>
                                     <div className='note-wrapper n1'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-とは.svg`}/>
                                         <p className='note'>

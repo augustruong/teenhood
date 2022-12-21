@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 
-.e3.s1 {background-color: #85BCFF; background-image: url(/images/ehon/e3_shasei/s1_bg.png); }
+.e3.s1 {background-color: #85BCFF;}
 .e3.s2 {background-color: #FFFFFF;}
 .e3.s3 {background-image: url(/images/ehon/e3_shasei/s3_musei.png); background-position: bottom;}
 .e3.s4 {background-color: #375A95;}
@@ -16,22 +16,38 @@
 /*-----------------------------------section 1------------------------------------*/
 .e3.s1 > .section-wrapper > .title {
     text-align: center;
-    margin: 0 auto;
     padding-top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
 .e3.s1 > .section-wrapper > img {
     display: block;
+    position: absolute;
 }
 
 .e3.s1 > .section-wrapper > .s1_shasei {
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
-    width: 30%;
-    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+}
+.e3.s1 > .section-wrapper > .infi-slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+.e3.s1 > .section-wrapper > .infi-slider > img {
+    animation: slideUp 30s linear infinite;
+    animation-delay: -30s;
+    width: 100%;
 }
 
+.e3.s1 > .section-wrapper > .infi-slider > img:nth-child(2) {
+    animation: slideUp2 30s linear infinite;
+    animation-delay: -15s;
+}
 .e3.s1 > .section-wrapper > .note-wrapper.n1 {
     position: absolute;
     top: 30%;

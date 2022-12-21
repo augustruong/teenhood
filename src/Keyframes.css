@@ -23,6 +23,24 @@
     0% {transform: translateX(0);}
     100% {transform: translateX(-200%);}
 }
+
+@keyframes slideUp {
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(-100%);}
+}
+@keyframes slideUp2 {
+    0% {transform: translateY(0%);}
+    100% {transform: translateY(-200%);}
+}
+
+@keyframes slideDown {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(100%);}
+}
+@keyframes slideDown2 {
+    0% {transform: translateY(-200%);}
+    100% {transform: translateY(0%);}
+}
 @keyframes float {
     0%, 100% {
         -webkit-transform: translateY(6px);

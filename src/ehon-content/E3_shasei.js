@@ -33,10 +33,12 @@ export default function E3_shasei(props) {
                             <section className='e3 s1'>
                                 <div className='section-wrapper'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_title.svg`}/>
+                                    <img className='s1_shasei' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei.png`}/>
                                     
-                                    {/* <img className='s1_shasei'
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shasei2.png`}
-                                    />  */}
+                                    <div className='infi-slider'>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_infislide.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_infislide.png`}/>
+                                    </div>
                                     <div className='note-wrapper n1'>
                                         <img className='stamp' src={process.env.PUBLIC_URL + `/icons-stamps/${thisLesson.lessonId}/stamp-とは.svg`}/>
                                         <p className='note'>
