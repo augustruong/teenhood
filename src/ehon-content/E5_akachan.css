@@ -5,6 +5,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.e5.s1 {
+    background-color: #d4ffc6;
+}
 .e5.s2, .e5.s3,.e5.s4,.e5.s5,.e5.s6 {background-color: #FAFAFA;}
 
 .box-content {
@@ -37,7 +40,32 @@
 }
 
 /*-----------------------------------section 1------------------------------------*/
+.e5.s1 > .section-wrapper {
+    position: relative;
+}
+.s1_baby {
+    animation: float 3s infinite ease-out;
+}
+.e5.s1 > .section-wrapper > img {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+.e5.s1 > .section-wrapper > .infi-slider {
+    width: 100%;
+    display: flex;
+    z-index: 99;
+}
+.e5.s1 > .section-wrapper > .infi-slider > img {
+    animation: slide 60s linear infinite;
+    animation-delay: -60s;
+    width: 100%;
+}
 
+.e5.s1 > .section-wrapper > .infi-slider > img:nth-child(2) {
+    animation: slide2 60s linear infinite;
+    animation-delay: -30s;
+}
 /*-----------------------------------section 2------------------------------------*/
 .e5.s2 > .section-wrapper {
     transform: translate(-50%,-52%);

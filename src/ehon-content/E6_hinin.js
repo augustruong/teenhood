@@ -29,6 +29,14 @@ export default function E6_hinin(props) {
                             <section className='e6 s1'>
                                 <div className='section-wrapper flex-column'>
                                     <img className='s1_hinin' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_hinin.png`}/>
+                                    <img className='s1_shiri' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_shiri.png`}/>
+                                    <img className='s1_chin' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_chin.png`}/>
+                                    
+                                    <div className='infi-slider'>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_bg.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_bg.png`}/>
+                                    </div>
+                                    
                                     <p className='block-msg'>案外妊娠にならないように<br/>ふたりをまもる！基本的な避妊法</p>
                                 </div>
                             </section>

@@ -49,9 +49,19 @@
 
 .nav-list__item.flex-row {
     justify-content: space-evenly;
+    border-top: 1px solid var(--grey-color);
+    margin: 10px 40px;
+
 }
 .nav-list__item.flex-row > .nav-item {
-    padding-left: 0;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+.nav-list__item.flex-row > .nav-item:hover {
+    background: none;
+}
+.nav-list__item.flex-row > .nav-item:hover > div > h4 {
+    color: var(--red-color);
 }
 .sos-btn {
     padding: 12px 100px;

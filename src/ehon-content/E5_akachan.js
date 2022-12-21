@@ -28,11 +28,14 @@ export default function E5_akachan(props) {
                             pageOnChange={(number) => {context.visitedCurrentPage(number)}}
                         >
                             <section className='e5 s1'>
-                                <div className='section-wrapper flex-row'>
-                                    <Image className=''
-                                        src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/baby-doko-1.png`}
-                                        webp={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/baby-doko-1.png`} 
-                                    />
+                                <div className='section-wrapper'>
+                                    <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/baby-doko.png`}/>
+                                    <img className='s1_baby' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/baby.png`}/>
+                                    
+                                    <div className='infi-slider'>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_bg.png`}/>
+                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s1_bg.png`}/>
+                                    </div>
                                 </div>
                             </section>
 

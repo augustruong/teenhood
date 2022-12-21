@@ -23,7 +23,16 @@
     0% {transform: translateX(0);}
     100% {transform: translateX(-200%);}
 }
-
+@keyframes float {
+    0%, 100% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(12px);
+    }
+    50% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-12px);
+    }
+}
 @keyframes kata0 {
     0%, 10%, 11%, 21%, 30%, 41%, 100% {
         -webkit-transform: translateY(1px);
