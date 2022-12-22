@@ -11,8 +11,9 @@ export default function EhonPage() {
   return (
     <div id='ehon-page'>
         <section className='header-section' style={{backgroundColor:"#FFECEC"}}>
-          <h2 style={{color:"#E06363"}}>性の絵本</h2>
-          <div className='bold mt10'>絵から性を学びましょう</div>
+        <img className='title' src={process.env.PUBLIC_URL + `/images/main/title_ehon.png`}/>
+
+          <h3 className='bold mt20'>絵から性を学びましょう</h3>
         </section>
 
         <section className='lessonList-section'>

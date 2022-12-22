@@ -6,6 +6,10 @@ import HomePage from './pages/main/HomePage';
 import EhonPage from './pages/main/EhonPage';
 import JishoPage from './pages/main/JishoPage';
 import NayamiPage from './pages/main/NayamiPage';
+import ContactPage from './pages/main/ContactPage';
+import SOSPage from './pages/main/SOSPage';
+
+
 import CoverPage from './pages/ehon/CoverPage';
 
 import EhonContentPage from './pages/ehon/EhonContentPage';
@@ -27,6 +31,9 @@ function App() {
           <Route path='/ehon' element={<EhonPage/>} />
           <Route path='/jisho' element={<JishoPage/>} />
           <Route path='/nayami' element={<NayamiPage/>} />
+          <Route path='/sos' element={<SOSPage/>} />
+          <Route path='/contact' element={<ContactPage/>} />
+
 
           <Route path='/ehon/e1_shishunki/cover' element={<CoverPage index={0}/>} />
           <Route path='/ehon/e2_gekkei/cover' element={<CoverPage index={1}/>} />

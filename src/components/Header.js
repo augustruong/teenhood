@@ -123,19 +123,20 @@ export default function NavWrapper(props) {
                             </div>
                         </NavLink>
                     </li>
-                    <button className='sos-btn'>
-                        <NavLink
-                            className='nav-item'
-                            to='/trouble'
-                            onClick={() => setShowNav(false)} 
-                        >
+                    
+                    <NavLink
+                        className='nav-item sos'
+                        to='/sos'
+                        onClick={() => setShowNav(false)} 
+                    >
+                        <button className='sos-btn'>
                             <div className='nav-item__transform-wrapper'
                                 style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
                             >
                                 <h3 className='nav-item__title lesson-title'>性のSOS</h3>
                             </div>
-                        </NavLink>
-                    </button>
+                        </button>
+                    </NavLink>
                 </ul>
 
                 <ul className='nav-list'>

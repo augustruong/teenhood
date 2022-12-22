@@ -15,8 +15,8 @@ export default function NayamiPage() {
     <MyProvider>
       <div id='nayami-page'>
           <section className='header-section' style={{backgroundColor:"#E1FCDA"}}>
-            <h2 style={{color:"#75BE5B"}}>性の悩み</h2>
-            <div className='bold mt10'>気になることを解けましょう</div>
+            <img className='title' src={process.env.PUBLIC_URL + `/images/main/title_nayami.png`}/>
+            <h3 className='bold mt20'>気になることを解けましょう</h3>
           </section>
 
           <section className='nayamiList-section'>

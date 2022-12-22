@@ -1,0 +1,54 @@
+.sos-template {
+    height: 100vh;
+    position: relative;
+}
+.sos-template > .wrapper.flex-row {
+    justify-content: center;
+    gap: 50px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.sos-template > .wrapper.flex-row > .flex-column {
+    align-items: center;
+    gap: 30px;
+}
+.sos-img {
+    width: 320px;
+}
+
+.sos-note {
+    background-color: #FEFFCC;
+    padding: 20px 20px;
+    border-radius: 20px;
+    width: 420px;
+}
+
+.sos-content {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px 10px 30px 40px;
+    width: 700px;
+}
+
+.sos-content > .scroll-wrapper {
+    overflow-y: scroll;
+    height: 600px;
+    padding-right: 20px;
+  }
+
+  .sos-content > .scroll-wrapper::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  .sos-content > .scroll-wrapper::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+  .sos-content > .scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: #B4B4B4;
+    border-radius: 100px;
+  }

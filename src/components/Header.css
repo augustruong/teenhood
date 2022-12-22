@@ -63,6 +63,10 @@
 .nav-list__item.flex-row > .nav-item:hover > div > h4 {
     color: var(--red-color);
 }
+
+.nav-item.sos {
+    padding-left: 0;
+}
 .sos-btn {
     padding: 12px 100px;
     border-radius: 15px;
@@ -74,7 +78,7 @@
     padding: 0;
 }
 
-.sos-btn > a > div > .nav-item__title {
+.sos-btn > div > .nav-item__title {
     color: #fff;
 }
 
