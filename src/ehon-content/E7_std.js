@@ -83,31 +83,31 @@ export default function E7_std(props){
                                 
                                     <div className='virus-wrapper flex-row'>
                                         <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(0)}}>
-                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/virus-0.png`}/>
+                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/梅毒.png`}/>
                                             <div className='virus-name'>梅毒</div>
                                         </div>
                                         <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(1)}}>
-                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/virus-1.png`}/>
+                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/性器クラミジア.png`}/>
                                             <div className='virus-name'>クラミジア</div>
                                         </div>
                                         <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(2)}}>
-                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/virus-2.png`}/>
+                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/淋菌感染症.png`}/>
                                             <div className='virus-name'>淋菌感染症</div>
                                         </div>
                                         <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(3)}}>
-                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/virus-3.png`}/>
+                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/性器カンジダ感染症.png`}/>
                                             <div className='virus-name'>性器カンジダ症</div>
                                         </div>
                                         <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(4)}}>
-                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/virus-4.png`}/>
+                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/尖圭コンジローマ.png`}/>
                                             <div className='virus-name'>尖圭コンジ<br/>ローマ</div>
                                         </div>
                                         <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(5)}}>
-                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/virus-5.png`}/>
+                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/トリコモナス症.png`}/>
                                             <div className='virus-name'>トリコモナス症</div>
                                         </div>
                                         <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(6)}}>
-                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/virus-6.png`}/>
+                                            <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/HIV・エイズ感染症.png`}/>
                                             <div className='virus-name'>HIV・エイズ<br/>感染症</div>
                                         </div>
                                     </div>

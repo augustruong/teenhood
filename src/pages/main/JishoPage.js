@@ -33,7 +33,7 @@ export default function JishoPage() {
 
         {page===1 &&
           <section className='az-section'>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>あ</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("汗")}}>あせ</div>
@@ -45,7 +45,7 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("陰唇")}}>陰唇</div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>か</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus("性器カンジダ感染症")}}>カンジダ症</div>
@@ -59,7 +59,7 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("肛門")}}>肛門</div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>さ</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("月経")}}>生理</div>
@@ -77,7 +77,7 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus("尖圭コンジローマ")}}>尖圭コンジローマ</div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>た</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("膣")}}>膣</div>
@@ -87,7 +87,7 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus("トリコモナス症")}}>トリコモナス症</div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>な</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("内性器")}}>内性器</div>
@@ -98,7 +98,7 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("妊娠")}}>妊娠</div>  
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>は</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus("梅毒")}}>梅毒</div>
@@ -110,13 +110,13 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("避妊")}}>避妊</div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>ま</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("夢精")}}>夢精</div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>ら</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("卵管")}}>卵管</div>
@@ -125,7 +125,7 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus("淋菌感染症")}}>淋菌感染症</div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
+            <div className='az-wordList-wrapper'>
               <div className='letter'>AZ</div>
               <div className='wordList'>
                 <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus("HIV・エイズ感染症")}}>HIV・エイズ</div>
@@ -136,75 +136,81 @@ export default function JishoPage() {
           </section>
         }
         {page===2 &&
-          <section className='tema-section'>
-            <div className='wordList-wrapper'>
-              <div className='thumb-wrapper'>
-                <LessonThumb lessonId="e1_shishunki" title="#1: 私のからだが変化している" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+          <section className='theme-section'>
+            <div className='flex-row'>
+              <div className='theme-wordList-wrapper'>
+                <div className='thumb-wrapper'>
+                  <LessonThumb lessonId="e1_shishunki" title="#1: 私のからだが変化している" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                </div>
+                <div className='wordList'>
+                  {EhonData[0].wordList.map((word) => (
+                    <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
+                  ))}
+                </div>
               </div>
-              <div className='wordList'>
-                {EhonData[0].wordList.map((word) => (
-                  <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
-                ))}
+              <div className='theme-wordList-wrapper'>
+                <div className='thumb-wrapper'>
+                  <LessonThumb lessonId="e2_gekkei" title="#2: 月経って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                </div>
+                <div className='wordList'>
+                  {EhonData[1].wordList.map((word) => (
+                    <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className='wordList-wrapper'>
-              <div className='thumb-wrapper'>
-                <LessonThumb lessonId="e2_gekkei" title="#2: 月経って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
-              </div>
-              <div className='wordList'>
-                {EhonData[1].wordList.map((word) => (
-                  <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
-                ))}
-              </div>
-            </div>
-            <div className='wordList-wrapper'>
-              <div className='thumb-wrapper'>
-                <LessonThumb lessonId="e3_shasei" title="#3: 射精って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
-              </div>
-              <div className='wordList'>
-                {EhonData[2].wordList.map((word) => (
-                  <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
-                ))}
-              </div>
-            </div>
-            <div className='wordList-wrapper'>
-              <div className='thumb-wrapper'>
-                <LessonThumb lessonId="e4_suki" title="#4: 人を好きになるってこと？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
-              </div>
-              <div className='wordList'>
-                {EhonData[3].wordList.map((word) => (
-                  <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
-                ))}
+              <div className='theme-wordList-wrapper'>
+                <div className='thumb-wrapper'>
+                  <LessonThumb lessonId="e3_shasei" title="#3: 射精って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                </div>
+                <div className='wordList'>
+                  {EhonData[2].wordList.map((word) => (
+                    <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
+                  ))}
+                </div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
-              <div className='thumb-wrapper'>
-                <LessonThumb lessonId="e5_akachan" title="#5: 赤ちゃんはどこからくるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+            <div className='flex-row'>
+              <div className='theme-wordList-wrapper'>
+                <div className='thumb-wrapper'>
+                  <LessonThumb lessonId="e4_suki" title="#4: 人を好きになるってこと？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                </div>
+                <div className='wordList'>
+                  {EhonData[3].wordList.map((word) => (
+                    <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
+                  ))}
+                </div>
               </div>
-              <div className='wordList'>
-                {EhonData[4].wordList.map((word) => (
-                  <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
-                ))}
+              <div className='theme-wordList-wrapper'>
+                <div className='thumb-wrapper'>
+                  <LessonThumb lessonId="e5_akachan" title="#5: 赤ちゃんはどこからくるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                </div>
+                <div className='wordList'>
+                  {EhonData[4].wordList.map((word) => (
+                    <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
+                  ))}
+                </div>
               </div>
             </div>
-            <div className='wordList-wrapper'>
-              <div className='thumb-wrapper'>
-                <LessonThumb lessonId="e6_hinin" title="#6: 基本的な避妊方法" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+            <div className='flex-row'>
+              <div className='theme-wordList-wrapper'>
+                <div className='thumb-wrapper'>
+                  <LessonThumb lessonId="e6_hinin" title="#6: 基本的な避妊方法" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                </div>
+                <div className='wordList'>
+                  {EhonData[5].wordList.map((word) => (
+                    <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
+                  ))}
+                </div>
               </div>
-              <div className='wordList'>
-                {EhonData[5].wordList.map((word) => (
-                  <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
-                ))}
-              </div>
-            </div>
-            <div className='wordList-wrapper'>
-              <div className='thumb-wrapper'>
-                <LessonThumb lessonId="e7_std" title="#7: 性感染症を知ろう" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
-              </div>
-              <div className='wordList'>
-                {EhonData[6].wordList.map((word) => (
-                  <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus(word)}}>{word}</div>
-                ))}
+              <div className='theme-wordList-wrapper'>
+                <div className='thumb-wrapper'>
+                  <LessonThumb lessonId="e7_std" title="#7: 性感染症を知ろう" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                </div>
+                <div className='wordList'>
+                  {EhonData[6].wordList.map((word) => (
+                    <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus(word)}}>{word}</div>
+                  ))}
+                </div>
               </div>
             </div>
           </section>

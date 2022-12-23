@@ -272,7 +272,7 @@ export default function E2_gekkei(props) {
                                 </div>
                             </section>
                             <section className='e2 s10'>
-                                <div className='section-wrapper scr-center'>
+                                <div className='section-wrapper'>
                                     <div className='flex-row'>
                                         <img className='' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s10_calendar.png`}/>
                                         <div className='content-wrapper'>
@@ -283,7 +283,7 @@ export default function E2_gekkei(props) {
                                 </div>
                             </section>
                             <section className='e2 s11'>
-                                <div className='section-wrapper'>
+                                <div className='section-wrapper scr-center'>
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s11_title.svg`}/>
                                     <div className='flex-row'>
                                         <div className='manner'>

@@ -522,13 +522,16 @@
 }
 
 /*-----------------------------------section 10------------------------------------*/
-
 .e2.s10 > .section-wrapper {
-    padding-top: 10%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
 }
 .e2.s10 > .section-wrapper > .flex-row {
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    gap: 10%;
+    width: 800px;
 }
 
 .e2.s10 > .section-wrapper > .flex-row > .content-wrapper > .calendar {
@@ -544,9 +547,11 @@
 }
 
 .e2.s10 > .section-wrapper > .flex-row > .content-wrapper > p {
-    margin-top: 100px;
+    margin-top: 50px;
 }
-
+.e2.s10 > .section-wrapper > .flex-row > img {
+    width: 360px;
+}
 /*-----------------------------------section 10------------------------------------*/
 .e2.s11 > .section-wrapper {
     text-align: center;

@@ -82,11 +82,11 @@
     padding-top: 5%;
     padding-bottom: 10%;    
 }
-#jisho-page > .az-section > .wordList-wrapper {
+.az-wordList-wrapper {
     width: 126px;
     text-align: left;
 }
-#jisho-page > .az-section > .wordList-wrapper > .letter {
+.az-wordList-wrapper > .letter {
     font-size: 64px;
     font-weight: 800;
     color: #2B79CA;
@@ -95,88 +95,89 @@
     margin-bottom: 15px;
     padding-right: 20px;
 }
-#jisho-page > .az-section > .wordList-wrapper > .wordList {
+.az-wordList-wrapper > .wordList {
     margin-bottom: 50px;
 }
-#jisho-page > .az-section > .wordList-wrapper > .wordList > div {
+.az-wordList-wrapper > .wordList > div {
     line-height: 30px;
 }
-#jisho-page > .az-section > .wordList-wrapper > .wordList > div:hover {
+.az-wordList-wrapper > .wordList > div:hover {
     font-weight: 700;
     cursor: pointer;
 }
 
 
-#jisho-page > .tema-section {
+#jisho-page > .theme-section {
     width: 70%;
     max-width: 1100px;
 
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
     padding-top: 5%;
     padding-bottom: 10%;    
 }
-#jisho-page > .tema-section > .wordList-wrapper {
+#jisho-page > .theme-section > .flex-row {
+    justify-content: center;
+    gap: 50px;
+    margin-bottom:80px;
+}
+.theme-wordList-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-#jisho-page > .tema-section > .wordList-wrapper > .thumb-wrapper {
+.theme-wordList-wrapper > .thumb-wrapper {
     width: 310px;
     text-align: left;
     background-color: #fff;
-    padding: 0 16px;
+    padding: 16px 16px 0 16px;
     border-radius: 15px;
     filter: drop-shadow(0px 7px 0px rgba(0, 0, 0, 0.04));
     z-index: 10;
 }
 
-#jisho-page > .tema-section > .wordList-wrapper > .thumb-wrapper:hover {
+.theme-wordList-wrapper > .thumb-wrapper:hover {
     filter: drop-shadow(0px 12px 8px rgba(0, 0, 0, 0.06));
     transition: filter .2s ease-in-out;
 }
-#jisho-page > .tema-section > .wordList-wrapper > .thumb-wrapper > .lesson-thumb {
+.theme-wordList-wrapper > .thumb-wrapper > .lesson-thumb {
     padding: 0px;
 }
-#jisho-page > .tema-section > .wordList-wrapper > .wordList {
+.theme-wordList-wrapper > .wordList {
     background-color: #fff;
     border-radius: 0 0 20px 20px;
     filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.04));
     width: 70%;
     padding: 20px 5px;
 }
-#jisho-page > .tema-section > .wordList-wrapper > .wordList > div {
+.theme-wordList-wrapper > .wordList > div {
     text-align: center;
     padding: 15px 0;
     border-radius: 15px;
 } 
-#jisho-page > .tema-section > .wordList-wrapper > .wordList > div:hover {
+.theme-wordList-wrapper > .wordList > div:hover {
     filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.04));
     cursor: pointer;
     font-weight: 600;
 }
-#jisho-page > .tema-section > .wordList-wrapper:nth-child(1) > .wordList > div:hover {
+.theme-wordList-wrapper:nth-child(1) > .wordList > div:hover {
     background-color: var(--e1-light-color);
 }
-#jisho-page > .tema-section > .wordList-wrapper:nth-child(2) > .wordList > div:hover {
+.theme-wordList-wrapper:nth-child(2) > .wordList > div:hover {
     background-color: var(--e2-light-color);
 }
-#jisho-page > .tema-section > .wordList-wrapper:nth-child(3) > .wordList > div:hover {
+.theme-wordList-wrapper:nth-child(3) > .wordList > div:hover {
     background-color: var(--e3-light-color);
 }
-#jisho-page > .tema-section > .wordList-wrapper:nth-child(4) > .wordList > div:hover {
+.theme-wordList-wrapper:nth-child(4) > .wordList > div:hover {
     background-color: var(--e4-light-color);
 }
-#jisho-page > .tema-section > .wordList-wrapper:nth-child(5) > .wordList > div:hover {
+.theme-wordList-wrapper:nth-child(5) > .wordList > div:hover {
     background-color: var(--e5-light-color);
 }
-#jisho-page > .tema-section > .wordList-wrapper:nth-child(6) > .wordList > div:hover {
+.theme-wordList-wrapper:nth-child(6) > .wordList > div:hover {
     background-color: var(--e6-light-color);
 }
-#jisho-page > .tema-section > .wordList-wrapper:nth-child(7) > .wordList > div:hover {
+.theme-wordList-wrapper:nth-child(7) > .wordList > div:hover {
     background-color: var(--e7-light-color);
 }
 /*------------------------------------NayamiPage-----------------------------------*/

@@ -18,12 +18,13 @@
 
 .e7.s1 > .section-wrapper {
     align-items: center;
-    transform: translate(-50%,-65%);
+    transform: translate(-50%,-60%);
 }
 
 .e7.s1 > .section-wrapper > .title{
     margin-top: 7%;
-    margin-bottom: 15%;
+    margin-bottom: 12%;
+    height: 81px;
 }
 .e7.s1 > .section-wrapper > .note-wrapper.n1 {
     margin-bottom: 10%;
@@ -110,4 +111,16 @@
     border: none;
     color: #fff;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1600px) {
+    .e7.s2 > .section-wrapper {
+        transform: translate(-50%,-50%);
+    }
+    .e7.s3 > .section-wrapper {
+        transform: translate(-50%,-50%);
+    }
+    .e7.s3 > .section-wrapper > img {
+        width: 320px;
+    }
 }
