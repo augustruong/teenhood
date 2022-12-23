@@ -21,7 +21,7 @@ export default function SOSPage() {
                     onBeforePageScroll={(number) => {context.setCurrentPage(number)}}
                 >
                 <section>
-                    <section className='sos-header-section' style={{backgroundColor:"#DBD1FF"}}>
+                    <section className='main-header-section' style={{backgroundColor:"#DBD1FF"}}>
                         <img className='title' src={process.env.PUBLIC_URL + `/images/main/title_sos.png`}/>
                         <h3 className='bold mt20'>「困った！」があったときに</h3>
                     </section>

@@ -14,7 +14,7 @@ export default function NayamiPage() {
   return (
     <MyProvider>
       <div id='nayami-page'>
-          <section className='header-section' style={{backgroundColor:"#E1FCDA"}}>
+          <section className='main-header-section' style={{backgroundColor:"#E1FCDA"}}>
             <img className='title' src={process.env.PUBLIC_URL + `/images/main/title_nayami.png`}/>
             <h3 className='bold mt20'>気になることを解けましょう</h3>
           </section>

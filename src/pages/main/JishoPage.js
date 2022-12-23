@@ -19,7 +19,7 @@ export default function JishoPage() {
         {type === "word" && <PopUpModal type={"word"} word={word} showModal={showModal} setShowModal={setShowModal} />}
         {type === "virus" && <PopUpModal type={"virus"} word={virus} showModal={showModal} setShowModal={setShowModal} />}
 
-        <section className='header-section' style={{backgroundColor:"#DEEFFF"}}>
+        <section className='main-header-section' style={{backgroundColor:"#DEEFFF"}}>
           <img className='title' src={process.env.PUBLIC_URL + `/images/main/title_jisho.png`}/>
           <h3 className='bold mt20'>ことばから性を学びましょう</h3>
         </section>

@@ -13,6 +13,7 @@
 } 
 .sos-template > .wrapper.flex-row > .flex-column {
     align-items: center;
+    justify-content: start;
     gap: 30px;
 }
 .sos-img {
@@ -31,11 +32,12 @@
     border-radius: 30px;
     padding: 40px 10px 30px 40px;
     width: 700px;
+    height: 690px;
 }
 
 .sos-content > .scroll-wrapper {
     overflow-y: scroll;
-    height: 600px;
+    height: 610px;
     padding-right: 20px;
   }
 

@@ -2,32 +2,30 @@
 #jisho-page {  background-color: #F8FCFF; }
 #nayami-page { height: 100vh; background-color: #F9FEF8; }
 
-#ehon-page>.header-section, 
-#jisho-page>.header-section, 
-#nayami-page>.header-section,
-#contact-page>.header-section,
-.sos-header-section{
+.main-header-section{
     text-align: center;
     padding: 70px 0 50px 0;
     width: 100%;
 }
-#nayami-page>.header-section {
+#nayami-page>.main-header-section {
     position: fixed;
 }
-#contact-page>.header-section {
-    padding: 100px 0 150px 0;
+#contact-page>.main-header-section {
+    padding: 80px 0 150px 0;
 }
-.header-section > .title {
+.main-header-section > .title {
     height: 81px;
 }
 @media screen and (max-width: 1600px) {
-    #ehon-page>.header-section, 
-    #jisho-page>.header-section, 
-    #nayami-page>.header-section,
-    #contact-page>.header-section,
-    #sos-page>.header-section {
-        padding: 40px 0;
-}
+    .main-header-section{
+        padding: 40px 0 15px 0;
+    }
+    .main-header-section > h3{
+        font-size: 20px;
+    }
+    #contact-page>.main-header-section {
+        padding: 60px 0 100px 0;
+    }
 }
 
 /*------------------------------------EhonPage--------------------------------------------*/
@@ -202,6 +200,7 @@
     padding: 40px 50px;
     margin-top: -80px;
 }
+
 #contact-form > h3 {
     font-weight: 700;
     font-size: 24px;
@@ -236,7 +235,21 @@
 #contact-form > input:focus, #contact-form > textarea:focus {
     outline: #7E86F6 2px solid;
 }
+@media screen and (max-width: 1600px) {
+    #contact-form{
+        margin-top: -50px;
+        padding: 40px 40px;
+        width: 500px;
+    }
+    #contact-form > button {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
 
+    #contact-form > input, #contact-form > textarea {
+        margin-bottom: 20px;
+    }
+}
 /*------------------------------------SOS Page-------------------------------------------*/
 #sos-page {
     background: #F8F6FF;

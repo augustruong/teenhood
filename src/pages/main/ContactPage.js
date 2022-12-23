@@ -8,7 +8,7 @@ export default function ContactPage() {
 
   return (
     <div id='contact-page'>
-        <section className='header-section' style={{backgroundColor:"#FFF19A"}}>
+        <section className='main-header-section' style={{backgroundColor:"#FFF19A"}}>
             <img className='title' src={process.env.PUBLIC_URL + `/images/main/title_contact.png`}/>
         </section>
         <section className='form-wrapper'>

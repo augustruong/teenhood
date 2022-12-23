@@ -10,7 +10,7 @@ export default function EhonPage() {
 
   return (
     <div id='ehon-page'>
-        <section className='header-section' style={{backgroundColor:"#FFECEC"}}>
+        <section className='main-header-section' style={{backgroundColor:"#FFECEC"}}>
         <img className='title' src={process.env.PUBLIC_URL + `/images/main/title_ehon.png`}/>
 
           <h3 className='bold mt20'>絵から性を学びましょう</h3>
