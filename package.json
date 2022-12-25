@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@inlet/react-pixi": "^6.8.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "jquery": "^3.6.2",
     "jquery.magnify": "^1.6.3",
+    "pixi.js": "^7.0.5",
     "react": "^17.0.0-rc.0",
     "react-dom": "^17.0.0-rc.0",
     "react-elastic-carousel": "^0.11.5",

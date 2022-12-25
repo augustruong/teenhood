@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
-import Image from 'react-image-webp';
+import Stage from "@inlet/react-pixi"
+import * as PIXI from "pixi.js";
 import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 

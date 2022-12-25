@@ -72,7 +72,6 @@ const FormWrapper = styled.div`
 export const WelcomeForm = () => {
     const [gender,setGender] = useState("");
     const [newMem, setNewMem] = useState("");
-    console.log(gender)
     return(
         <FormWrapper>
             <form id='welcome-form'>
@@ -91,8 +90,8 @@ export const WelcomeForm = () => {
                             <div className={gender==="girl" ? 'active' : ''}  onClick={() => setGender("girl")}>女</div>
                         </div>
                         <div className='select flex-row'>
-                            <div className={newMem ? 'active' : ''} onClick={() => setNewMem(true)}>Ｏ</div>
-                            <div className={!newMem ? 'active' : ''} onClick={() => setNewMem(false)}>Ｘ</div>
+                            <div className={newMem===true ? 'active' : ''} onClick={() => setNewMem(true)}>Ｏ</div>
+                            <div className={newMem===false ? 'active' : ''} onClick={() => setNewMem(false)}>Ｘ</div>
                         </div>
                         </div>
                 </div>
