@@ -4,15 +4,20 @@ import PartList from './PartList';
 import WordList from './WordList';
 import { MContext } from '../module/MyProvider';
 
-
 import EhonData from '../data/EhonData.json'
 
 import './LessonNav.css'
 
 export default function LessonNav(props) {
     const thisLesson = EhonData[props.index];
+    let numSection = 0;
+    EhonData.map((child) => {
+        if (child.lessonId === thisLesson.lessonId) {numSection = child.sectionNumber}
+    })
+    console.log(numSection)
 
     return(
+        
         <nav className='lesson-nav-wrapper'>
             <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/thumbnail.png`}/>
             <div className='header'>
@@ -21,7 +26,7 @@ export default function LessonNav(props) {
                     <div className='progress-bar'></div>
                     <MContext.Consumer>
                         {(context) => (
-                            <div className='progress-status' style={{fontSize: 12}}>{(context.visited.visitedPage.filter(x => x == true).length / context.visited.visitedPage.length * 100).toFixed(0)}% COMPLETE</div>
+                            <div className='progress-status' style={{fontSize: 12}}>{(context.visited.visitedPage.filter(x => x == true).length / numSection* 100).toFixed(0)}% COMPLETE</div>
                         )}
                     </MContext.Consumer>
                 </div>
