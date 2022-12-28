@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
-import Stage from "@inlet/react-pixi"
+import { Stage, Sprite, Texture, render } from '@inlet/react-pixi'
 import * as PIXI from "pixi.js";
 import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
@@ -11,12 +11,15 @@ import './Ehon.css'
 import './E2_gekkei.css'
 import { useTheme } from 'styled-components';
 
+import shikyuu from '../../public/images/ehon/e2_gekkei/s2_front-子宮.svg'
+
 export default function E2_gekkei(props) {
     const thisLesson = EhonData[props.index];
     const [showModal, setShowModal] = useState(false);
     const [word, setWord] = useState("");
     const [s2Page,setS2Page] = useState(1)
     const [s3Page,setS3Page] = useState(1)
+    let scale = { x: 1, y: 1 }
 
     return(
         <div>
@@ -68,14 +71,26 @@ export default function E2_gekkei(props) {
                                     <div className='diagram-wrapper'>
                                         {s2Page === 1 && 
                                             <div className='front'>
-                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-front.png`}/>
+                                                {/* <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-front.png`}/>
                                                 <div className='diagram-moji'>
                                                     <div className='s2_子宮' onClick={() => {setShowModal(!showModal); setWord("子宮")}}></div>
                                                     <div className='s2_卵管' onClick={() => {setShowModal(!showModal); setWord("卵管")}}></div>
                                                     <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
                                                     <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
                                                     <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
-                                                </div>
+                                                </div> */}
+                                                <Stage width={960} height={450} 
+                                                        options={{backgroundColor: "#fff", antialias: true }}>
+                                                    <Sprite width={380} height={380} x={290} y={70} image={process.env.PUBLIC_URL + `/images/ehon/e2_gekkei/s2_naiseiki-front.png`}/>
+                                                    <Sprite width={50} height={242} x={457} image={shikyuu} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => {
+                                                            this.image = `/images/ehon/e2_gekkei/s2_front-hv-子宮.svg`;
+                                                            
+                                                            render();
+                                                      }}
+                                                    />
+                                                
+                                                </Stage>
                                             </div>
                                         }
                                         {s2Page === 2 && 

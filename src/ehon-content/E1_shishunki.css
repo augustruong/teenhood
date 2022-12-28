@@ -174,7 +174,7 @@
 
 #leaves i {
     display: inline-block;
-    background: url("/images/ehon/e1_shishunki/s6_flower.png");
+    background: url("/public/images/ehon/e1_shishunki/s6_flower.png");
     transform: skew(20deg);
     z-index: 1;
     animation: falling 5s 0s infinite;
@@ -203,9 +203,9 @@
 #leaves i:nth-of-type(14n) { animation-delay: 4.7s;}
 #leaves i:nth-of-type(15n) { animation-delay: 3s;  }
 
-#leaves i:nth-of-type(n)     {background: url("/images/ehon/e1_shishunki/s6_flower.png"); background-size: contain; background-repeat: no-repeat;}
-#leaves i:nth-of-type(2n+2)  {background: url("/images/ehon/e1_shishunki/s6_flower.png");background-size: contain; background-repeat: no-repeat;}
-#leaves i:nth-of-type(4n+1)  {background: url("/images/ehon/e1_shishunki/s6_flower.png");background-size: contain; background-repeat: no-repeat;}
+#leaves i:nth-of-type(n)     {background: url("/public/images/ehon/e1_shishunki/s6_flower.png"); background-size: contain; background-repeat: no-repeat;}
+#leaves i:nth-of-type(2n+2)  {background: url("/public/images/ehon/e1_shishunki/s6_flower.png");background-size: contain; background-repeat: no-repeat;}
+#leaves i:nth-of-type(4n+1)  {background: url("/public/images/ehon/e1_shishunki/s6_flower.png");background-size: contain; background-repeat: no-repeat;}
 
 #leaves i:nth-of-type(n)    { opacity: 1;}
 #leaves i:nth-of-type(3n+1)  { opacity: .7;}

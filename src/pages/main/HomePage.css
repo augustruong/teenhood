@@ -7,7 +7,7 @@
     height: 100vh;
     text-align: center;
     padding-top: 7%;
-    background-image: url(/images/key-visual/kv_background.png);
+    background-image: url(/public/images/key-visual/kv_background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
     animation: jitter-1 1s infinite ease-out;
 }
 .hero-section > .chara-wrapper > .bubble-wrapper {
-    background-image: url(/images/key-visual/bubble.png);
+    background-image: url(/public/images/key-visual/bubble.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
