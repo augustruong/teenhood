@@ -117,7 +117,7 @@ export default function WordModal(props) {
     return el.word === props.word;
   });
   var [thisWord,setThisWord] = useState(getWord[0]);
-
+  
   return (
     <ModalWrapper>
       <ModalInner>

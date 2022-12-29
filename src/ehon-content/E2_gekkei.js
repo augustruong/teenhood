@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
-// import Stage from "@inlet/react-pixi"
-// import * as PIXI from "pixi.js";
+import { Stage, Sprite, Texture, render } from '@inlet/react-pixi'
 import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 
@@ -11,12 +10,50 @@ import './Ehon.css'
 import './E2_gekkei.css'
 import { useTheme } from 'styled-components';
 
+import 子宮_front from './images/e2_gekkei/s2_front-子宮.svg'
+import 子宮_front_hv from './images/e2_gekkei/s2_front-hv-子宮.svg'
+import 卵管_front from './images/e2_gekkei/s2_front-卵管.svg'
+import 卵管_front_hv from './images/e2_gekkei/s2_front-hv-卵管.svg'
+import 卵子_front from './images/e2_gekkei/s2_front-卵子.svg'
+import 卵子_front_hv from './images/e2_gekkei/s2_front-hv-卵子.svg'
+import 卵巣_front from './images/e2_gekkei/s2_front-卵巣.svg'
+import 卵巣_front_hv from './images/e2_gekkei/s2_front-hv-卵巣.svg'
+import ちつ_front from './images/e2_gekkei/s2_front-ちつ.svg'
+import ちつ_front_hv from './images/e2_gekkei/s2_front-hv-ちつ.svg'
+
+import 子宮_side from './images/e2_gekkei/s2_side-子宮.svg'
+import 子宮_side_hv from './images/e2_gekkei/s2_side-hv-子宮.svg'
+import 卵管_side from './images/e2_gekkei/s2_side-卵管.svg'
+import 卵管_side_hv from './images/e2_gekkei/s2_side-hv-卵管.svg'
+import 卵子_side from './images/e2_gekkei/s2_side-卵子.svg'
+import 卵子_side_hv from './images/e2_gekkei/s2_side-hv-卵子.svg'
+import 卵巣_side from './images/e2_gekkei/s2_side-卵巣.svg'
+import 卵巣_side_hv from './images/e2_gekkei/s2_side-hv-卵巣.svg'
+import ちつ_side from './images/e2_gekkei/s2_side-ちつ.svg'
+import ちつ_side_hv from './images/e2_gekkei/s2_side-hv-ちつ.svg'
+import 肛門_side from './images/e2_gekkei/s2_side-肛門.svg'
+import 肛門_side_hv from './images/e2_gekkei/s2_side-hv-肛門.svg' 
+
 export default function E2_gekkei(props) {
     const thisLesson = EhonData[props.index];
     const [showModal, setShowModal] = useState(false);
     const [word, setWord] = useState("");
     const [s2Page,setS2Page] = useState(1)
     const [s3Page,setS3Page] = useState(1)
+    let scale = { x: 1, y: 1 }
+
+    const [imgFront子宮,setImgFront子宮] = useState(子宮_front)
+    const [imgFront卵管,setImgFront卵管] = useState(卵管_front)
+    const [imgFront卵子,setImgFront卵子] = useState(卵子_front)
+    const [imgFront卵巣,setImgFront卵巣] = useState(卵巣_front)
+    const [imgFrontちつ,setImgFrontちつ] = useState(ちつ_front)
+
+    const [imgSide子宮,setImgSide子宮] = useState(子宮_side)
+    const [imgSide卵管,setImgSide卵管] = useState(卵管_side)
+    const [imgSide卵子,setImgSide卵子] = useState(卵子_side)
+    const [imgSide卵巣,setImgSide卵巣] = useState(卵巣_side)
+    const [imgSideちつ,setImgSideちつ] = useState(ちつ_side)
+    const [imgSide肛門,setImgSide肛門] = useState(肛門_side)
 
     return(
         <div>
@@ -68,27 +105,71 @@ export default function E2_gekkei(props) {
                                     <div className='diagram-wrapper'>
                                         {s2Page === 1 && 
                                             <div className='front'>
-                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-front.png`}/>
-                                                <div className='diagram-moji'>
-                                                    <div className='s2_子宮' onClick={() => {setShowModal(!showModal); setWord("子宮")}}></div>
-                                                    <div className='s2_卵管' onClick={() => {setShowModal(!showModal); setWord("卵管")}}></div>
-                                                    <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
-                                                    <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
-                                                    <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
-                                                </div>
+                                                <Stage width={960} height={480} options={{backgroundColor: "#fff", antialias: true }}>
+                                                    <Sprite width={400} height={400} x={280} y={70} image={process.env.PUBLIC_URL + `/images/ehon/e2_gekkei/s2_naiseiki-front.png`}/>
+                                                    <Sprite width={50} height={242} x={457} image={imgFront子宮} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront子宮(子宮_front_hv)}}
+                                                        pointerout={() => { setImgFront子宮(子宮_front)}}
+                                                        pointerdown={() => { setWord("子宮"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={242} height={60} x={160} y={160} image={imgFront卵管} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront卵管(卵管_front_hv)}}
+                                                        pointerout={() => { setImgFront卵管(卵管_front)}}
+                                                        pointerdown={() => { setWord("卵管"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={257} height={48} x={160} y={238} image={imgFront卵子} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront卵子(卵子_front_hv)}}
+                                                        pointerout={() => { setImgFront卵子(卵子_front)}}
+                                                        pointerdown={() => { setWord("卵子"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={243.5} height={62.5} x={580} y={205} image={imgFront卵巣} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront卵巣(卵巣_front_hv)}}
+                                                        pointerout={() => { setImgFront卵巣(卵巣_front)}}
+                                                        pointerdown={() => { setWord("卵巣"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={340} height={48} x={480} y={300} image={imgFrontちつ} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFrontちつ(ちつ_front_hv)}}
+                                                        pointerout={() => { setImgFrontちつ(ちつ_front)}}
+                                                        pointerdown={() => { setWord("膣"); setShowModal(!showModal)}}
+                                                    />
+                                                </Stage>
                                             </div>
                                         }
                                         {s2Page === 2 && 
                                             <div className='side'>
-                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-side.png`}/>
-                                                <div className='diagram-moji'>
-                                                    <div className='s2_子宮' onClick={() => {setShowModal(!showModal); setWord("子宮")}}></div>
-                                                    <div className='s2_卵管' onClick={() => {setShowModal(!showModal); setWord("卵管")}}></div>
-                                                    <div className='s2_卵子' onClick={() => {setShowModal(!showModal); setWord("卵子")}}></div>
-                                                    <div className='s2_卵巣' onClick={() => {setShowModal(!showModal); setWord("卵巣")}}></div>
-                                                    <div className='s2_ちつ' onClick={() => {setShowModal(!showModal); setWord("膣")}}></div>
-                                                    <div className='s2_肛門' onClick={() => {setShowModal(!showModal); setWord("肛門")}}></div>
-                                                </div>
+                                                <Stage width={960} height={480} options={{backgroundColor: "#fff", antialias: true }}>
+                                                    <Sprite width={400} height={400} x={280} y={70} image={process.env.PUBLIC_URL + `/images/ehon/e2_gekkei/s2_naiseiki-side.png`}/>
+                                                    <Sprite width={50} height={256} x={457} image={imgSide子宮} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide子宮(子宮_side_hv)}}
+                                                        pointerout={() => { setImgSide子宮(子宮_side)}}
+                                                        pointerdown={() => { setWord("子宮"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={325} height={60} x={140} y={155} image={imgSide卵管} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide卵管(卵管_side_hv)}}
+                                                        pointerout={() => { setImgSide卵管(卵管_side)}}
+                                                        pointerdown={() => { setWord("卵管"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={330.5} height={48} x={140} y={216} image={imgSide卵子} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide卵子(卵子_side_hv)}}
+                                                        pointerout={() => { setImgSide卵子(卵子_side)}}
+                                                        pointerdown={() => { setWord("卵子"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={332.5} height={62.5} x={490} y={170} image={imgSide卵巣} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide卵巣(卵巣_side_hv)}}
+                                                        pointerout={() => { setImgSide卵巣(卵巣_side)}}
+                                                        pointerdown={() => { setWord("卵巣"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={340} height={48} x={478} y={300} image={imgSideちつ} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSideちつ(ちつ_side_hv)}}
+                                                        pointerout={() => { setImgSideちつ(ちつ_side)}}
+                                                        pointerdown={() => { setWord("膣"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={270.5} height={48} x={550} y={235} image={imgSide肛門} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide肛門(肛門_side_hv)}}
+                                                        pointerout={() => { setImgSide肛門(肛門_side)}}
+                                                        pointerdown={() => { setWord("肛門"); setShowModal(!showModal)}}
+                                                    />
+                                                </Stage>
                                             </div>
                                         }
                                         <nav>

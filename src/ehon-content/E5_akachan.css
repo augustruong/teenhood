@@ -145,7 +145,7 @@
 }
 
 .e5.s4 > .section-wrapper > .box-content {
-    background-image: url('/images/ehon/e5_akachan/s4_sex.png');
+    background-image: url('/public/images/ehon/e5_akachan/s4_sex.png');
     background-size: cover;
     background-repeat: no-repeat;
     /* padding: 0; */
@@ -199,7 +199,7 @@
 }
 
 .e5.s6 > .section-wrapper > .box-content {
-    background-image: url('/images/ehon/e5_akachan/s6_birth.png');
+    background-image: url('/public/images/ehon/e5_akachan/s6_birth.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -50px;

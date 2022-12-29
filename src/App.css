@@ -50,12 +50,12 @@ body *{z-index: 1; }
 /*-----------------------------------FONTS------------------------------------*/
 @font-face {
   font-family: 'HGRPP1';
-  src: url("/fonts/HGRPP1.TTC");
+  src: url("/public/fonts/HGRPP1.TTC");
 }
 
 @font-face {
   font-family: 'SoupofJustice';
-  src: url("/fonts/iCielSoupofJustice.ttf");
+  src: url("/public/fonts/iCielSoupofJustice.ttf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200;300;400;500;600;700;800;900&display=swap');

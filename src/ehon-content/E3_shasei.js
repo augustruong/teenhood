@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ReactPageScroller from 'react-page-scroller';
-import Image from 'react-image-webp';
+import { Stage, Sprite, Texture, render } from '@inlet/react-pixi'
 import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 
@@ -9,12 +9,54 @@ import EhonData from '../data/EhonData.json'
 import './Ehon.css'
 import './E3_shasei.css'
 
+import ぼうこう_front from './images/e3_shasei/s2_front-ぼうこう.svg'
+import ぼうこう_front_hv from './images/e3_shasei/s2_front-hv-ぼうこう.svg'
+import 尿道_front from './images/e3_shasei/s2_front-尿道.svg'
+import 尿道_front_hv from './images/e3_shasei/s2_front-hv-尿道.svg'
+import 精巣_front from './images/e3_shasei/s2_front-精巣.svg'
+import 精巣_front_hv from './images/e3_shasei/s2_front-hv-精巣.svg'
+import ペニス_front from './images/e3_shasei/s2_front-ペニス.svg'
+import ペニス_front_hv from './images/e3_shasei/s2_front-hv-ペニス.svg'
+import 精管_front from './images/e3_shasei/s2_front-精管.svg'
+import 精管_front_hv from './images/e3_shasei/s2_front-hv-精管.svg'
+import 精子_front from './images/e3_shasei/s2_front-精子.svg'
+import 精子_front_hv from './images/e3_shasei/s2_front-hv-精子.svg'
+
+import ぼうこう_side from './images/e3_shasei/s2_side-ぼうこう.svg'
+import ぼうこう_side_hv from './images/e3_shasei/s2_side-hv-ぼうこう.svg'
+import 尿道_side from './images/e3_shasei/s2_side-尿道.svg'
+import 尿道_side_hv from './images/e3_shasei/s2_side-hv-尿道.svg'
+import 精巣_side from './images/e3_shasei/s2_side-精巣.svg'
+import 精巣_side_hv from './images/e3_shasei/s2_side-hv-精巣.svg'
+import ペニス_side from './images/e3_shasei/s2_side-ペニス.svg'
+import ペニス_side_hv from './images/e3_shasei/s2_side-hv-ペニス.svg'
+import 精管_side from './images/e3_shasei/s2_side-精管.svg'
+import 精管_side_hv from './images/e3_shasei/s2_side-hv-精管.svg'
+import 精子_side from './images/e3_shasei/s2_side-精子.svg'
+import 精子_side_hv from './images/e3_shasei/s2_side-hv-精子.svg'
+import 肛門_side from './images/e3_shasei/s2_side-肛門.svg'
+import 肛門_side_hv from './images/e3_shasei/s2_side-hv-肛門.svg' 
+
 export default function E3_shasei(props) {
     const thisLesson = EhonData[props.index];
     const [showModal, setShowModal] = useState(false);
     const [word, setWord] = useState("");
     const [s2Page,setS2Page] = useState(1)
 
+    const [imgFrontぼうこう,setImgFrontぼうこう] = useState(ぼうこう_front)
+    const [imgFront尿道,setImgFront尿道] = useState(尿道_front)
+    const [imgFront精巣,setImgFront精巣] = useState(精巣_front)
+    const [imgFrontペニス,setImgFrontペニス] = useState(ペニス_front)
+    const [imgFront精管,setImgFront精管] = useState(精管_front)
+    const [imgFront精子,setImgFront精子] = useState(精子_front)
+
+    const [imgSideぼうこう,setImgSideぼうこう] = useState(ぼうこう_side)
+    const [imgSide尿道,setImgSide尿道] = useState(尿道_side)
+    const [imgSide精巣,setImgSide精巣] = useState(精巣_side)
+    const [imgSideペニス,setImgSideペニス] = useState(ペニス_side)
+    const [imgSide精管,setImgSide精管] = useState(精管_side)
+    const [imgSide精子,setImgSide精子] = useState(精子_side)
+    const [imgSide肛門,setImgSide肛門] = useState(肛門_side)
 
     return(
         <div>
@@ -62,29 +104,81 @@ export default function E3_shasei(props) {
                                     <div className='diagram-wrapper'>
                                         {s2Page === 1 && 
                                             <div className='front'>
-                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-front.png`}/>
-                                                <div className='diagram-moji'>
-                                                    <div className='s2_ぼうこう' onClick={() => {setShowModal(!showModal); setWord("膀胱")}}></div>
-                                                    <div className='s2_尿道' onClick={() => {setShowModal(!showModal); setWord("尿道")}}></div>
-                                                    <div className='s2_精巣' onClick={() => {setShowModal(!showModal); setWord("精巣")}}></div>
-                                                    <div className='s2_ペニス' onClick={() => {setShowModal(!showModal); setWord("ペニス")}}></div>
-                                                    <div className='s2_精管' onClick={() => {setShowModal(!showModal); setWord("精管")}}></div>
-                                                    <div className='s2_精子' onClick={() => {setShowModal(!showModal); setWord("精子")}}></div>
-                                                </div>
+                                                <Stage width={960} height={480} options={{backgroundColor: "#fff", antialias: true }}>
+                                                    <Sprite width={400} height={400} x={280} y={70} image={process.env.PUBLIC_URL + `/images/ehon/e3_shasei/s2_naiseiki-front.png`}/>
+                                                    <Sprite width={90} height={231} x={444} image={imgFrontぼうこう} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFrontぼうこう(ぼうこう_front_hv)}}
+                                                        pointerout={() => { setImgFrontぼうこう(ぼうこう_front)}}
+                                                        pointerdown={() => { setWord("膀胱"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={405} height={48} x={83} y={350} image={imgFront尿道} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront尿道(尿道_front_hv)}}
+                                                        pointerout={() => { setImgFront尿道(尿道_front)}}
+                                                        pointerdown={() => { setWord("尿道"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={275} height={60} x={555} y={280} image={imgFront精巣} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront精巣(精巣_front_hv)}}
+                                                        pointerout={() => { setImgFront精巣(精巣_front)}}
+                                                        pointerdown={() => { setWord("精巣"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={380} height={48} x={83} y={280} image={imgFrontペニス} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFrontペニス(ペニス_front_hv)}}
+                                                        pointerout={() => { setImgFrontペニス(ペニス_front)}}
+                                                        pointerdown={() => { setWord("ペニス"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={307} height={48} x={83} y={190} image={imgFront精管} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront精管(精管_front_hv)}}
+                                                        pointerout={() => { setImgFront精管(精管_front)}}
+                                                        pointerdown={() => { setWord("精管"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={307} height={48} x={525} y={350} image={imgFront精子} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgFront精子(精子_front_hv)}}
+                                                        pointerout={() => { setImgFront精子(精子_front)}}
+                                                        pointerdown={() => { setWord("精子"); setShowModal(!showModal)}}
+                                                    />
+                                                </Stage>
                                             </div>
                                         }
                                         {s2Page === 2 && 
                                             <div className='side'>
-                                                <img className='diagram-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s2_naiseiki-side.png`}/>
-                                                <div className='diagram-moji'>
-                                                    <div className='s2_ぼうこう' onClick={() => {setShowModal(!showModal); setWord("膀胱")}}></div>
-                                                    <div className='s2_尿道' onClick={() => {setShowModal(!showModal); setWord("尿道")}}></div>
-                                                    <div className='s2_精巣' onClick={() => {setShowModal(!showModal); setWord("精巣")}}></div>
-                                                    <div className='s2_ペニス' onClick={() => {setShowModal(!showModal); setWord("ペニス")}}></div>
-                                                    <div className='s2_精管' onClick={() => {setShowModal(!showModal); setWord("精管")}}></div>
-                                                    <div className='s2_精子' onClick={() => {setShowModal(!showModal); setWord("精子")}}></div>
-                                                    <div className='s2_肛門' onClick={() => {setShowModal(!showModal); setWord("肛門")}}></div>
-                                                </div>
+                                                <Stage width={960} height={480} options={{backgroundColor: "#fff", antialias: true }}>
+                                                    <Sprite width={400} height={400} x={280} y={70} image={process.env.PUBLIC_URL + `/images/ehon/e3_shasei/s2_naiseiki-side.png`}/>
+                                                    <Sprite width={90} height={231} x={450} image={imgSideぼうこう} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSideぼうこう(ぼうこう_side_hv)}}
+                                                        pointerout={() => { setImgSideぼうこう(ぼうこう_side)}}
+                                                        pointerdown={() => { setWord("膀胱"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={266} height={48} x={96} y={350} image={imgSide尿道} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide尿道(尿道_side_hv)}}
+                                                        pointerout={() => { setImgSide尿道(尿道_side)}}
+                                                        pointerdown={() => { setWord("尿道"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={368} height={48} x={450} y={320} image={imgSide精巣} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide精巣(精巣_side_hv)}}
+                                                        pointerout={() => { setImgSide精巣(精巣_side)}}
+                                                        pointerdown={() => { setWord("精巣"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={252} height={48} x={96} y={270} image={imgSideペニス} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSideペニス(ペニス_side_hv)}}
+                                                        pointerout={() => { setImgSideペニス(ペニス_side)}}
+                                                        pointerdown={() => { setWord("ペニス"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={310} height={48} x={96} y={200} image={imgSide精管} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide精管(精管_side_hv)}}
+                                                        pointerout={() => { setImgSide精管(精管_side)}}
+                                                        pointerdown={() => { setWord("精管"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={404} height={58} x={418} y={380} image={imgSide精子} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide精子(精子_side_hv)}}
+                                                        pointerout={() => { setImgSide精子(精子_side)}}
+                                                        pointerdown={() => { setWord("精子"); setShowModal(!showModal)}}
+                                                    />
+                                                    <Sprite width={243.5} height={62.5} x={578} y={200} image={imgSide肛門} interactive={true} cursor={"pointer"}
+                                                        pointerover={() => { setImgSide肛門(肛門_side_hv)}}
+                                                        pointerout={() => { setImgSide肛門(肛門_side)}}
+                                                        pointerdown={() => { setWord("肛門"); setShowModal(!showModal)}}
+                                                    />
+                                                </Stage>
                                             </div>
                                         }
                                         <nav>
