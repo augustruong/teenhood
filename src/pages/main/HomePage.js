@@ -4,6 +4,7 @@ import ReactPageScroller from 'react-page-scroller';
 import { PopUpModal } from '../../components/modals/PopUpModal'
 
 import './HomePage.css'
+import MethodSection from '../../components/MethodSection';
 
 export default function HomePage() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -21,48 +22,25 @@ export default function HomePage() {
             <img className='chinchan' src={process.env.PUBLIC_URL + `/images/key-visual/chinchan.png`}/>
             <img className='futari' src={process.env.PUBLIC_URL + `/images/key-visual/futari.png`}/>
             <img className='shirichan' src={process.env.PUBLIC_URL + `/images/key-visual/shirichan.png`}/>
-            <div className='bubble-wrapper'><span className='teenhood'>TeenHood</span><br/>ってなに？</div>
+            <Link to="/about">
+              <div className='bubble-wrapper'><span className='teenhood'>TeenHood</span><br/>ってなに？</div>
+            </Link>
+          </div>
+          <div>
+            <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g className="parallax">
+              <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(76,160,255,0.5)" />
+              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(76,160,255,0.3)" />
+              <use xlinkHref="#gentle-wave" x="48" y="7" fill="rgba(76,160,255)" />
+            </g>
+            </svg>
           </div>
         </section>
-
-        <section className='method-section'>
-          <div className='section-header'>好きな形式をえらびましょう</div>
-          <div className='wrapper flex-row'>
-            <div className='method-card ehon flex-column ct'>
-              <Link to={`/ehon`} className='method-thumb'>
-                <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/ehon-thumb.png`}/>
-                <h4 className='title'>性の絵本</h4>
-                <div className='subtitle'>絵から性を学びましょう</div>
-              </Link>
-
-              <NavLink to={`/ehon`} ><button className='method-icon ehon'>絵</button></NavLink>
-              
-            </div>
-            
-            <div className='method-card jisho flex-column ct'>
-              <Link to={`/jisho`} className='method-thumb'>
-                <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/jisho-thumb.png`}/>
-                <h4 className='title'>性の辞書</h4>
-                <div className='subtitle'>ことばから性を学びましょう</div>
-              </Link>
-              
-              <NavLink to={`/jisho`} ><button className='method-icon jisho'>辞</button></NavLink>
-
-            </div>
-
-            <div className='method-card nayami flex-column ct'>
-              <Link to={`/nayami`} className='method-thumb'>
-                <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/nayami-thumb.png`}/>
-                <h4 className='title'>性の悩み</h4>
-                <div className='subtitle'>気になることを解けましょう</div>
-              </Link>
-              
-              <NavLink to={`/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
-
-            </div>
-
-          </div>
-        </section>
+        <MethodSection/>
       </ReactPageScroller> 
     </div>
   )
