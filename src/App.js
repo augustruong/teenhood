@@ -9,6 +9,7 @@ import NayamiPage from './pages/main/NayamiPage';
 import ContactPage from './pages/main/ContactPage';
 import SOSPage from './pages/main/SOSPage';
 import AboutPage from './pages/main/AboutPage';
+import QuizPage from './pages/main/QuizPage';
 
 
 import CoverPage from './pages/ehon/CoverPage';
@@ -35,6 +36,7 @@ function App() {
           <Route path='/sos' element={<SOSPage/>} />
           <Route path='/contact' element={<ContactPage/>} />
           <Route path='/about' element={<AboutPage/>} />
+          <Route path='/quiz' element={<QuizPage/>} />
 
 
           <Route path='/ehon/e1_shishunki/cover' element={<CoverPage index={0}/>} />

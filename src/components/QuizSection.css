@@ -1,0 +1,30 @@
+.quiz-section {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.quiz-card {
+    border-radius: 30px;
+}
+
+.question {
+    width: 300px;
+}
+
+.quiz-anketto {
+    height: 480px;
+    width: 430px;
+    background: url(./assets/anketto-bg.png) no-repeat;
+    margin: 0 auto;
+    padding-top: 162px;
+}
+.quiz-anketto > p {
+    line-height: 210%;
+}
+.quiz-anketto > button {
+    border: none;
+    background-color: #44AEA1;
+    color: #fff;
+    margin-top: 90px;
+
+}

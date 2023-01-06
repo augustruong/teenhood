@@ -79,10 +79,10 @@ const ModalContent = styled.div`
     margin-right: 10px;
   }
   .nayami-question::before {
-    content: url("/icons/i-question.svg");
+    content: url("/icons-stamps/i-question.svg");
   }
   .nayami-answer::before {
-    content: url("/icons/i-answer.svg");
+    content: url("/icons-stamps/i-answer.svg");
   }
   .toggle-icon {
     display: inline;

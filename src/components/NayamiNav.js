@@ -35,31 +35,31 @@ export default function NayamiNav(props) {
             {(context) => (
                 <NayamiNavWrapper className='flex-row'>
                     <img className='icon' 
-                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-curve.png`}
+                         src={process.env.PUBLIC_URL + `/icons-stamps/i-curve.png`}
                          onClick={() => {context.setCurrentPage(0)}}     
                     />
                     <img className='icon' 
-                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-gekkei.png`}
+                         src={process.env.PUBLIC_URL + `/icons-stamps/i-gekkei.png`}
                          onClick={() => {context.setCurrentPage(1)}}     
                     />
                     <img className='icon' 
-                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-penis.png`}
+                         src={process.env.PUBLIC_URL + `/icons-stamps/i-penis.png`}
                          onClick={() => {context.setCurrentPage(2)}}     
                     />
                     <img className='icon' 
-                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-love.png`}
+                         src={process.env.PUBLIC_URL + `/icons-stamps/i-love.png`}
                          onClick={() => {context.setCurrentPage(3)}}     
                     />
                     <img className='icon' 
-                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-baby.png`}
+                         src={process.env.PUBLIC_URL + `/icons-stamps/i-baby.png`}
                          onClick={() => {context.setCurrentPage(4)}}     
                     />
                     <img className='icon' 
-                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-condom.png`}
+                         src={process.env.PUBLIC_URL + `/icons-stamps/i-condom.png`}
                          onClick={() => {context.setCurrentPage(5)}}     
                     />
                     <img className='icon' 
-                         src={process.env.PUBLIC_URL + `/icons-stamps/nayami/i-std.png`}
+                         src={process.env.PUBLIC_URL + `/icons-stamps/i-std.png`}
                          onClick={() => {context.setCurrentPage(6)}}     
                     />
                 </NayamiNavWrapper>

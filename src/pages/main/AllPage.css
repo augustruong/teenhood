@@ -1,7 +1,7 @@
 #ehon-page { background-color: #FFFBFB; }
 #jisho-page {  background-color: #F8FCFF; }
 #nayami-page { height: 100vh; background-color: #F9FEF8; }
-
+#quiz-page { height: 100vh; background-color: #ECFFF9;}
 .main-header-section{
     text-align: center;
     padding: 70px 0 50px 0;
