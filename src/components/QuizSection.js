@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Stage, Sprite, Texture, render, Text } from '@inlet/react-pixi'
 import { TextStyle } from 'pixi.js';
 import QuizData from '../data/QuizData.json'
-import CountUp from 'react-countup';
 
 import './QuizSection.css'
 

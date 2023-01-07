@@ -84,6 +84,21 @@
 .method-thumb > .title { font-size: 20px; line-height: 40px;  }
 .method-thumb > .subtitle { font-size: 14px; letter-spacing: 0.1em;}
 
+@media screen and (max-width: 1600px)  {
+    .method-section > .header > .title {
+        height: 75px;
+    }
+    .method-section > .inner {
+        padding-top: 40px;
+    }
+    .method-section > .inner > .subheader {
+        margin-bottom: 40px;
+    }
+    .method-section > .inner > .wrapper {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .method-section > .inner > .wrapper { width: 80%; }
 }
