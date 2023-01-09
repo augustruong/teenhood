@@ -1,61 +1,61 @@
 [
     {
         "question": "コンドームを正しく\n使用することは性感染症\n予防につながる？",
-        "answer": true,
+        "answer": "true",
         "detail": "すべての性感染症を予防できるわけではないので注意が必要｡",
         "tag": "std"
     },
     {
         "question": "オーラルセックスは\n性感染症の心配がない？",
-        "answer": false,
+        "answer": "false",
         "detail": "すべての性行為に性感染症のリスクがあります｡",
         "tag": "std"
     },
     {
         "question": "射精のとき､\nおしっこは混じる？",
-        "answer": false,
+        "answer": "false",
         "detail": "射精の瞬間は尿が体外に出ない仕組みになっています｡",
         "tag": "penis"
     },
     {
         "question": "射精前に腟からペニス\nを引き抜けば妊娠する\nことはない？",
-        "answer": false,
+        "answer": "false",
         "detail": "ペニスを膣に挿入したら精液が出る可能性があり避妊法として不適切｡",
         "tag": "condom"
     },
     {
         "question": "卵子は毎日作られる？",
-        "answer": false,
+        "answer": "false",
         "detail": "卵子の数は胎児のときがピーク｡それ以降は作られません｡",
         "tag": "gekkei"
     },
     {
         "question": "性感染症は感染すると\nすぐ症状が現れる？",
-        "answer": false,
+        "answer": "false",
         "detail": "症状が出ないこともあり､性行為経験がある人は一度検査しましょう｡",
         "tag": "std"
     },
     {
         "question": "洗浄時､腟内は\nよく洗うべき？",
-        "answer": false,
+        "answer": "false",
         "detail": "膣の中は分泌物の働きで清潔に保たれているので洗わなくてよい｡",
         "tag": "gekkei"
     },
     {
         "question": "生理中のセックス\nは妊娠しない？",
-        "answer": false,
+        "answer": "false",
         "detail": "タイミングによって､妊娠の可能性はあります｡",
         "tag": "baby"
     },
     {
         "question": "同性婚が認められている\n国は25ヶ国より多い？",
-        "answer": true,
+        "answer": "true",
         "detail": "2019年5月現在で 27｡（2019.5 NPO法人EMA日本調べ）",
         "tag": "love"
     },
     {
         "question": "妊娠検査薬で結果\nが出るには、受精後\n2週間かかります。",
-        "answer": true,
+        "answer": "true",
         "detail": "性交日が排卵日を最短として2週間後に検査するとはっきりと陽性になる。",
         "tag": "baby"
     }

@@ -23,8 +23,8 @@ export default function QuizSection() {
     const arr = [];
     const max = QuizData.length;
     const [questions,setQuestions] = useState();
+    const [answers,setAnswers] = useState([]);
     
-
     function shuffle() {
         var n,p;
 
@@ -54,7 +54,7 @@ export default function QuizSection() {
     const optionClicked = (isCorrect) => {
         if (isCorrect) setScore(score + 1);
         if (currentNo + 1 < 10) setCurrentNo(currentNo + 1);
-        else {setShowResults(true); setShowQuiz(false)}
+        else {console.log(answers); setShowResults(true); setShowQuiz(false)}
     };
 
     /* Resets the game back to default */
@@ -124,6 +124,7 @@ export default function QuizSection() {
                     pointerover={() => setBtnO(btn_o_hv)}
                     pointerout={() => setBtnO(btn_o)}
                     pointerdown={() => {
+                        setAnswers(answers => [...answers, "true"])
                         optionClicked(true === QuizData[questions[currentNo]].answer);
                     }}
                 />
@@ -134,6 +135,7 @@ export default function QuizSection() {
                     pointerover={() => setBtnX(btn_x_hv)}
                     pointerout={() => setBtnX(btn_x)}
                     pointerdown={() => {
+                        setAnswers(answers => [...answers, "false"])
                         optionClicked(false === QuizData[questions[currentNo]].answer);
                     }}
                 />
@@ -141,35 +143,54 @@ export default function QuizSection() {
             }
             {showResults &&
                 /* Final Results */
-                <Stage className="quiz-result" height={590} width={430} options={{backgroundAlpha: 0,antialias: true}}>
-                    {score < 8 ? (
-                        <Sprite image={result_bg1} x={0} y={32} />
-                    ) : (
-                        <Sprite image={result_bg2} x={0} y={32} />
-                    )}
-                    <Text text={score*10}
-                                x={215} y={255} anchor={0.5} rotation={6}
-                                style={
-                                    new TextStyle({
-                                        align: 'center',
-                                        fontSize: 81,
-                                        fontWeight: 600,
-                                        fill: '#44AEA1',
-                                    })
-                                    }
-                    />
-                    <Sprite 
-                        image={btnRetry}
-                        x={215} y={560} anchor={0.5}
-                        interactive={true} cursor={"pointer"}
-                        pointerover={() => setBtnRetry(btn_retry_hv)}
-                        pointerout={() => setBtnRetry(btn_retry)}
-                        pointerdown={() => {
-                            restartGame()
-                        }}
-                    />
-                </Stage>
-            
+                <div>
+                    <Stage className="quiz-result" height={590} width={430} options={{backgroundAlpha: 0,antialias: true}}>
+                        {score < 8 ? (
+                            <Sprite image={result_bg1} x={0} y={32} />
+                        ) : (
+                            <Sprite image={result_bg2} x={0} y={32} />
+                        )}
+                        <Text text={score*10}
+                                    x={215} y={255} anchor={0.5} rotation={6}
+                                    style={
+                                        new TextStyle({
+                                            align: 'center',
+                                            fontSize: 81,
+                                            fontWeight: 600,
+                                            fill: '#44AEA1',
+                                        })
+                                        }
+                        />
+                        <Sprite 
+                            image={btnRetry}
+                            x={215} y={560} anchor={0.5}
+                            interactive={true} cursor={"pointer"}
+                            pointerover={() => setBtnRetry(btn_retry_hv)}
+                            pointerout={() => setBtnRetry(btn_retry)}
+                            pointerdown={() => {
+                                restartGame()
+                            }}
+                        />
+                    </Stage>
+                    <div className='quiz-answer'>
+                            <h3>クイズの答え</h3>
+                            {questions.map((key,index) => (
+                                <div className='wrapper'>
+                                    <p className='question'>{QuizData[key].question}</p>
+                                    <div className='chosen-ans' style={answers[index] === QuizData[key].answer ? {backgroundColor: "#C7FFB8"} : {backgroundColor: "#FFD0D0"}}>
+                                        <div>あなたの答え</div>
+                                        <div>{answers[index] === "true" ? "O" : "X"}</div>
+                                    </div>
+                                    <div className='right-ans'>
+                                        <div>正解</div>
+                                        <div>{QuizData[key].answer === "true" ? "O" : "X"}</div>
+                                    </div>
+                                    <p className='detail'>説明：{QuizData[key].detail}</p>
+
+                                </div>
+                            ))}
+                    </div>
+                </div>
             }
         </div>
     );
