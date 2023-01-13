@@ -83,6 +83,7 @@ export default function JishoPage() {
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("膣")}}>膣</div>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("体毛")}}>体毛</div>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("着床")}}>着床</div>
+                <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("胎児")}}>胎児</div>
                 <div onClick={() => {setShowModal(!showModal); setType("word"); setWord("中絶")}}>中絶</div>
                 <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus("トリコモナス症")}}>トリコモナス症</div>
               </div>
@@ -168,21 +169,9 @@ export default function JishoPage() {
                   ))}
                 </div>
               </div>
-            </div>
-            <div className='flex-row'>
               <div className='theme-wordList-wrapper'>
                 <div className='thumb-wrapper'>
-                  <LessonThumb lessonId="e4_suki" title="#4: 人を好きになるってこと？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
-                </div>
-                <div className='wordList'>
-                  {EhonData[3].wordList.map((word) => (
-                    <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
-                  ))}
-                </div>
-              </div>
-              <div className='theme-wordList-wrapper'>
-                <div className='thumb-wrapper'>
-                  <LessonThumb lessonId="e5_akachan" title="#5: 赤ちゃんはどこからくるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                  <LessonThumb lessonId="e5_akachan" title="#4: 人を好きになるってこと？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
                 </div>
                 <div className='wordList'>
                   {EhonData[4].wordList.map((word) => (
@@ -190,25 +179,31 @@ export default function JishoPage() {
                   ))}
                 </div>
               </div>
-            </div>
-            <div className='flex-row'>
               <div className='theme-wordList-wrapper'>
                 <div className='thumb-wrapper'>
-                  <LessonThumb lessonId="e6_hinin" title="#6: 基本的な避妊方法" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                  <LessonThumb lessonId="e6_hinin" title="#5: 赤ちゃんはどこからくるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
                 </div>
                 <div className='wordList'>
                   {EhonData[5].wordList.map((word) => (
                     <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
                   ))}
                 </div>
-              </div>
+              </div>          
               <div className='theme-wordList-wrapper'>
                 <div className='thumb-wrapper'>
                   <LessonThumb lessonId="e7_std" title="#7: 性感染症を知ろう" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
                 </div>
                 <div className='wordList'>
                   {EhonData[6].wordList.map((word) => (
-                    <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus(word)}}>{word}</div>
+                    <div>
+                    {word === "性感染症" ? 
+                      (
+                        <div onClick={() => {setShowModal(!showModal); setType("word"); setWord(word)}}>{word}</div>
+                      ) : (
+                        <div onClick={() => {setShowModal(!showModal); setType("virus"); setVirus(word)}}>{word}</div>
+                      )
+                    }
+                    </div>
                   ))}
                 </div>
               </div>

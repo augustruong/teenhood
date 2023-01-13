@@ -13,11 +13,11 @@ import './E7_std.css'
 export default function E7_std(props){
     const thisLesson = EhonData[props.index];
     const [showModal, setShowModal] = useState(false);
-    const [virusIndex, setVirusIndex] = useState("");
+    const [virus, setVirus] = useState("");
 
     return(
         <div>
-            <PopUpModal type={"virus"} virusIndex={virusIndex} showModal={showModal} setShowModal={setShowModal} />
+            <PopUpModal type={"virus"} word={virus} showModal={showModal} setShowModal={setShowModal} />
 
             <div className='lesson-content__inner'>
                 <MContext.Consumer>
@@ -82,31 +82,31 @@ export default function E7_std(props){
                                     <div className='subtitle' >気になる性感染症を選んでね！</div>
                                 
                                     <div className='virus-wrapper flex-row'>
-                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(0)}}>
+                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirus("梅毒")}}>
                                             <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/梅毒.png`}/>
                                             <div className='virus-name'>梅毒</div>
                                         </div>
-                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(1)}}>
+                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirus("性器クラミジア")}}>
                                             <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/性器クラミジア.png`}/>
                                             <div className='virus-name'>クラミジア</div>
                                         </div>
-                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(2)}}>
+                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirus("淋菌感染症")}}>
                                             <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/淋菌感染症.png`}/>
                                             <div className='virus-name'>淋菌感染症</div>
                                         </div>
-                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(3)}}>
+                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirus("性器カンジダ感染症")}}>
                                             <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/性器カンジダ感染症.png`}/>
                                             <div className='virus-name'>性器カンジダ症</div>
                                         </div>
-                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(4)}}>
+                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirus("尖圭コンジローマ")}}>
                                             <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/尖圭コンジローマ.png`}/>
                                             <div className='virus-name'>尖圭コンジ<br/>ローマ</div>
                                         </div>
-                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(5)}}>
+                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirus("トリコモナス症")}}>
                                             <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/トリコモナス症.png`}/>
                                             <div className='virus-name'>トリコモナス症</div>
                                         </div>
-                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirusIndex(6)}}>
+                                        <div className='virus' onClick={() => {setShowModal(!showModal); setVirus("HIV・エイズ感染症")}}>
                                             <img className='virus-img' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/HIV・エイズ感染症.png`}/>
                                             <div className='virus-name'>HIV・エイズ<br/>感染症</div>
                                         </div>
