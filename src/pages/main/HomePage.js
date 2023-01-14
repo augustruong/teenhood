@@ -25,9 +25,18 @@ export default function HomePage() {
             <Link to="/about">
               <div className='bubble-wrapper'><span className='teenhood'>TeenHood</span><br/>ってなに？</div>
             </Link>
+            <div class="mouse_scroll">
+              <div class="mouse">
+                <div class="wheel"></div>
+              </div>
+              <div>
+                <span class="m_scroll_arrows unu"></span>
+                <span class="m_scroll_arrows doi"></span>
+                <span class="m_scroll_arrows trei"></span>
+              </div>
           </div>
-          <div>
-            <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+            <div>
+            <svg className="waves home" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
               <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -39,6 +48,8 @@ export default function HomePage() {
             </g>
             </svg>
           </div>
+          </div>
+          
         </section>
         <MethodSection/>
       </ReactPageScroller> 
