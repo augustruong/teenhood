@@ -143,7 +143,7 @@ ul.nav-list.main {
 }
 
 .lesson-visual {
-    --transition-duration: 1s;
+    --transition-duration: .75s;
     --transition-ease: cubic-bezier(1,0,1,0);
     position: relative;
     z-index: 1;

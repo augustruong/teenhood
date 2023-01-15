@@ -51,7 +51,7 @@ export default function HomePage() {
           </div>
           
         </section>
-        <MethodSection/>
+        <MethodSection />
       </ReactPageScroller> 
     </div>
   )

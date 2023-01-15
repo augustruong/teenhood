@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../logo.svg';
 import { MdClose } from 'react-icons/md';
 import styled from 'styled-components';
+import LessonVisual from './LessonVisual'
 
 import './Header.css'
 import ChatBox from '../module/ChatBox';
@@ -85,7 +86,7 @@ export default function NavWrapper(props) {
                         <NavLink
                             className='nav-item'
                             to='/quiz'
-                            style={{'--hover-bg-color': 'var(--pink-color)'}}
+                            style={{'--hover-bg-color': 'var(--mint-color)'}}
                             onClick={() => setShowNav(false)} 
                         >
                             <div className='nav-item__transform-wrapper'
@@ -279,12 +280,7 @@ export default function NavWrapper(props) {
                 </ul>
             </nav>
 
-            <picture className={lessonId ? 'lesson-visual active' : 'lesson-visual'}>
-                <img 
-                    src={process.env.PUBLIC_URL + `/images/ehon/${lessonId}/visual.png`}
-                    width="2400" height="1500"
-                />
-            </picture>
+            <LessonVisual lessonId={lessonId}/>
             <div className={showNav ? "nav-backdrop active" : "nav-backdrop"}></div>
         </header>
     )
