@@ -6,6 +6,7 @@ import { PopUpModal } from '../components/modals/PopUpModal'
 import {GlassMagnifier,MOUSE_ACTIVATION,TOUCH_ACTIVATION} from "react-image-magnifiers";
 
 import EhonData from '../data/EhonData.json'
+import LessonThumb from '../components/LessonThumb';
 
 import './Ehon.css'
 import './E1_shishunki.css'
@@ -169,6 +170,12 @@ export default function E1_shishunki(props) {
                                         <i></i> 
                                     </div>
                                 </div>
+                            </div>
+                        </section>
+                        <section className='next-lesson'>
+                            <div className='wrapper flex-row scr-center'>
+                                <LessonThumb lessonId="e2_gekkei" title="#2: 月経って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                                <LessonThumb lessonId="e3_shasei" title="#3: 射精って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
                             </div>
                         </section>
                     </ReactPageScroller>

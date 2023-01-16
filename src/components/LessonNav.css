@@ -26,6 +26,10 @@
     margin-bottom: 5px;
 }
 
+.lesson-nav-wrapper > .header > .progress-wrapper > .progress-bar > div {
+  background-color: var(--red-color);
+  height: 3px;
+}
 .lesson-nav-wrapper > .header > .method-wrapper {
     display: flex;
     flex-direction: row;

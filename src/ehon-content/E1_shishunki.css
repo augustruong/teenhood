@@ -1,4 +1,4 @@
-.e1.s1, .e1.s2, .e1.s3, .e1.s4, .e1.s5, .e1.s6 {
+.e1.s1, .e1.s2, .e1.s3, .e1.s4, .e1.s5, .e1.s6, .next-lesson {
     height: 100vh;
     width: calc(100% - 270px);
     position: relative;
@@ -6,7 +6,7 @@
 
 .e1.s1 {background-color: #87D0F3;}
 .e1.s2, .e1.s3, .e1.s4, .e1.s5, .e1.s6 {background-color: #FFFFFF;}
-
+.next-lesson {background-color: #FFECEC;}
 /*-----------------------------------section 1------------------------------------*/
 
 .e1.s1 > .section-wrapper {
@@ -215,3 +215,7 @@
 
 
 #leaves i:nth-of-type(n) { animation-timing-function:ease-in-out;}
+
+.next-lesson .wrapper {
+    width: 60%;
+}
