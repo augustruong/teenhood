@@ -26,9 +26,9 @@ export default function NavWrapper(props) {
 
     return(
         <header id='header'>
-            <NavLink to='/' className='logo'>
+            {/* <NavLink to='/' className='logo'>
                 <img src={logo} className='logo-svg'/>
-            </NavLink>
+            </NavLink> */}
 
             <ChatBox />  
 
@@ -39,6 +39,9 @@ export default function NavWrapper(props) {
             </div>
 
             <nav className={`nav ${showNav ? "active" : ""} ${lessonId ? "hover-within" : ""}`} >
+                <NavLink to='/' className='logo'>
+                    <img src={logo} className='logo-svg'/>
+                </NavLink>
                 <ul className='nav-list main'>
                     <li className='nav-list__item'>
                         <NavLink
