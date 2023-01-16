@@ -53,20 +53,18 @@ export default function MethodSection() {
                 <div className='method-card quiz flex-column'>
                   <Link to={`/quiz`} className='method-thumb'>
                     <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/quiz-thumb.png`}/>
-                    <h4 className='title'>性の悩み</h4>
-                    <div className='subtitle'>気になることを解けましょう</div>
+                    <h4 className='title'>性のクイズ</h4>
+                    <div className='subtitle'>性の知識をテストしましょう</div>
                   </Link>
                   
-                  <NavLink to={`/quiz`} ><button className='method-icon nayami'>ク</button></NavLink>
                 </div>
-                <div className='method-card quiz flex-column'>
-                  <Link to={`/quiz`} className='method-thumb'>
-                    <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/quiz-thumb.png`}/>
-                    <h4 className='title'>性の悩み</h4>
-                    <div className='subtitle'>気になることを解けましょう</div>
+                <div className='method-card sos flex-column'>
+                  <Link to={`/sos`} className='method-thumb'>
+                    <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/sos-thumb.png`}/>
+                    <h4 className='title'>性のSOS</h4>
+                    <div className='subtitle'>「困った！」があったときに</div>
                   </Link>
                   
-                  <NavLink to={`/quiz`} ><button className='method-icon nayami'>ク</button></NavLink>
                 </div>
               </section>
             </ReactPageScroller>
