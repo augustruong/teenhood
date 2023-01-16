@@ -46,6 +46,14 @@
     z-index: 12;
     animation: jitter-1 1s infinite ease-out;
 }
+.hero-section > .chara-wrapper > .bg {
+  z-index: 13;
+  position: absolute;
+  bottom:-10%;
+  left: 0;
+  height: 10%;
+  width: 100vw;
+}
 .bubble-wrapper {
     background-image: url(/public/images/key-visual/bubble.png);
     background-size: contain;

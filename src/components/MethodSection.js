@@ -9,8 +9,8 @@ export default function MethodSection() {
       
         <section className='method-section'>
           <div className='header'>
-            <img className='title' src={process.env.PUBLIC_URL + `/images/key-visual/方式.svg`}/>
-            {/* <div className='bg'></div> */}
+            <img className='title' src={process.env.PUBLIC_URL + `/images/methods/方式.svg`}/>
+            {/* <img className='bg' src={process.env.PUBLIC_URL + `/images/methods/header_bg.png`}/> */}
           </div>
           <div className='main'>
             <div className='subheader'>好きな形式をえらびましょう</div>

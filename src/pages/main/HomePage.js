@@ -22,6 +22,8 @@ export default function HomePage() {
             <img className='chinchan' src={process.env.PUBLIC_URL + `/images/key-visual/chinchan.png`}/>
             <img className='futari' src={process.env.PUBLIC_URL + `/images/key-visual/futari.png`}/>
             <img className='shirichan' src={process.env.PUBLIC_URL + `/images/key-visual/shirichan.png`}/>
+            <img className='bg' src={process.env.PUBLIC_URL + `/images/key-visual/header_bg.png`}/>
+            
             <Link to="/about">
               <div className='bubble-wrapper'><span className='teenhood'>TeenHood</span><br/>ってなに？</div>
             </Link>

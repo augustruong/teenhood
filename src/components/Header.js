@@ -26,10 +26,6 @@ export default function NavWrapper(props) {
 
     return(
         <header id='header'>
-            {/* <NavLink to='/' className='logo'>
-                <img src={logo} className='logo-svg'/>
-            </NavLink> */}
-
             <ChatBox />  
 
             <div id='menu-btn' className={showNav ? 'checked' : ''} onClick={() => setShowNav(!showNav)}>
