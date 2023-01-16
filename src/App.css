@@ -205,6 +205,20 @@ button:hover {
   display: inline-block;
 }
 
+.bubble-wrapper {
+    position: absolute;
+    background-image: url(/public/images/bubble.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 180px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
 /*-----------------------------------transition------------------------------------*/
 :root {
   --ease-level1: var( --easeOutCubic );

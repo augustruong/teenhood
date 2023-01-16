@@ -54,29 +54,20 @@
   height: 10%;
   width: 100vw;
 }
-.bubble-wrapper {
-    background-image: url(/public/images/key-visual/bubble.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+.bubble-wrapper.home {
     height: 180px;
     width: 250px;
     padding-top: 52px;
     padding-left: 10px;
-    position: absolute;
     right: 16%;
     top: 45%;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.15em;
 }
-.bubble-wrapper > .teenhood {
+.bubble-wrapper.home > .teenhood {
     color: #E06363;
     letter-spacing: 0.05em;
     font-weight: 800;
 }
-.bubble-wrapper:hover {
+.bubble-wrapper.home:hover {
     cursor: pointer;
     animation: jitter-2 2s infinite ease-out;
 }

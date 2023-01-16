@@ -173,10 +173,13 @@ export default function E1_shishunki(props) {
                             </div>
                         </section>
                         <section className='next-lesson'>
+                            <h3>次の絵本を見ましょう</h3>
                             <div className='wrapper flex-row scr-center'>
                                 <LessonThumb lessonId="e2_gekkei" title="#2: 月経って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
                                 <LessonThumb lessonId="e3_shasei" title="#3: 射精って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
                             </div>
+                            <div className='bubble-wrapper forGirls'><span>女の子へ</span></div>
+                            <div className='bubble-wrapper forBoys'><span>男の子へ</span></div>
                         </section>
                     </ReactPageScroller>
                 )}

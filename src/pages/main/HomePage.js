@@ -25,7 +25,7 @@ export default function HomePage() {
             <img className='bg' src={process.env.PUBLIC_URL + `/images/key-visual/header_bg.png`}/>
             
             <Link to="/about">
-              <div className='bubble-wrapper'><span className='teenhood'>TeenHood</span><br/>ってなに？</div>
+              <div className='bubble-wrapper home'><span className='teenhood'>TeenHood</span><br/>ってなに？</div>
             </Link>
             <div class="mouse_scroll">
               <div class="mouse">
