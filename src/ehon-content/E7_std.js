@@ -9,6 +9,7 @@ import EhonData from '../data/EhonData.json'
 
 import './Ehon.css'
 import './E7_std.css'
+import '../components/MethodSection.css'
 
 export default function E7_std(props){
     const thisLesson = EhonData[props.index];
@@ -115,17 +116,22 @@ export default function E7_std(props){
                             </section>  
                             <section className='e7 s3'>
                                 <div className='section-wrapper flex-column scr-center'>
-                                        <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_condom.png`}/>
-                                        <Link to={`/ehon/e6_hinin/content`}>
-                                            <button>コンドームの使い方</button>
-                                        </Link>
+                                    <img src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s3_condom.png`}/>
+                                    <Link to={`/ehon/e6_hinin/content`}>
+                                        <button>コンドームの使い方</button>
+                                    </Link>
                                 </div> 
                             </section>
                             <section className='owari'>
-                                <h3>最後の絵本でした！</h3>
+                                {/* <h3>最後の絵本でした</h3> */}
+                                <div className='method-card quiz flex-column'>
+                                    <Link to={`/quiz`} className='method-thumb'>
+                                        <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/quiz-thumb.png`}/>
+                                        <h4 className='title'>性のクイズ</h4>
+                                        <div className='subtitle'>性の知識をテストしましょう</div>
+                                    </Link>
+                                </div>
                             </section>
-
-
                         </ReactPageScroller>
 
 

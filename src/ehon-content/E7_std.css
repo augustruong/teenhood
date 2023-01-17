@@ -129,7 +129,16 @@
 }
 
 /*-----------------------------------おわり------------------------------------*/
+.owari {
+    padding-top: 10%;
+}
 .owari > h3 {
     text-align: center;
     padding-top: 10%;
+    margin-bottom: 50px;
 }
+.owari > .method-card > .method-thumb {
+    margin: 0 auto;
+    text-align: center;
+}
+

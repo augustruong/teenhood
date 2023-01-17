@@ -12,7 +12,7 @@ export default function HomePage() {
 
   return (
     <div id='home'>
-      <PopUpModal type={"welcome"} showModal={showModal} setShowModal={setShowModal} />
+      {/* <PopUpModal type={"welcome"} showModal={showModal} setShowModal={setShowModal} /> */}
 
       <ReactPageScroller>
         <section className='hero-section'>
