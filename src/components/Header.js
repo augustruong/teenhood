@@ -259,23 +259,7 @@ export default function NavWrapper(props) {
                             </div>
                         </NavLink>
                     </li>
-                    <li className='nav-list__item'>
-                        <NavLink
-                            className='nav-item lesson'
-                            to='/ehon/e7_std/cover'
-                            style={{'--hover-bg-color': '#FFB31F'}}
-                            onClick={() => setShowNav(false)}
-                            onMouseEnter = {() => setLessonId("e7_std")}
-                            onMouseLeave = {() => setLessonId("")}
-                        >
-                            <div className='nav-item__transform-wrapper'
-                                style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
-                            >
-                            <h4 className='nav-item__title'>性感染症を知ろう</h4>
-                            <div className='nav-item__subtitle'>女性の内性器</div>
-                            </div>
-                        </NavLink>
-                    </li>
+                    
                 </ul>
             </nav>
 

@@ -52,7 +52,9 @@ ul.nav-list.main {
     padding-bottom: 2rem;
     margin-top: 20px;
 }
-
+ul.nav-list {
+    padding-bottom: 2rem;
+}
 .nav-list__item.flex-row {
     justify-content: space-evenly;
     border-top: 1px solid var(--grey-color);

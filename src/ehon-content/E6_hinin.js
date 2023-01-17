@@ -5,6 +5,7 @@ import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 
 import EhonData from '../data/EhonData.json'
+import LessonThumb from '../components/LessonThumb';
 
 import './Ehon.css'
 import './E6_hinin.css'
@@ -122,6 +123,13 @@ export default function E6_hinin(props) {
                                         </p>
                                     </div>
                                 </div>
+                            </section>
+                            <section className='e6 next-lesson'>
+                                <h3>次の絵本を見ましょう</h3>
+                                <div className='wrapper flex-row scr-center'>
+                                    <LessonThumb lessonId="e7_std" title="#7: 性感染症を知ろう" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                                </div>
+                                <div className='bubble-wrapper right'><span>二人へ</span></div>
                             </section>
                         </ReactPageScroller>
                     )}

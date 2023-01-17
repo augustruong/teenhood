@@ -81,3 +81,20 @@
     align-items: center;
     gap:120px;
 }
+
+/*-----------------------------------next lesson------------------------------------*/
+.e4.next-lesson > h3 {
+    text-align: center;
+    padding-top: 7%;
+}
+.e4.next-lesson > .wrapper {
+    width: 60%;
+    top: 65%;
+}
+
+.e4.next-lesson > .bubble-wrapper.right {
+    top: 36%;
+    right: 25%;
+    padding-top: 70px;
+    padding-left: 95px;
+}

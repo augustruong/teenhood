@@ -121,7 +121,9 @@ export default function E7_std(props){
                                         </Link>
                                 </div> 
                             </section>
-
+                            <section className='owari'>
+                                <h3>最後の絵本でした！</h3>
+                            </section>
 
 
                         </ReactPageScroller>

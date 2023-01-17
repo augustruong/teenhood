@@ -161,3 +161,19 @@
     margin-top: -20px;
     margin-left: -60px;
 }
+/*-----------------------------------next lesson------------------------------------*/
+.e6.next-lesson > h3 {
+    text-align: center;
+    padding-top: 7%;
+}
+.e6.next-lesson > .wrapper {
+    width: 60%;
+    top: 65%;
+}
+
+.e6.next-lesson > .bubble-wrapper.right {
+    top: 36%;
+    right: 25%;
+    padding-top: 70px;
+    padding-left: 95px;
+}

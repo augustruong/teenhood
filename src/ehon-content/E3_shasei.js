@@ -5,6 +5,7 @@ import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 
 import EhonData from '../data/EhonData.json'
+import LessonThumb from '../components/LessonThumb';
 
 import './Ehon.css'
 import './E3_shasei.css'
@@ -254,6 +255,15 @@ export default function E3_shasei(props) {
                                         </p>
                                     </div>
                                 </div>
+                            </section>
+                            <section className='e3 next-lesson'>
+                                <h3>次の絵本を見ましょう</h3>
+                                <div className='wrapper flex-row scr-center'>
+                                    <LessonThumb lessonId="e2_gekkei" title="#2: 月経って何がおこるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                                    <LessonThumb lessonId="e4_suki" title="#4: 人を好きになるってこと？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                                </div>
+                                <div className='bubble-wrapper left'><span>女の子へ</span></div>
+                                <div className='bubble-wrapper right'><span>二人へ</span></div>
                             </section>
                         </ReactPageScroller>
                     )}

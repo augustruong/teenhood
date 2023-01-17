@@ -5,6 +5,7 @@ import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 
 import EhonData from '../data/EhonData.json'
+import LessonThumb from '../components/LessonThumb';
 
 import './Ehon.css'
 import './E4_suki.css'
@@ -86,6 +87,13 @@ export default function E4_suki(props) {
                                     <img className='title' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_title.svg`}/>
                                     <img className='s5_loveyourself' src={process.env.PUBLIC_URL + `/images/ehon/${thisLesson.lessonId}/s5_loveyourself.png`}/>
                                 </div>
+                            </section>
+                            <section className='e4 next-lesson'>
+                                <h3>次の絵本を見ましょう</h3>
+                                <div className='wrapper flex-row scr-center'>
+                                    <LessonThumb lessonId="e5_akachan" title="#5: 赤ちゃんはどこからくるの？" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                                </div>
+                                <div className='bubble-wrapper right'><span>二人へ</span></div>
                             </section>
                         </ReactPageScroller>
                     )}

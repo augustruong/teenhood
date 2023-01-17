@@ -1,4 +1,4 @@
-.e7.s1, .e7.s2, .e7.s3{
+.e7.s1, .e7.s2, .e7.s3, .owari {
     height: 100vh;
     width: calc(100% - 270px);
     position: relative;
@@ -12,6 +12,9 @@
         #FFF19A 35%,
         #FFF19A 100%
     );
+}
+.owari {
+    background-color: #FFF9D5;
 }
 
 /*-----------------------------------section 1------------------------------------*/
@@ -123,4 +126,10 @@
     .e7.s3 > .section-wrapper > img {
         width: 320px;
     }
+}
+
+/*-----------------------------------おわり------------------------------------*/
+.owari > h3 {
+    text-align: center;
+    padding-top: 10%;
 }

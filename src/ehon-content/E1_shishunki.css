@@ -216,28 +216,28 @@
 
 #leaves i:nth-of-type(n) { animation-timing-function:ease-in-out;}
 
-.next-lesson > h3 {
+.e1.next-lesson > h3 {
     text-align: center;
     padding-top: 5%;
 }
-.next-lesson > .wrapper {
+.e1.next-lesson > .wrapper {
     width: 60%;
     top: 60%;
 }
 
-.next-lesson > .bubble-wrapper.forGirls {
+.e1.next-lesson > .bubble-wrapper.left {
     left: 15%;
     top: 68%;
     transform: scale(-1,-1);
     padding-top: 70px;
     padding-left: 80px;
 }
-.next-lesson > .bubble-wrapper.forGirls > span {
+.e1.next-lesson > .bubble-wrapper.left > span {
     transform: scale(-1,-1);
     display: inline-block;
 
 }
-.next-lesson > .bubble-wrapper.forBoys {
+.e1.next-lesson > .bubble-wrapper.right {
     top: 20%;
     right: 15%;
     padding-top: 70px;

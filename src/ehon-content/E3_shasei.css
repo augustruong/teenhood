@@ -209,3 +209,31 @@
     margin-left: -60px;
     margin-top: -25px;
 }
+
+.e3.next-lesson > h3 {
+    text-align: center;
+    padding-top: 5%;
+}
+.e3.next-lesson > .wrapper {
+    width: 60%;
+    top: 60%;
+}
+
+.e3.next-lesson > .bubble-wrapper.left {
+    left: 15%;
+    top: 68%;
+    transform: scale(-1,-1);
+    padding-top: 70px;
+    padding-left: 80px;
+}
+.e3.next-lesson > .bubble-wrapper.left > span {
+    transform: scale(-1,-1);
+    display: inline-block;
+
+}
+.e3.next-lesson > .bubble-wrapper.right {
+    top: 20%;
+    right: 15%;
+    padding-top: 70px;
+    padding-left: 95px;
+}

@@ -5,6 +5,7 @@ import { MContext } from '../module/MyProvider';
 import { PopUpModal } from '../components/modals/PopUpModal'
 
 import EhonData from '../data/EhonData.json'
+import LessonThumb from '../components/LessonThumb';
 
 import './Ehon.css'
 import './E5_akachan.css'
@@ -139,6 +140,13 @@ export default function E5_akachan(props) {
                                     <div className='box-content flex-row'></div>
                                     <p className='block-msg'>赤ちゃんが生まれてくる</p>
                                 </div>
+                            </section>
+                            <section className='e5 next-lesson'>
+                                <h3>次の絵本を見ましょう</h3>
+                                <div className='wrapper flex-row scr-center'>
+                                    <LessonThumb lessonId="e6_hinin" title="#6: 基本的な避妊方法" subtitle="思春期のしるし、男女のからだのちがい" bgColor="white"/>
+                                </div>
+                                <div className='bubble-wrapper right'><span>二人へ</span></div>
                             </section>
                         </ReactPageScroller>
                     )}
