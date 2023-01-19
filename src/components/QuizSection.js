@@ -49,12 +49,12 @@ export default function QuizSection() {
     const [showResults, setShowResults] = useState(false);
     const [currentNo, setCurrentNo] = useState(0);
     const [score, setScore] = useState(0);
-
+    
     /* A possible answer was clicked */
     const optionClicked = (isCorrect) => {
         if (isCorrect) setScore(score + 1);
         if (currentNo + 1 < 10) setCurrentNo(currentNo + 1);
-        else {console.log(answers); setShowResults(true); setShowQuiz(false)}
+        else { setShowResults(true); setShowQuiz(false)}
     };
 
     /* Resets the game back to default */
@@ -125,7 +125,7 @@ export default function QuizSection() {
                     pointerout={() => setBtnO(btn_o)}
                     pointerdown={() => {
                         setAnswers(answers => [...answers, "true"])
-                        optionClicked(true === QuizData[questions[currentNo]].answer);
+                        optionClicked("true" === QuizData[questions[currentNo]].answer);
                     }}
                 />
                 <Sprite 
@@ -136,7 +136,7 @@ export default function QuizSection() {
                     pointerout={() => setBtnX(btn_x)}
                     pointerdown={() => {
                         setAnswers(answers => [...answers, "false"])
-                        optionClicked(false === QuizData[questions[currentNo]].answer);
+                        optionClicked("false" === QuizData[questions[currentNo]].answer);
                     }}
                 />
                 </Stage>
