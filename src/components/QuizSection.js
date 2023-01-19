@@ -143,7 +143,7 @@ export default function QuizSection() {
             }
             {showResults &&
                 /* Final Results */
-                <div>
+                <div className='quiz-result-section'>
                     <Stage className="quiz-result" height={590} width={430} options={{backgroundAlpha: 0,antialias: true}}>
                         {score < 8 ? (
                             <Sprite image={result_bg1} x={0} y={32} />
@@ -190,6 +190,9 @@ export default function QuizSection() {
                                 </div>
                             ))}
                     </div>
+                    {score > 8 && 
+                        <img className='omedetou' src={process.env.PUBLIC_URL + `/images/omedetou.png`}/>
+                    }
                 </div>
             }
         </div>

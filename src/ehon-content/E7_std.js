@@ -123,7 +123,8 @@ export default function E7_std(props){
                                 </div> 
                             </section>
                             <section className='owari'>
-                                {/* <h3>最後の絵本でした</h3> */}
+                                <h3>~ 最後の絵本でした ~</h3>
+                                <p>つぎは性のクイズをやってみましょうか？</p>
                                 <div className='method-card quiz flex-column'>
                                     <Link to={`/quiz`} className='method-thumb'>
                                         <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/quiz-thumb.png`}/>
