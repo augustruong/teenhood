@@ -10,7 +10,7 @@ import ContactPage from './pages/main/ContactPage';
 import SOSPage from './pages/main/SOSPage';
 import AboutPage from './pages/main/AboutPage';
 import QuizPage from './pages/main/QuizPage';
-
+import UnavailablePage from './pages/main/UnavailablePage';
 
 import CoverPage from './pages/ehon/CoverPage';
 
@@ -22,14 +22,22 @@ import './App.css';
 import './Keyframes.css'
 
 function App() {
+  var checkScreen = true;
+  if (window.innerWidth < window.innerHeight) { checkScreen = false; }
+  if (window.innerWidth < 800) checkScreen = false;
+
   return (
     <>
       <HashRouter>
-        <Header/>
+        {checkScreen && <Header/>}
         <img src={process.env.PUBLIC_URL + '/images/texture.JPG'} className='texture'/>
 
         <Routes>
-          <Route path='/' element={<HomePage/>} />
+          {checkScreen ? (
+            <Route path='/' element={<HomePage/>} />
+          ) : (
+            <Route path='/' element={<UnavailablePage/>} />
+          )}
           <Route path='/ehon' element={<EhonPage/>} />
           <Route path='/jisho' element={<JishoPage/>} />
           <Route path='/nayami' element={<NayamiPage/>} />
