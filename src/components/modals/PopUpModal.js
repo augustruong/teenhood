@@ -6,6 +6,8 @@ import { MdClose } from 'react-icons/md';
 import WordModal from './WordModal';
 import VirusModal from './VirusModal';
 import { WelcomeForm } from './WelcomeForm';
+import PrivateZone from './PrivateZone';
+
 
 const Background = styled.div`
   width: 100vw;
@@ -70,6 +72,8 @@ export const PopUpModal = ({ type, word, virusIndex, showModal, setShowModal }) 
               {type === "word" && <WordModal word={word}/>}
               {type === "virus" && <VirusModal word={word}/>}
               {type === "welcome" && <WelcomeForm />}
+              {type === "privateZone" && <PrivateZone />}
+
               <CloseModalButton
                 aria-label='Close modal'
                 onClick={() => setShowModal(prev => !prev)}
