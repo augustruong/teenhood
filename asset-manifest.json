@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/teenhood/static/css/main.cc0398f4.css",
-    "main.js": "/teenhood/static/js/main.cf5e5039.js",
+    "main.css": "/teenhood/static/css/main.45e17b3c.css",
+    "main.js": "/teenhood/static/js/main.271f9338.js",
     "static/js/787.9727d7e2.chunk.js": "/teenhood/static/js/787.9727d7e2.chunk.js",
     "static/media/s6_birth.png": "/teenhood/static/media/s6_birth.8dfe6c604bfc06c1c4e1.png",
     "static/media/HGRPP1.TTC": "/teenhood/static/media/HGRPP1.41d1e86b66a829b80523.TTC",
@@ -75,12 +75,12 @@
     "static/media/btn_x_hv.svg": "/teenhood/static/media/btn_x_hv.2263b9a2fdf5069b671b6c99e5591c29.svg",
     "static/media/btn_o.svg": "/teenhood/static/media/btn_o.800b77f9391fafe0a94b7dad40fc85c1.svg",
     "static/media/btn_o_hv.svg": "/teenhood/static/media/btn_o_hv.401c50e170a014b8d313a8b4710ca926.svg",
-    "main.cc0398f4.css.map": "/teenhood/static/css/main.cc0398f4.css.map",
-    "main.cf5e5039.js.map": "/teenhood/static/js/main.cf5e5039.js.map",
+    "main.45e17b3c.css.map": "/teenhood/static/css/main.45e17b3c.css.map",
+    "main.271f9338.js.map": "/teenhood/static/js/main.271f9338.js.map",
     "787.9727d7e2.chunk.js.map": "/teenhood/static/js/787.9727d7e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc0398f4.css",
-    "static/js/main.cf5e5039.js"
+    "static/css/main.45e17b3c.css",
+    "static/js/main.271f9338.js"
   ]
 }
