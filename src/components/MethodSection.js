@@ -14,6 +14,7 @@ export default function MethodSection() {
           </div>
           <div className='main'>
             <div className='subheader'>好きな形式をえらびましょう</div>
+            {window.innerWidth < 1920 &&
             <ReactPageScroller containerWidth={"100%"}>
               <section>
                 <section className='method-card-wrapper flex-row'>
@@ -64,10 +65,58 @@ export default function MethodSection() {
                     <h4 className='title'>性のSOS</h4>
                     <div className='subtitle'>「困った！」があったときに</div>
                   </Link>
-                  
                 </div>
               </section>
+              
             </ReactPageScroller>
+            }
+            {window.innerWidth >= 1920 &&
+              <div className='method-card-container'>
+                <section className='method-card-wrapper flex-row'>
+                  <div className='method-card ehon flex-column'>
+                    <Link to={`/ehon`} className='method-thumb'>
+                      <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/ehon-thumb.png`}/>
+                      <h4 className='title'>性の絵本</h4>
+                      <div className='subtitle'>絵から性を学びましょう</div>
+                    </Link>
+                    <NavLink to={`/ehon`} ><button className='method-icon ehon'>絵</button></NavLink>
+                  </div>
+                  <div className='method-card jisho flex-column'>
+                    <Link to={`/jisho`} className='method-thumb'>
+                      <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/jisho-thumb.png`}/>
+                      <h4 className='title'>性の辞書</h4>
+                      <div className='subtitle'>ことばから性を学びましょう</div>
+                    </Link>
+                    <NavLink to={`/jisho`} ><button className='method-icon jisho'>辞</button></NavLink>
+                  </div>
+                  <div className='method-card nayami flex-column'>
+                    <Link to={`/nayami`} className='method-thumb'>
+                      <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/nayami-thumb.png`}/>
+                      <h4 className='title'>性の悩み</h4>
+                      <div className='subtitle'>気になることを解けましょう</div>
+                    </Link>
+                    <NavLink to={`/nayami`} ><button className='method-icon nayami'>悩</button></NavLink>
+                  </div>
+                </section>
+                <section className='method-card-wrapper flex-row' style={{marginTop: "50px"}}>
+                  <div className='method-card quiz flex-column'>
+                    <Link to={`/quiz`} className='method-thumb'>
+                      <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/quiz-thumb.png`}/>
+                      <h4 className='title'>性のクイズ</h4>
+                      <div className='subtitle'>性の知識をテストしましょう</div>
+                    </Link>
+                    
+                  </div>
+                  <div className='method-card sos flex-column'>
+                    <Link to={`/sos`} className='method-thumb'>
+                      <img className='thumbnail' src={process.env.PUBLIC_URL + `/images/methods/sos-thumb.png`}/>
+                      <h4 className='title'>性のSOS</h4>
+                      <div className='subtitle'>「困った！」があったときに</div>
+                    </Link>
+                  </div>
+                </section>
+              </div>
+            }
           </div>
         </section>
     )
